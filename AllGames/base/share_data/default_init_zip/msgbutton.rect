@@ -1,0 +1,6 @@
+name	l	t	r	b	offx	offy	origW	origH
+msg_ok	0	0	183	85	0	0	183	85
+msg_yes	183	0	251	68	0	0	68	68
+cancel	0	85	128	152	0	0	128	67
+ok	0	152	129	219	0	0	129	67
+msg_no	128	85	195	151	0	0	67	66

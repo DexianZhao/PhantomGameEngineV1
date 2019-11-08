@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_Debug|Win32'">
+    <LocalDebuggerCommand>$(ProjectDir)../../../AllGames\PhantomSimulator.exe</LocalDebuggerCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_Debug|x64'">
+    <LocalDebuggerCommand>E:\PhantomGameEngine\PhantomEngine3D\AllGames\PhantomSimulator.exe</LocalDebuggerCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_Debug|Win32'">
+    <LocalDebuggerWorkingDirectory>../../../AllGames/</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments>
+    </LocalDebuggerCommandArguments>
+    <LocalDebuggerMergeEnvironment>true</LocalDebuggerMergeEnvironment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_Debug|x64'">
+    <LocalDebuggerWorkingDirectory>E:\PhantomGameEngine\PhantomEngine3D\AllGames</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerCommandArguments />
+    <LocalDebuggerMergeEnvironment>true</LocalDebuggerMergeEnvironment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'">
+    <LocalDebuggerCommand>../../PlatformGL.exe</LocalDebuggerCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|x64'">
+    <LocalDebuggerCommand>../../PlatformGL.exe</LocalDebuggerCommand>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'">
+    <LocalDebuggerWorkingDirectory>../../</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|x64'">
+    <LocalDebuggerWorkingDirectory>../../</LocalDebuggerWorkingDirectory>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>

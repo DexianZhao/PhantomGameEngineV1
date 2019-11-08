@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="DXUT.cpp">
+      <Filter>DirectX_9_10</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTenum.cpp">
+      <Filter>DirectX_9_10</Filter>
+    </ClCompile>
+    <ClCompile Include="DXUTmisc.cpp">
+      <Filter>DirectX_9_10</Filter>
+    </ClCompile>
+    <ClCompile Include="MailOGLEs2_Emulator.cpp">
+      <Filter>OpenGLES_Mail</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectX9_Emulator.cpp">
+      <Filter>DirectX_9_10</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="DXUTmisc.h">
+      <Filter>DirectX_9_10</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUT.h">
+      <Filter>DirectX_9_10</Filter>
+    </ClInclude>
+    <ClInclude Include="DXUTenum.h">
+      <Filter>DirectX_9_10</Filter>
+    </ClInclude>
+    <ClInclude Include="MailOGLEs2_Emulator.h">
+      <Filter>OpenGLES_Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLES2_Mail\include\ES2\gl.h">
+      <Filter>OpenGLES_Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLES2_Mail\include\ES2\gl2platform.h">
+      <Filter>OpenGLES_Mail</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenGLES2_Mail\include\ES2\glext.h">
+      <Filter>OpenGLES_Mail</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="OpenGLES_Mail">
+      <UniqueIdentifier>{d57bc7f3-ae3a-432f-8dd8-1db598e9e46a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectX_9_10">
+      <UniqueIdentifier>{0eff7d03-6b4b-457b-8d58-5eba37bb5b4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="win32">
+      <UniqueIdentifier>{ab20638e-a381-481b-8607-534a8c0c2a73}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

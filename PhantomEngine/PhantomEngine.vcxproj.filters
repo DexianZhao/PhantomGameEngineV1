@@ -1,0 +1,605 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="req">
+      <UniqueIdentifier>{668cef75-de8c-4cb8-b90c-fccfa248ed6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{a4b21a61-fdd4-449d-a48c-bb38d25bd846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os">
+      <UniqueIdentifier>{49419943-facf-4fde-9a7b-44392f720f2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="device">
+      <UniqueIdentifier>{355b989f-614a-48e2-853a-eeaa05cdb6c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Meshs">
+      <UniqueIdentifier>{718f6256-d8dd-4162-bad3-8410d7ae97e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Unit3D">
+      <UniqueIdentifier>{b28361d9-cda4-4b72-8fbe-e0196d0a3d49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\Socket">
+      <UniqueIdentifier>{31d2dd9b-6c8c-4f54-a4c6-c5dded1bbc18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\mylua">
+      <UniqueIdentifier>{cd8bdb18-e8a0-48e2-9170-fc06863b3197}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\mylua\lua">
+      <UniqueIdentifier>{36c942d2-f983-487c-a62d-c55fa6149861}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\TiledMap">
+      <UniqueIdentifier>{4498a14e-0ae7-406a-972c-94deb86b5c5e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Android.mk" />
+    <None Include="PhantomEngineIOS.m">
+      <Filter>源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\include\MyInclude.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomAStarPath.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomBase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomCamera.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomDefine.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomEnum.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomFile.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomFloatAnimation.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomFont.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomMath.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomMusic2D.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomOS.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIAnalyseText.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIBase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIButton.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUICheckBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIComboBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIControl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIDialog.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIEffect.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIListBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIListCtrl.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIManager.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIProgress.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIScrollBar.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUISlider.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIStatic.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUIStaticFormat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUITextFormat.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUnit3D.h">
+      <Filter>include\Unit3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUnit3DElement.h">
+      <Filter>include\Unit3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomBone.h">
+      <Filter>include\Meshs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Box2D_Usage.h">
+      <Filter>include\Meshs</Filter>
+    </ClInclude>
+    <ClInclude Include="PhantomDirectX9.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="PhantomWin32.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomScene3D.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomHttp.h">
+      <Filter>include\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomSocket.h">
+      <Filter>include\Socket</Filter>
+    </ClInclude>
+    <ClInclude Include="req\myunzip.h">
+      <Filter>req</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomEffect.h">
+      <Filter>include\Meshs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\sqlite3.h">
+      <Filter>req</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomDB.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomSceneDefine3D.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="PhantomAPI.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="APILua.h">
+      <Filter>源文件\mylua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomSubMesh.h">
+      <Filter>include\Meshs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomMesh.h">
+      <Filter>include\Meshs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\LuaManager.h">
+      <Filter>源文件\mylua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomMapBase.h">
+      <Filter>include\TiledMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomMap2D.h">
+      <Filter>include\TiledMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomAction.h">
+      <Filter>include\TiledMap</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lapi.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lauxlib.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lcode.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\ldebug.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\ldo.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lfunc.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lgc.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\llex.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\llimits.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lmem.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lobject.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lopcodes.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lparser.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lstate.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lstring.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\ltable.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\ltm.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lua.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lua_tinker.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\luaconf.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lualib.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lundump.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lvm.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\dep\lua\lzio.h">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomLanguage.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="encrypt.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomDevice.h">
+      <Filter>device</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomUITextBox.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomScene3DUnits.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomGame.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomGameBase.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomGameObject.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\PhantomShadowMap.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="PhantomOpenGL.h">
+      <Filter>device</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="PhantomAStarPath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomCamera.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomDefine.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomFloatAnimation.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomFont.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomMath.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomMusic2D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIAnalyseText.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIButton.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUICheckBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIComboBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIControl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIEffect.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIListBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIListCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIProgress.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIScrollBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUISlider.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIStatic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUIStaticFormat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUITextFormat.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomOpenGL2_0.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomDirectX9.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomDevice.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\PhantomOSAndroid.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUnit3D.cpp">
+      <Filter>include\Unit3D</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUnit3DElement.cpp">
+      <Filter>include\Unit3D</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomBone.cpp">
+      <Filter>include\Meshs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\include\PhantomImp.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomManagerRender.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomWin32.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomScene3D.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomMusicAndroid.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomMusicIOS.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomMusicWin32.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomHttp.cpp">
+      <Filter>include\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomSocket.cpp">
+      <Filter>include\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomSocketAndroid.cpp">
+      <Filter>include\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomSocketIOS.cpp">
+      <Filter>include\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomSocketWin32.cpp">
+      <Filter>include\Socket</Filter>
+    </ClCompile>
+    <ClCompile Include="req\myunzip.cpp">
+      <Filter>req</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomEffect.cpp">
+      <Filter>include\Meshs</Filter>
+    </ClCompile>
+    <ClCompile Include="req\sqlite3.c">
+      <Filter>req</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomDB.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomAPI.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="APILua.cpp">
+      <Filter>源文件\mylua</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomSubMesh.cpp">
+      <Filter>include\Meshs</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomMesh.cpp">
+      <Filter>include\Meshs</Filter>
+    </ClCompile>
+    <ClCompile Include="LuaManager.cpp">
+      <Filter>源文件\mylua</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomMapBase.cpp">
+      <Filter>include\TiledMap</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomMap2D.cpp">
+      <Filter>include\TiledMap</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomAction.cpp">
+      <Filter>include\TiledMap</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lapi.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lauxlib.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lbaselib.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lcode.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\ldblib.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\ldebug.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\ldo.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\ldump.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lfunc.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lgc.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\linit.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\liolib.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\llex.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lmathlib.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lmem.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\loadlib.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lobject.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lopcodes.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\loslib.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lparser.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lstate.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lstring.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lstrlib.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\ltable.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\ltablib.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\ltm.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lua_tinker.cpp">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lundump.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lvm.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\lzio.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="..\dep\lua\print.c">
+      <Filter>源文件\mylua\lua</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomLanguage.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="encrypt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomUITextBox.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomScene3DUnits.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomGame.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomGameBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomGameObject.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomShadowMap.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PhantomOpenGL.cpp">
+      <Filter>device</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

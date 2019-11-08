@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OpenGL_V1|Win32">
+      <Configuration>OpenGL_V1</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OpenGL_V1|x64">
+      <Configuration>OpenGL_V1</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{777271DB-5C00-46C4-B57F-28AFA3C7976B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>pnglib</RootNamespace>
+    <ProjectName>dependencies</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>../../bz_output/$(ConfigurationName)/$(ProjectName)</OutDir>
+    <IntDir>../../bz_output/$(ConfigurationName)/$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>../../bz_output/$(ConfigurationName)/$(ProjectName)</OutDir>
+    <IntDir>../../bz_output/$(ConfigurationName)/$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|x64'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <OutDir>../../bz_output/$(ConfigurationName)/$(ProjectName)r</OutDir>
+    <IntDir>../../bz_output/$(ConfigurationName)/$(ProjectName)r</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;EDITOR_OS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../dep/png_c;../dep/zlib_c;../dep</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>../lib/dependenciesD.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;EDITOR_OS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../dep/png_c;../dep/zlib_c;../dep</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>../lib/dependenciesx64D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;EDITOR_OS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../dep/png_c;../dep/zlib_c;../dep</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>../lib/dependencies.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;EDITOR_OS;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../dep/png_c;../dep/zlib_c;../dep</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>../lib/dependencies.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;EDITOR_OS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./png_c;./zlib_c;./</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>../lib/dependenciesR.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;EDITOR_OS;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>./png_c;./zlib_c;./</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <OutputFile>../lib/dependenciesR.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Android.mk" />
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="jpeg_c\jaricom.c" />
+    <ClCompile Include="jpeg_c\jcapimin.c" />
+    <ClCompile Include="jpeg_c\jcapistd.c" />
+    <ClCompile Include="jpeg_c\jcarith.c" />
+    <ClCompile Include="jpeg_c\jccoefct.c" />
+    <ClCompile Include="jpeg_c\jccolor.c" />
+    <ClCompile Include="jpeg_c\jcdctmgr.c" />
+    <ClCompile Include="jpeg_c\jchuff.c" />
+    <ClCompile Include="jpeg_c\jcinit.c" />
+    <ClCompile Include="jpeg_c\jcmainct.c" />
+    <ClCompile Include="jpeg_c\jcmarker.c" />
+    <ClCompile Include="jpeg_c\jcmaster.c" />
+    <ClCompile Include="jpeg_c\jcomapi.c" />
+    <ClCompile Include="jpeg_c\jcparam.c" />
+    <ClCompile Include="jpeg_c\jcprepct.c" />
+    <ClCompile Include="jpeg_c\jcsample.c" />
+    <ClCompile Include="jpeg_c\jctrans.c" />
+    <ClCompile Include="jpeg_c\jdapimin.c" />
+    <ClCompile Include="jpeg_c\jdapistd.c" />
+    <ClCompile Include="jpeg_c\jdarith.c" />
+    <ClCompile Include="jpeg_c\jdatadst.c" />
+    <ClCompile Include="jpeg_c\jdatasrc.c" />
+    <ClCompile Include="jpeg_c\jdcoefct.c" />
+    <ClCompile Include="jpeg_c\jdcolor.c" />
+    <ClCompile Include="jpeg_c\jddctmgr.c" />
+    <ClCompile Include="jpeg_c\jdhuff.c" />
+    <ClCompile Include="jpeg_c\jdinput.c" />
+    <ClCompile Include="jpeg_c\jdmainct.c" />
+    <ClCompile Include="jpeg_c\jdmarker.c" />
+    <ClCompile Include="jpeg_c\jdmaster.c" />
+    <ClCompile Include="jpeg_c\jdmerge.c" />
+    <ClCompile Include="jpeg_c\jdpostct.c" />
+    <ClCompile Include="jpeg_c\jdsample.c" />
+    <ClCompile Include="jpeg_c\jdtrans.c" />
+    <ClCompile Include="jpeg_c\jerror.c" />
+    <ClCompile Include="jpeg_c\jfdctflt.c" />
+    <ClCompile Include="jpeg_c\jfdctfst.c" />
+    <ClCompile Include="jpeg_c\jfdctint.c" />
+    <ClCompile Include="jpeg_c\jidctflt.c" />
+    <ClCompile Include="jpeg_c\jidctfst.c" />
+    <ClCompile Include="jpeg_c\jidctint.c" />
+    <ClCompile Include="jpeg_c\jmemmgr.c" />
+    <ClCompile Include="jpeg_c\jmemnobs.c" />
+    <ClCompile Include="jpeg_c\jquant1.c" />
+    <ClCompile Include="jpeg_c\jquant2.c" />
+    <ClCompile Include="jpeg_c\jutils.c" />
+    <ClCompile Include="png_c\png.c" />
+    <ClCompile Include="png_c\pngerror.c" />
+    <ClCompile Include="png_c\pngget.c" />
+    <ClCompile Include="png_c\pngmem.c" />
+    <ClCompile Include="png_c\pngpread.c" />
+    <ClCompile Include="png_c\pngread.c" />
+    <ClCompile Include="png_c\pngrio.c" />
+    <ClCompile Include="png_c\pngrtran.c" />
+    <ClCompile Include="png_c\pngrutil.c" />
+    <ClCompile Include="png_c\pngset.c" />
+    <ClCompile Include="png_c\pngtrans.c" />
+    <ClCompile Include="png_c\pngwio.c" />
+    <ClCompile Include="png_c\pngwrite.c" />
+    <ClCompile Include="png_c\pngwtran.c" />
+    <ClCompile Include="png_c\pngwutil.c" />
+    <ClCompile Include="zlib_c\adler32.c" />
+    <ClCompile Include="zlib_c\compress.c" />
+    <ClCompile Include="zlib_c\crc32.c" />
+    <ClCompile Include="zlib_c\deflate.c" />
+    <ClCompile Include="zlib_c\gzclose.c" />
+    <ClCompile Include="zlib_c\gzlib.c" />
+    <ClCompile Include="zlib_c\gzread.c" />
+    <ClCompile Include="zlib_c\gzwrite.c" />
+    <ClCompile Include="zlib_c\infback.c" />
+    <ClCompile Include="zlib_c\inffast.c" />
+    <ClCompile Include="zlib_c\inflate.c" />
+    <ClCompile Include="zlib_c\inftrees.c" />
+    <ClCompile Include="zlib_c\trees.c" />
+    <ClCompile Include="zlib_c\uncompr.c" />
+    <ClCompile Include="zlib_c\zutil.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="jpeg_c\jchuff.h" />
+    <ClInclude Include="jpeg_c\jconfig.h" />
+    <ClInclude Include="jpeg_c\jdct.h" />
+    <ClInclude Include="jpeg_c\jerror.h" />
+    <ClInclude Include="jpeg_c\jinclude.h" />
+    <ClInclude Include="jpeg_c\jmemsys.h" />
+    <ClInclude Include="jpeg_c\jmorecfg.h" />
+    <ClInclude Include="jpeg_c\jpegint.h" />
+    <ClInclude Include="jpeg_c\jpeglib.h" />
+    <ClInclude Include="jpeg_c\jversion.h" />
+    <ClInclude Include="png_c\png.h" />
+    <ClInclude Include="png_c\pngconf.h" />
+    <ClInclude Include="png_c\pngpriv.h" />
+    <ClInclude Include="zlib_c\crc32.h" />
+    <ClInclude Include="zlib_c\deflate.h" />
+    <ClInclude Include="zlib_c\gzguts.h" />
+    <ClInclude Include="zlib_c\inffast.h" />
+    <ClInclude Include="zlib_c\inffixed.h" />
+    <ClInclude Include="zlib_c\inflate.h" />
+    <ClInclude Include="zlib_c\inftrees.h" />
+    <ClInclude Include="zlib_c\trees.h" />
+    <ClInclude Include="zlib_c\zconf.h" />
+    <ClInclude Include="zlib_c\zlib.h" />
+    <ClInclude Include="zlib_c\zutil.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

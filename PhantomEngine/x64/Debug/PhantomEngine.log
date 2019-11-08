@@ -1,0 +1,1681 @@
+﻿  PhantomManager.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(622): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(621): note: 编译类 模板 成员函数“BOOL Phantom::NameT<128>::isFile(const Phantom::NameT<128> &)”时
+  e:\phantomenginegithub\phantomengine\phantommanager.cpp(1527): note: 参见对正在编译的函数 模板 实例化“BOOL Phantom::NameT<128>::isFile(const Phantom::NameT<128> &)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(623): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantommanager.cpp(440): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  PhantomDirectX9.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdirectx9.cpp(530): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdirectx9.cpp(1143): warning C4474: sprintf: 格式字符串中传递的参数太多
+  e:\phantomenginegithub\phantomengine\phantomdirectx9.cpp(1143): note: 占位符和其参数预计 2 可变参数，但提供的却是 3 参数
+e:\phantomenginegithub\phantomengine\phantomdirectx9.cpp(1318): warning C4311: “类型转换”: 从“LPD3DXEFFECT”到“int”的指针截断
+e:\phantomenginegithub\phantomengine\phantomdirectx9.cpp(1318): warning C4302: “类型转换”: 从“LPD3DXEFFECT”到“int”截断
+e:\phantomenginegithub\phantomengine\phantomdirectx9.cpp(1321): warning C4311: “类型转换”: 从“LPD3DXEFFECT”到“int”的指针截断
+e:\phantomenginegithub\phantomengine\phantomdirectx9.cpp(1321): warning C4302: “类型转换”: 从“LPD3DXEFFECT”到“int”截断
+e:\phantomenginegithub\phantomengine\phantomdirectx9.cpp(1333): warning C4311: “类型转换”: 从“D3DXHANDLE”到“unsigned int”的指针截断
+e:\phantomenginegithub\phantomengine\phantomdirectx9.cpp(1333): warning C4302: “类型转换”: 从“D3DXHANDLE”到“unsigned int”截断
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<16>::size(void)”时
+  e:\phantomenginegithub\phantomengine\phantomdirectx9.cpp(564): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<16>::size(void)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(326): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<16>”的引用
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  正在生成代码...
+  正在编译...
+  myunzip.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\req\myunzip.cpp(2683): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<60>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantombase.h(1023): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantombase.h(1022): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<60>”的引用
+  encrypt.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<60>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantombase.h(1023): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantombase.h(1022): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<60>”的引用
+  PhantomWin32.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(622): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(621): note: 编译类 模板 成员函数“BOOL Phantom::NameT<128>::isFile(const Phantom::NameT<128> &)”时
+  e:\phantomenginegithub\phantomengine\phantomwin32.cpp(308): note: 参见对正在编译的函数 模板 实例化“BOOL Phantom::NameT<128>::isFile(const Phantom::NameT<128> &)”的引用
+  e:\phantomenginegithub\include\phantommusic2d.h(64): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(623): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomwin32.cpp(304): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  PhantomUnit3DElement.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\phantomunit3delement.cpp(583): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomunit3delement.cpp(768): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<128>::size(void)”时
+  e:\phantomenginegithub\include\phantombase.h(1132): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<128>::size(void)”的引用
+  PhantomUnit3D.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomunit3d.cpp(77): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\phantomunit3d.cpp(467): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(622): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(621): note: 编译类 模板 成员函数“BOOL Phantom::NameT<128>::isFile(const Phantom::NameT<128> &)”时
+  e:\phantomenginegithub\phantomengine\phantomunit3d.cpp(474): note: 参见对正在编译的函数 模板 实例化“BOOL Phantom::NameT<128>::isFile(const Phantom::NameT<128> &)”的引用
+e:\phantomenginegithub\include\phantombase.h(623): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<128>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomunit3d.cpp(468): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomunit3d.cpp(402): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<32>::size(void)”时
+  e:\phantomenginegithub\include\phantombase.h(1385): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<32>::size(void)”的引用
+  PhantomUITextFormat.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomUITextBox.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomUIStaticFormat.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuistaticformat.cpp(97): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuistaticformat.cpp(189): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomUIStatic.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuistatic.cpp(182): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuistatic.cpp(213): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  PhantomUISlider.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomUIScrollBar.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomUIProgress.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomUIManager.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuimanager.cpp(1008): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”时
+  e:\phantomenginegithub\phantomengine\phantomuimanager.cpp(151): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<512>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomuimanager.cpp(165): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<512>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomuimanager.cpp(160): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::setIsFile(void)”的引用
+  PhantomUIListCtrl.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuilistctrl.cpp(242): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuilistctrl.cpp(248): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuilistctrl.cpp(664): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomUIListBox.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomUIEffect.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomUIDialog.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(861): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(867): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(868): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(869): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(877): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(878): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(879): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(904): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(905): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(906): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(930): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(1749): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(2977): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(3567): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(3569): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(3572): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(3575): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(3578): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(3579): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(3581): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(3583): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(3584): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(3587): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”时
+  e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(2937): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<512>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomuidialog.cpp(2933): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::setIsFile(void)”的引用
+  PhantomUIControl.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuicontrol.cpp(3390): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuicontrol.cpp(3450): warning C4267: “=”: 从“size_t”转换到“short”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<32>::size(void)”时
+  e:\phantomenginegithub\phantomengine\phantomuicontrol.cpp(3338): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<32>::size(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\phantomuicontrol.cpp(1517): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(49): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<128>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomuicontrol.cpp(1521): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<60>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomuicontrol.cpp(291): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::setIsFile(void)”的引用
+  PhantomUIComboBox.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomUICheckBox.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  正在生成代码...
+  正在编译...
+  PhantomUIButton.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  PhantomUIBase.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuibase.cpp(396): warning C4267: “初始化”: 从“size_t”转换到“short”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuibase.cpp(408): warning C4267: “初始化”: 从“size_t”转换到“short”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuibase.cpp(1364): warning C4267: “初始化”: 从“size_t”转换到“short”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuibase.cpp(1372): warning C4267: “初始化”: 从“size_t”转换到“short”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomuibase.cpp(851): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(49): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+  PhantomUIAnalyseText.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuianalysetext.cpp(112): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuianalysetext.cpp(348): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuianalysetext.cpp(374): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuianalysetext.cpp(402): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuianalysetext.cpp(438): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomuianalysetext.cpp(561): warning C4267: “参数”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomSubMesh.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomsubmesh.cpp(1239): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\phantomsubmesh.cpp(1291): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<128>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomsubmesh.cpp(1294): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomsubmesh.cpp(1290): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<60>::size(void)”时
+  e:\phantomenginegithub\phantomengine\phantomsubmesh.cpp(1019): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<60>::size(void)”的引用
+  PhantomSocketWin32.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomsocket.h(328): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomsocket.h(90): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomSocketIOS.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomsocket.h(328): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomsocket.h(90): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomSocketAndroid.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomsocket.h(328): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomsocket.h(90): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomSocket.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<16>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomsocket.cpp(971): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<16>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomsocket.h(91): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<16>”的引用
+  PhantomShadowMap.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomshadowmap.cpp(54): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomScene3DUnits.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomscene3dunits.cpp(513): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\phantomscene3dunits.cpp(357): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomscene3dunits.cpp(355): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<32>::size(void)”时
+  e:\phantomenginegithub\include\phantombase.h(1385): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<32>::size(void)”的引用
+  PhantomScene3D.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomscene3d.cpp(3421): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomscene3d.cpp(2309): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<32>::size(void)”时
+  e:\phantomenginegithub\include\phantombase.h(1385): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<32>::size(void)”的引用
+  PhantomOpenGL2_0.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomOpenGL.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomMusicWin32.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”时
+  e:\phantomenginegithub\phantomengine\phantommusicwin32.cpp(337): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<512>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantommusicwin32.cpp(158): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<512>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantommusicwin32.cpp(335): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::setIsFile(void)”的引用
+  PhantomMusicIOS.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomMusicAndroid.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomMusic2D.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantommusic2d.cpp(61): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  e:\phantomenginegithub\include\phantommusic2d.h(64): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+  PhantomMesh.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1015): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1533): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1535): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1792): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1793): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1808): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1824): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1841): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1842): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1851): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(1852): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(2044): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(2057): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(2058): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(2182): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(2183): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(2229): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantommesh.cpp(2230): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\phantommesh.cpp(1487): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<128>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantommesh.cpp(1490): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantommesh.cpp(1058): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  PhantomMath.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<60>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantombase.h(1023): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantombase.h(1022): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<60>”的引用
+  PhantomMapBase.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantommapbase.cpp(106): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+  正在生成代码...
+  正在编译...
+  PhantomMap2D.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  PhantomManagerRender.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomLanguage.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomlanguage.cpp(160): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomlanguage.cpp(176): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\phantomlanguage.cpp(238): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomlanguage.cpp(237): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<60>::size(void)”时
+  e:\phantomenginegithub\phantomengine\phantomlanguage.cpp(168): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<60>::size(void)”的引用
+  PhantomHttp.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomhttp.cpp(57): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomhttp.cpp(148): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomhttp.cpp(218): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomhttp.cpp(254): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomhttp.cpp(283): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomhttp.cpp(380): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomhttp.cpp(410): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomhttp.cpp(575): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomhttp.cpp(841): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<256>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomhttp.cpp(907): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<256>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantommanager.h(311): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<256>”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<4096>::size(void)”时
+  e:\phantomenginegithub\phantomengine\phantomhttp.cpp(141): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<4096>::size(void)”的引用
+  PhantomGameObject.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  PhantomGameBase.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  PhantomGame.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomgame.cpp(612): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomgame.cpp(613): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomgame.cpp(614): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomgame.cpp(616): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\phantomgame.cpp(591): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(50): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomgame.cpp(817): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  PhantomFont.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomfont.cpp(106): warning C4267: “=”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”时
+  e:\phantomenginegithub\phantomengine\phantomfont.cpp(69): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<512>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomfont.cpp(70): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<512>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomfont.cpp(66): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::setIsFile(void)”的引用
+  PhantomFloatAnimation.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<60>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantombase.h(1023): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantombase.h(1022): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<60>”的引用
+  PhantomFile.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\cinclude.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+e:\phantomenginegithub\phantomengine\phantomfile.cpp(838): warning C4267: “return”: 从“size_t”转换到“Phantom::int64”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomfile.cpp(844): warning C4267: “return”: 从“size_t”转换到“Phantom::int64”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomfile.cpp(1841): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomfile.cpp(1892): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomfile.cpp(2010): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomfile.cpp(2014): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomfile.cpp(2026): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomfile.cpp(2030): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomfile.cpp(2244): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomfile.cpp(2324): warning C4267: “参数”: 从“size_t”转换到“Phantom::int64”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<16>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomfile.cpp(54): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<16>::operator =(const char *)”的引用
+  e:\phantomenginegithub\phantomengine\phantomfile.cpp(51): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<16>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”时
+  e:\phantomenginegithub\phantomengine\phantomfile.cpp(87): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(622): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(621): note: 编译类 模板 成员函数“BOOL Phantom::NameT<512>::isFile(const Phantom::NameT<512> &)”时
+  e:\phantomenginegithub\phantomengine\phantomfile.cpp(2152): note: 参见对正在编译的函数 模板 实例化“BOOL Phantom::NameT<512>::isFile(const Phantom::NameT<512> &)”的引用
+e:\phantomenginegithub\include\phantombase.h(623): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(608): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(607): note: 编译类 模板 成员函数“void Phantom::NameT<512>::operator +=(char)”时
+  e:\phantomenginegithub\phantomengine\phantomfile.cpp(326): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::operator +=(char)”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<512>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomfile.cpp(377): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<512>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomfile.cpp(322): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<512>::size(void)”时
+  e:\phantomenginegithub\phantomengine\phantomfile.cpp(323): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<512>::size(void)”的引用
+  PhantomEffect.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomeffect.cpp(943): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomeffect.cpp(1610): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomeffect.cpp(3494): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomeffect.cpp(3513): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomeffect.cpp(3675): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\phantomeffect.cpp(464): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomeffect.cpp(468): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  PhantomDevice.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdevice.cpp(237): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdevice.cpp(238): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdevice.cpp(1098): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdevice.cpp(1165): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdevice.cpp(2154): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdevice.cpp(2184): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<16>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomdevice.cpp(1092): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<16>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(326): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<16>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”时
+  e:\phantomenginegithub\phantomengine\phantomdevice.cpp(1867): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<512>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomdevice.cpp(1870): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<512>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomdevice.cpp(1864): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<60>::size(void)”时
+  e:\phantomenginegithub\phantomengine\phantomdevice.cpp(1648): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<60>::size(void)”的引用
+  PhantomDB.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdb.cpp(21): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdb.cpp(381): warning C4267: “初始化”: 从“size_t”转换到“short”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdb.cpp(397): warning C4267: “初始化”: 从“size_t”转换到“short”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdb.cpp(1077): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantomdb.cpp(1618): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<31>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantomdb.cpp(256): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<31>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdb.h(166): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<31>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\phantomdb.cpp(1220): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(50): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\phantomdb.cpp(525): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<60>::size(void)”时
+  e:\phantomenginegithub\phantomengine\phantomdb.cpp(1042): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<60>::size(void)”的引用
+  PhantomCamera.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  PhantomBone.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantombone.cpp(360): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantombone.cpp(493): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomBase.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantombase.cpp(181): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantombase.cpp(182): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantombase.cpp(183): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantombase.cpp(669): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantombase.cpp(690): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantombase.cpp(707): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantombase.cpp(739): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\phantombase.cpp(823): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”时
+  e:\phantomenginegithub\phantomengine\phantombase.cpp(85): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”的引用
+  e:\phantomenginegithub\phantomengine\phantombase.cpp(82): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<512>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantombase.cpp(83): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::operator =(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<60>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\phantombase.cpp(88): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::operator +=(const char *)”的引用
+  e:\phantomenginegithub\include\phantombase.h(1022): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<60>”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  PhantomAction.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomuibase.h(140): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomAStarPath.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<60>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantombase.h(1023): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantombase.h(1022): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<60>”的引用
+  PhantomAPI.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  LuaManager.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\luamanager.cpp(12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\luamanager.cpp(186): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\luamanager.cpp(355): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\luamanager.cpp(357): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\luamanager.cpp(527): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\luamanager.cpp(530): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\luamanager.cpp(627): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomengine\luamanager.cpp(1783): warning C4267: “=”: 从“size_t”转换到“WORD”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomengine\luamanager.cpp(1922): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<128>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomengine\luamanager.cpp(407): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomengine\luamanager.cpp(601): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  正在生成代码...
+  正在编译...
+  APILua.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<60>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantombase.h(1023): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantombase.h(1022): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<60>”的引用
+  PhantomOSAndroid.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  PhantomImp.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”时
+  e:\phantomenginegithub\include\phantomimp.cpp(58): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<512>::setIsFile(void)”时
+  e:\phantomenginegithub\include\phantomimp.cpp(56): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::setIsFile(void)”的引用
+  lua_tinker.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<60>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantombase.h(1023): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantombase.h(1022): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<60>”的引用
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1357,5): warning MSB8012: TargetPath(E:\PhantomEngineGithub\x64\Debug\PhantomEngine.lib) does not match the Library's OutputFile property value (E:\PhantomEngineGithub\lib\PhantomEnginex64D.lib). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1359,5): warning MSB8012: TargetName(PhantomEngine) does not match the Library's OutputFile property value (PhantomEnginex64D). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Lib.OutputFile).
+PhantomSocketIOS.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+PhantomSocketAndroid.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+PhantomOpenGL2_0.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+PhantomMusicIOS.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+PhantomOSAndroid.obj : warning LNK4221: 此对象文件未定义任何之前未定义的公共符号，因此任何耗用此库的链接操作都不会使用此文件
+  PhantomEngine.vcxproj -> E:\PhantomEngineGithub\x64\Debug\PhantomEngine.lib

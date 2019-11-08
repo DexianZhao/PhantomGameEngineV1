@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OpenGL_V1|x64">
+      <Configuration>OpenGL_V1</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OpenGL_V1|Win32">
+      <Configuration>OpenGL_V1</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{259BBDE3-6081-4E55-88A6-F813C20296C8}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>PhantomEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'">
+    <OutDir>../../bz_output/$(ConfigurationName)/$(ProjectName)_OGL</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>../../bz_output/$(ConfigurationName)D/$(ProjectName)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>../../bz_output/$(ConfigurationName)/$(ProjectName)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'">
+    <IntDir>../../bz_output/$(ConfigurationName)/$(ProjectName)_OGL</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IntDir>../../bz_output/$(ConfigurationName)D/$(ProjectName)</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IntDir>../../bz_output/$(ConfigurationName)/$(ProjectName)</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>EDITOR_OS;WIN32;_DEBUG;_LIB;OGL_V1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;../EngineProtected;..\include\dependencies;..\dep;..\dep\png_c;..\dep\zlib_c;.\req;..\Emulator\DirectX_9_10\include;..\Emulator\OpenGLES2_Mail\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>../ogl_lib/$(ProjectName)OGL.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>EDITOR_OS;WIN32;_DEBUG;_LIB;OGL_V1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;../EngineProtected;..\include\dependencies;..\dep;..\dep\png_c;..\dep\zlib_c;.\req;..\Emulator\DirectX_9_10\include;..\Emulator\OpenGLES2_Mail\include</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>../ogl_lib/$(ProjectName)OGL.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>EDITOR_OS;WIN32;N_CPUTIME;_DEBUG;_LIB;DIRECT_X_9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;../EngineProtected;..\include\dependencies;..\dep;..\dep\png_c;..\dep\zlib_c;.\req;..\Emulator\DirectX_9_10\include;..\Emulator\OpenGLES2_Mail\include;./;../AllGames/base</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>../lib/$(ProjectName)D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>EDITOR_OS;WIN32;N_CPUTIME;_DEBUG;_LIB;DIRECT_X_9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;../EngineProtected;..\include\dependencies;..\dep;..\dep\png_c;..\dep\zlib_c;.\req;..\Emulator\DirectX_9_10\include;..\Emulator\OpenGLES2_Mail\include;./;../AllGames/base</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <OutputFile>../lib/$(ProjectName)x64D.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>EDITOR_OS;WIN32;N_CPUTIME_TOP;_LIB;DIRECT_X_9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;../EngineProtected;..\include\dependencies;..\dep;..\dep\png_c;..\dep\zlib_c;.\req;..\Emulator\DirectX_9_10\include;..\Emulator\OpenGLES2_Mail\include;./;../AllGames/base</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+    <Lib>
+      <OutputFile>../lib/$(ProjectName)R.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>EDITOR_OS;WIN32;N_CPUTIME_TOP;_LIB;DIRECT_X_9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\include;../EngineProtected;..\include\dependencies;..\dep;..\dep\png_c;..\dep\zlib_c;.\req;..\Emulator\DirectX_9_10\include;..\Emulator\OpenGLES2_Mail\include;./;../AllGames/base</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib />
+    <Lib>
+      <OutputFile>../lib/$(ProjectName)R.lib</OutputFile>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="Android.mk" />
+    <None Include="PhantomEngineIOS.m" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\dep\lua\lapi.h" />
+    <ClInclude Include="..\dep\lua\lauxlib.h" />
+    <ClInclude Include="..\dep\lua\lcode.h" />
+    <ClInclude Include="..\dep\lua\ldebug.h" />
+    <ClInclude Include="..\dep\lua\ldo.h" />
+    <ClInclude Include="..\dep\lua\lfunc.h" />
+    <ClInclude Include="..\dep\lua\lgc.h" />
+    <ClInclude Include="..\dep\lua\llex.h" />
+    <ClInclude Include="..\dep\lua\llimits.h" />
+    <ClInclude Include="..\dep\lua\lmem.h" />
+    <ClInclude Include="..\dep\lua\lobject.h" />
+    <ClInclude Include="..\dep\lua\lopcodes.h" />
+    <ClInclude Include="..\dep\lua\lparser.h" />
+    <ClInclude Include="..\dep\lua\lstate.h" />
+    <ClInclude Include="..\dep\lua\lstring.h" />
+    <ClInclude Include="..\dep\lua\ltable.h" />
+    <ClInclude Include="..\dep\lua\ltm.h" />
+    <ClInclude Include="..\dep\lua\lua.h" />
+    <ClInclude Include="..\dep\lua\luaconf.h" />
+    <ClInclude Include="..\dep\lua\lualib.h" />
+    <ClInclude Include="..\dep\lua\lua_tinker.h" />
+    <ClInclude Include="..\dep\lua\lundump.h" />
+    <ClInclude Include="..\dep\lua\lvm.h" />
+    <ClInclude Include="..\dep\lua\lzio.h" />
+    <ClInclude Include="..\include\Box2D_Usage.h" />
+    <ClInclude Include="..\include\LuaManager.h" />
+    <ClInclude Include="..\include\PhantomAction.h" />
+    <ClInclude Include="..\include\PhantomEffect.h" />
+    <ClInclude Include="..\include\MyInclude.h" />
+    <ClInclude Include="..\include\PhantomAStarPath.h" />
+    <ClInclude Include="..\include\PhantomBase.h" />
+    <ClInclude Include="..\include\PhantomBone.h" />
+    <ClInclude Include="..\include\PhantomCamera.h" />
+    <ClInclude Include="..\include\PhantomDefine.h" />
+    <ClInclude Include="..\include\PhantomDevice.h" />
+    <ClInclude Include="..\include\PhantomEnum.h" />
+    <ClInclude Include="..\include\PhantomFile.h" />
+    <ClInclude Include="..\include\PhantomFloatAnimation.h" />
+    <ClInclude Include="..\include\PhantomFont.h" />
+    <ClInclude Include="..\include\PhantomGame.h" />
+    <ClInclude Include="..\include\PhantomGameBase.h" />
+    <ClInclude Include="..\include\PhantomGameObject.h" />
+    <ClInclude Include="..\include\PhantomHttp.h" />
+    <ClInclude Include="..\include\PhantomLanguage.h" />
+    <ClInclude Include="..\include\PhantomManager.h" />
+    <ClInclude Include="..\include\PhantomMap2D.h" />
+    <ClInclude Include="..\include\PhantomMath.h" />
+    <ClInclude Include="..\include\PhantomScene3DUnits.h" />
+    <ClInclude Include="..\include\PhantomShadowMap.h" />
+    <ClInclude Include="..\include\PhantomSubMesh.h" />
+    <ClInclude Include="..\include\PhantomMesh.h" />
+    <ClInclude Include="..\include\PhantomMusic2D.h" />
+    <ClInclude Include="..\include\PhantomOS.h" />
+    <ClInclude Include="..\include\PhantomScene3D.h" />
+    <ClInclude Include="..\include\PhantomSceneDefine3D.h" />
+    <ClInclude Include="..\include\PhantomSocket.h" />
+    <ClInclude Include="..\include\PhantomDB.h" />
+    <ClInclude Include="..\include\PhantomUIAnalyseText.h" />
+    <ClInclude Include="..\include\PhantomUIBase.h" />
+    <ClInclude Include="..\include\PhantomUIButton.h" />
+    <ClInclude Include="..\include\PhantomUICheckBox.h" />
+    <ClInclude Include="..\include\PhantomUIComboBox.h" />
+    <ClInclude Include="..\include\PhantomUIControl.h" />
+    <ClInclude Include="..\include\PhantomUIDialog.h" />
+    <ClInclude Include="..\include\PhantomUIEffect.h" />
+    <ClInclude Include="..\include\PhantomUIListBox.h" />
+    <ClInclude Include="..\include\PhantomUIListCtrl.h" />
+    <ClInclude Include="..\include\PhantomUIManager.h" />
+    <ClInclude Include="..\include\PhantomUIProgress.h" />
+    <ClInclude Include="..\include\PhantomUIScrollBar.h" />
+    <ClInclude Include="..\include\PhantomUISlider.h" />
+    <ClInclude Include="..\include\PhantomUIStatic.h" />
+    <ClInclude Include="..\include\PhantomUIStaticFormat.h" />
+    <ClInclude Include="..\include\PhantomUITextBox.h" />
+    <ClInclude Include="..\include\PhantomUITextFormat.h" />
+    <ClInclude Include="..\include\PhantomUnit3D.h" />
+    <ClInclude Include="..\include\PhantomUnit3DElement.h" />
+    <ClInclude Include="..\include\sqlite3.h" />
+    <ClInclude Include="..\include\PhantomMapBase.h" />
+    <ClInclude Include="APILua.h" />
+    <ClInclude Include="encrypt.h" />
+    <ClInclude Include="PhantomAPI.h" />
+    <ClInclude Include="PhantomDirectX9.h" />
+    <ClInclude Include="PhantomOpenGL.h" />
+    <ClInclude Include="PhantomWin32.h" />
+    <ClInclude Include="req\myunzip.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\dep\lua\lapi.c" />
+    <ClCompile Include="..\dep\lua\lauxlib.c" />
+    <ClCompile Include="..\dep\lua\lbaselib.c" />
+    <ClCompile Include="..\dep\lua\lcode.c" />
+    <ClCompile Include="..\dep\lua\ldblib.c" />
+    <ClCompile Include="..\dep\lua\ldebug.c" />
+    <ClCompile Include="..\dep\lua\ldo.c" />
+    <ClCompile Include="..\dep\lua\ldump.c" />
+    <ClCompile Include="..\dep\lua\lfunc.c" />
+    <ClCompile Include="..\dep\lua\lgc.c" />
+    <ClCompile Include="..\dep\lua\linit.c" />
+    <ClCompile Include="..\dep\lua\liolib.c" />
+    <ClCompile Include="..\dep\lua\llex.c" />
+    <ClCompile Include="..\dep\lua\lmathlib.c" />
+    <ClCompile Include="..\dep\lua\lmem.c" />
+    <ClCompile Include="..\dep\lua\loadlib.c" />
+    <ClCompile Include="..\dep\lua\lobject.c" />
+    <ClCompile Include="..\dep\lua\lopcodes.c" />
+    <ClCompile Include="..\dep\lua\loslib.c" />
+    <ClCompile Include="..\dep\lua\lparser.c" />
+    <ClCompile Include="..\dep\lua\lstate.c" />
+    <ClCompile Include="..\dep\lua\lstring.c" />
+    <ClCompile Include="..\dep\lua\lstrlib.c" />
+    <ClCompile Include="..\dep\lua\ltable.c" />
+    <ClCompile Include="..\dep\lua\ltablib.c" />
+    <ClCompile Include="..\dep\lua\ltm.c" />
+    <ClCompile Include="..\dep\lua\lua_tinker.cpp" />
+    <ClCompile Include="..\dep\lua\lundump.c" />
+    <ClCompile Include="..\dep\lua\lvm.c" />
+    <ClCompile Include="..\dep\lua\lzio.c" />
+    <ClCompile Include="..\dep\lua\print.c" />
+    <ClCompile Include="..\include\PhantomImp.cpp" />
+    <ClCompile Include="..\include\PhantomOSAndroid.cpp" />
+    <ClCompile Include="APILua.cpp" />
+    <ClCompile Include="encrypt.cpp" />
+    <ClCompile Include="LuaManager.cpp" />
+    <ClCompile Include="PhantomAction.cpp" />
+    <ClCompile Include="PhantomAPI.cpp" />
+    <ClCompile Include="PhantomEffect.cpp" />
+    <ClCompile Include="PhantomAStarPath.cpp" />
+    <ClCompile Include="PhantomBase.cpp" />
+    <ClCompile Include="PhantomBone.cpp" />
+    <ClCompile Include="PhantomCamera.cpp" />
+    <ClCompile Include="PhantomDefine.cpp" />
+    <ClCompile Include="PhantomDevice.cpp" />
+    <ClCompile Include="PhantomDirectX9.cpp" />
+    <ClCompile Include="PhantomFile.cpp" />
+    <ClCompile Include="PhantomFloatAnimation.cpp" />
+    <ClCompile Include="PhantomFont.cpp" />
+    <ClCompile Include="PhantomGame.cpp" />
+    <ClCompile Include="PhantomGameBase.cpp" />
+    <ClCompile Include="PhantomGameObject.cpp" />
+    <ClCompile Include="PhantomHttp.cpp" />
+    <ClCompile Include="PhantomLanguage.cpp" />
+    <ClCompile Include="PhantomManager.cpp" />
+    <ClCompile Include="PhantomMap2D.cpp" />
+    <ClCompile Include="PhantomMath.cpp" />
+    <ClCompile Include="PhantomOpenGL.cpp" />
+    <ClCompile Include="PhantomScene3DUnits.cpp" />
+    <ClCompile Include="PhantomShadowMap.cpp" />
+    <ClCompile Include="PhantomSubMesh.cpp" />
+    <ClCompile Include="PhantomMesh.cpp" />
+    <ClCompile Include="PhantomMusic2D.cpp" />
+    <ClCompile Include="PhantomMusicAndroid.cpp" />
+    <ClCompile Include="PhantomMusicIOS.cpp" />
+    <ClCompile Include="PhantomMusicWin32.cpp" />
+    <ClCompile Include="PhantomOpenGL2_0.cpp" />
+    <ClCompile Include="PhantomManagerRender.cpp" />
+    <ClCompile Include="PhantomScene3D.cpp" />
+    <ClCompile Include="PhantomSocket.cpp" />
+    <ClCompile Include="PhantomSocketAndroid.cpp" />
+    <ClCompile Include="PhantomSocketIOS.cpp" />
+    <ClCompile Include="PhantomSocketWin32.cpp" />
+    <ClCompile Include="PhantomDB.cpp" />
+    <ClCompile Include="PhantomUIAnalyseText.cpp" />
+    <ClCompile Include="PhantomUIBase.cpp" />
+    <ClCompile Include="PhantomUIButton.cpp" />
+    <ClCompile Include="PhantomUICheckBox.cpp" />
+    <ClCompile Include="PhantomUIComboBox.cpp" />
+    <ClCompile Include="PhantomUIControl.cpp" />
+    <ClCompile Include="PhantomUIDialog.cpp" />
+    <ClCompile Include="PhantomUIEffect.cpp" />
+    <ClCompile Include="PhantomUIListBox.cpp" />
+    <ClCompile Include="PhantomUIListCtrl.cpp" />
+    <ClCompile Include="PhantomUIManager.cpp" />
+    <ClCompile Include="PhantomUIProgress.cpp" />
+    <ClCompile Include="PhantomUIScrollBar.cpp" />
+    <ClCompile Include="PhantomUISlider.cpp" />
+    <ClCompile Include="PhantomUIStatic.cpp" />
+    <ClCompile Include="PhantomUIStaticFormat.cpp" />
+    <ClCompile Include="PhantomUITextBox.cpp" />
+    <ClCompile Include="PhantomUITextFormat.cpp" />
+    <ClCompile Include="PhantomUnit3D.cpp" />
+    <ClCompile Include="PhantomUnit3DElement.cpp" />
+    <ClCompile Include="PhantomWin32.cpp" />
+    <ClCompile Include="req\myunzip.cpp" />
+    <ClCompile Include="req\sqlite3.c" />
+    <ClCompile Include="PhantomMapBase.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

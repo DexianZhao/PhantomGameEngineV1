@@ -1,0 +1,19 @@
+REGEDIT
+; 此 .REG 文件可能由 SETUP 程序使用。
+;   如果 SETUP 程序不可用，则调用
+;   CWinApp::RegisterShellFileTypes 和 COleObjectFactory::UpdateRegistryAll
+;   在 InitInstance 中对下列项自动进行注册。
+
+HKEY_CLASSES_ROOT\.rpgmesh = PhantomVD.Document
+HKEY_CLASSES_ROOT\PhantomVD.Document\shell\open\command = PhantomVD.EXE %1
+HKEY_CLASSES_ROOT\PhantomVD.Document\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\PhantomVD.Document\shell\open\ddeexec\application = PhantomVD
+    ; 注意: 此应用程序是可选的
+    ;  (默认为“命令”中的应用程序名)
+
+HKEY_CLASSES_ROOT\PhantomVD.Document = PhantomVD.Document
+
+HKEY_CLASSES_ROOT\.rpgExp = txtfile
+HKEY_CLASSES_ROOT\.rpgExp\OpenWithList\devenv.exe = ""
+HKEY_CLASSES_ROOT\.rpgExpAni = txtfile
+HKEY_CLASSES_ROOT\.rpgExpAni\OpenWithList\devenv.exe = ""

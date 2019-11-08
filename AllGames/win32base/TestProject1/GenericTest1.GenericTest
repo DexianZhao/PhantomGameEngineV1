@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<GenericTest name="GenericTest1" storage="e:\phantomgameengine\phantomengine3d\allgames\win32base\testproject1\generictest1.generictest" id="ff59e52d-11c9-4381-9853-0ba78327bdaa" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Command filename="E:\PhantomGameEngine\PhantomEngine3D\AllGames\PhantomSimulator.exe" workingDirectory="%TestOutputDirectory%" />
+  <SummaryXmlFile path="%TestOutputDirectory%\&lt;在此输入摘要文件名&gt;" />
+</GenericTest>

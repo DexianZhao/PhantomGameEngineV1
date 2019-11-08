@@ -1,0 +1,616 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\AllGames\base\MD5.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Win32Base\DlgLog.cpp" />
+    <ClCompile Include="DlgEditBox.cpp" />
+    <ClCompile Include="DlgFindText.cpp" />
+    <ClCompile Include="DlgGameEditBox.cpp" />
+    <ClCompile Include="DlgLuaEditor.cpp" />
+    <ClCompile Include="LuaEditor\CodeAnalyse.cpp" />
+    <ClCompile Include="LuaEditor\CodeComboBox.cpp" />
+    <ClCompile Include="LuaEditor\CodeEditor.cpp" />
+    <ClCompile Include="LuaEditor\CodeListBox.cpp" />
+    <ClCompile Include="LuaEditor\DlgFindReplace.cpp" />
+    <ClCompile Include="LuaEditor\LuaXmlModule.cpp" />
+    <ClCompile Include="LuaEditor\MyLuaEditor.cpp" />
+    <ClCompile Include="LuaEditor\ToolTipDialog.cpp" />
+    <ClCompile Include="AlignDialog.cpp" />
+    <ClCompile Include="AlignDialog3D.cpp" />
+    <ClCompile Include="base_xmlFileA.cpp" />
+    <ClCompile Include="base_xmlFileW.cpp" />
+    <ClCompile Include="BigTextEditor.cpp" />
+    <ClCompile Include="ChangeSpinButtonCtrl.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="ClassView.cpp" />
+    <ClCompile Include="CreateFileDlg.cpp" />
+    <ClCompile Include="DialogBase.cpp" />
+    <ClCompile Include="DlgCodeColor.cpp" />
+    <ClCompile Include="DlgMixFPS.cpp" />
+    <ClCompile Include="DlgSceneObject.cpp" />
+    <ClCompile Include="DlgSelectDevice.cpp" />
+    <ClCompile Include="FileView.cpp" />
+    <ClCompile Include="GameManager.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GameScreenSize.cpp" />
+    <ClCompile Include="GCAnimationCtrl.cpp" />
+    <ClCompile Include="GCBitmapMgr.cpp" />
+    <ClCompile Include="GCCodeEditor.cpp" />
+    <ClCompile Include="GCFloatAnimation.cpp" />
+    <ClCompile Include="GCGameService.cpp" />
+    <ClCompile Include="GCLanguage.cpp" />
+    <ClCompile Include="GCMFCHelper.cpp" />
+    <ClCompile Include="GCPhantomEngine.cpp" />
+    <ClCompile Include="GCPropertyBase.cpp" />
+    <ClCompile Include="GCRenderSystem.cpp" />
+    <ClCompile Include="GCSceneEditor3D.cpp" />
+    <ClCompile Include="GCSceneEditor3DProperties.cpp" />
+    <ClCompile Include="GCSceneEditor3D_HeightMode.cpp" />
+    <ClCompile Include="GCSceneEditor3D_LineMode.cpp" />
+    <ClCompile Include="GCSceneEditor3D_ObjectMode.cpp" />
+    <ClCompile Include="GCSceneEditor3D_TextureMode.cpp" />
+    <ClCompile Include="GCStateDefault.cpp" />
+    <ClCompile Include="GCTrackEditor.cpp" />
+    <ClCompile Include="GCViewBase.cpp" />
+    <ClCompile Include="GCViewGeometryEditor.cpp" />
+    <ClCompile Include="GCViewManager.cpp" />
+    <ClCompile Include="GCViewTreeBase.cpp" />
+    <ClCompile Include="GCViewUIEditor.cpp" />
+    <ClCompile Include="GCViewUIEditorHtml5.cpp" />
+    <ClCompile Include="GCViewUIEditorProc.cpp" />
+    <ClCompile Include="GCViewUIEditorProperties.cpp" />
+    <ClCompile Include="GCViewUIEditorUnit.cpp" />
+    <ClCompile Include="ImageButton.cpp" />
+    <ClCompile Include="ImageCheck.cpp" />
+    <ClCompile Include="ImageListViewDLG.cpp" />
+    <ClCompile Include="ImportEquipDLG.cpp" />
+    <ClCompile Include="ListBoxEditor.cpp" />
+    <ClCompile Include="ListBoxIcon.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MoveAxis.cpp" />
+    <ClCompile Include="MTreeCtrl.cpp" />
+    <ClCompile Include="MultiExportDlg.cpp" />
+    <ClCompile Include="MyEdit.cpp" />
+    <ClCompile Include="MyGameInit.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MyGameState.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MyMFCPropertyGridProperty.cpp" />
+    <ClCompile Include="OutputWnd.cpp" />
+    <ClCompile Include="phantom-gc.cpp" />
+    <ClCompile Include="phantom-gcDoc.cpp" />
+    <ClCompile Include="phantom-gcView.cpp" />
+    <ClCompile Include="PropertiesDialogWnd.cpp" />
+    <ClCompile Include="PropertiesUIWnd.cpp" />
+    <ClCompile Include="PropertiesWnd.cpp" />
+    <ClCompile Include="PropertyDlgWndBase.cpp" />
+    <ClCompile Include="RotationAxis.cpp" />
+    <ClCompile Include="ScaleAxis.cpp" />
+    <ClCompile Include="SceneCreateDlg.cpp" />
+    <ClCompile Include="SetElementTextureDlg.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SubGeometryEditorDlg.cpp" />
+    <ClCompile Include="TgaLoader.cpp" />
+    <ClCompile Include="TrackAnimationCtrl.cpp" />
+    <ClCompile Include="UIPngMaker.cpp" />
+    <ClCompile Include="ValueEditor.cpp" />
+    <ClCompile Include="ViewImageManager.cpp" />
+    <ClCompile Include="ViewLayerImages.cpp" />
+    <ClCompile Include="ViewTree.cpp" />
+    <ClCompile Include="xml\tinystr.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxmlerror.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxmlparser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxmlw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Win32base\DlgLog.h" />
+    <ClInclude Include="DlgEditBox.h" />
+    <ClInclude Include="DlgFindText.h" />
+    <ClInclude Include="DlgGameEditBox.h" />
+    <ClInclude Include="DlgLuaEditor.h" />
+    <ClInclude Include="LuaEditor\CodeAnalyse.h" />
+    <ClInclude Include="LuaEditor\CodeComboBox.h" />
+    <ClInclude Include="LuaEditor\CodeEditor.h" />
+    <ClInclude Include="LuaEditor\CodeListBox.h" />
+    <ClInclude Include="LuaEditor\DlgFindReplace.h" />
+    <ClInclude Include="LuaEditor\LuaXmlModule.h" />
+    <ClInclude Include="LuaEditor\MyLuaEditor.h" />
+    <ClInclude Include="LuaEditor\ToolTipDialog.h" />
+    <ClInclude Include="AlignDialog.h" />
+    <ClInclude Include="AlignDialog3D.h" />
+    <ClInclude Include="base_xmlFileA.h" />
+    <ClInclude Include="base_xmlFileW.h" />
+    <ClInclude Include="BigTextEditor.h" />
+    <ClInclude Include="ChangeSpinButtonCtrl.h" />
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="ClassView.h" />
+    <ClInclude Include="CreateFileDlg.h" />
+    <ClInclude Include="DialogBase.h" />
+    <ClInclude Include="DlgCodeColor.h" />
+    <ClInclude Include="DlgMixFPS.h" />
+    <ClInclude Include="DlgSceneObject.h" />
+    <ClInclude Include="DlgSelectDevice.h" />
+    <ClInclude Include="FileView.h" />
+    <ClInclude Include="GameManager.h" />
+    <ClInclude Include="GameScreenSize.h" />
+    <ClInclude Include="GCAnimationCtrl.h" />
+    <ClInclude Include="GCBitmapMgr.h" />
+    <ClInclude Include="GCCodeEditor.h" />
+    <ClInclude Include="GCDefine.h" />
+    <ClInclude Include="GCFloatAnimation.h" />
+    <ClInclude Include="GCGameService.h" />
+    <ClInclude Include="GCLanguage.h" />
+    <ClInclude Include="GCMFCHelper.h" />
+    <ClInclude Include="GCPropertyBase.h" />
+    <ClInclude Include="GCRenderSystem.h" />
+    <ClInclude Include="GCSceneEditor3D.h" />
+    <ClInclude Include="GCStateDefault.h" />
+    <ClInclude Include="GCTrackEditor.h" />
+    <ClInclude Include="GCViewBase.h" />
+    <ClInclude Include="GCViewGeometryEditor.h" />
+    <ClInclude Include="GCViewManager.h" />
+    <ClInclude Include="GCViewTreeBase.h" />
+    <ClInclude Include="GCViewUIEditor.h" />
+    <ClInclude Include="GCViewUnit3D.h" />
+    <ClInclude Include="ImageButton.h" />
+    <ClInclude Include="ImageCheck.h" />
+    <ClInclude Include="ImageListViewDLG.h" />
+    <ClInclude Include="ImportEquipDLG.h" />
+    <ClInclude Include="ListBoxEditor.h" />
+    <ClInclude Include="ListBoxIcon.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="MoveAxis.h" />
+    <ClInclude Include="MTreeCtrl.h" />
+    <ClInclude Include="MultiExportDlg.h" />
+    <ClInclude Include="MyEdit.h" />
+    <ClInclude Include="MyGameState.h" />
+    <ClInclude Include="MyMFCPropertyGridProperty.h" />
+    <ClInclude Include="OutputWnd.h" />
+    <ClInclude Include="phantom-gc.h" />
+    <ClInclude Include="phantom-gcDoc.h" />
+    <ClInclude Include="phantom-gcView.h" />
+    <ClInclude Include="PropertiesDialogWnd.h" />
+    <ClInclude Include="PropertiesUIWnd.h" />
+    <ClInclude Include="PropertiesWnd.h" />
+    <ClInclude Include="PropertyDlgWndBase.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RotationAxis.h" />
+    <ClInclude Include="ScaleAxis.h" />
+    <ClInclude Include="SceneCreateDlg.h" />
+    <ClInclude Include="SetElementTextureDlg.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SubGeometryEditorDlg.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TgaLoader.h" />
+    <ClInclude Include="TrackAnimationCtrl.h" />
+    <ClInclude Include="UIPngMaker.h" />
+    <ClInclude Include="ValueEditor.h" />
+    <ClInclude Include="ViewImageManager.h" />
+    <ClInclude Include="ViewLayerImages.h" />
+    <ClInclude Include="ViewTree.h" />
+    <ClInclude Include="xml\tinystr.h" />
+    <ClInclude Include="xml\tinyxml.h" />
+    <ClInclude Include="xml\tinyxmlw.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\execute\default\buydlg.bin">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\execute\default\default.zip">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\execute\default\game_icon.bin">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\..\execute\default\mainlogo.bin">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="..\AllGames\base\share_data\default.zip" />
+    <None Include="..\AllGames\base\share_data\default_init_zip.zip" />
+    <None Include="default\default.zip" />
+    <None Include="default\mainlogo.bin" />
+    <None Include="DlgViewerHttp.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+    <None Include="phantom-gc.reg">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bmp00001.bmp" />
+    <None Include="res\bmp00002.bmp" />
+    <None Include="res\bmp00003.bmp" />
+    <None Include="res\bmp00004.bmp" />
+    <None Include="res\bmp00005.bmp" />
+    <None Include="res\bmp00006.bmp" />
+    <None Include="res\bmp00007.bmp" />
+    <None Include="res\bmp00008.bmp" />
+    <None Include="res\bmp00009.bmp" />
+    <None Include="res\buttons.bmp" />
+    <None Include="res\classview.bmp" />
+    <None Include="res\classview_hc.bmp" />
+    <None Include="res\class_vi.bmp" />
+    <None Include="res\class_view.ico" />
+    <None Include="res\class_view_hc.ico" />
+    <None Include="res\effect.bmp" />
+    <None Include="res\effect.ico" />
+    <None Include="res\effect_f.ico" />
+    <None Include="res\effect_v.bmp" />
+    <None Include="res\explorer.bmp" />
+    <None Include="res\explorer_hc.bmp" />
+    <None Include="res\filelarge.bmp" />
+    <None Include="res\filesmal.bmp" />
+    <None Include="res\filesmall.bmp" />
+    <None Include="res\fileview.bmp" />
+    <None Include="res\fileview_hc.bmp" />
+    <None Include="res\file_vie.bmp" />
+    <None Include="res\file_view.ico" />
+    <None Include="res\file_view_hc.ico" />
+    <None Include="res\gameproj.ico" />
+    <None Include="res\game_icon.bin">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="res\geometry.bmp" />
+    <None Include="res\geometry.ico" />
+    <None Include="res\geometrys.ico" />
+    <None Include="res\ico00001.ico" />
+    <None Include="res\ico00002.ico" />
+    <None Include="res\ico00003.ico" />
+    <None Include="res\ico00004.ico" />
+    <None Include="res\ico00005.ico" />
+    <None Include="res\ico00006.ico" />
+    <None Include="res\ico00007.ico" />
+    <None Include="res\ico00008.ico" />
+    <None Include="res\ico00009.ico" />
+    <None Include="res\icon1.ico" />
+    <None Include="res\logic_fi.ico" />
+    <None Include="res\lua_code.xml" />
+    <None Include="res\main.bmp" />
+    <None Include="res\main1.bin">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="res\mainfram.bmp" />
+    <None Include="res\menuimages.bmp" />
+    <None Include="res\menuimages_hc.bmp" />
+    <None Include="res\mesh_too.bmp" />
+    <None Include="res\output_wnd.ico" />
+    <None Include="res\output_wnd_hc.ico" />
+    <None Include="res\phantom-gc.ico" />
+    <None Include="res\phantom-gcDoc.ico" />
+    <None Include="res\phantomgc.rc2">
+      <FileType>RC</FileType>
+    </None>
+    <None Include="res\plot_bac.bmp" />
+    <None Include="res\plot_cal.bmp" />
+    <None Include="res\plot_exp.bmp" />
+    <None Include="res\properti.bmp" />
+    <None Include="res\properti.ico" />
+    <None Include="res\properties.bmp" />
+    <None Include="res\properties_hc.bmp" />
+    <None Include="res\properties_wnd.ico" />
+    <None Include="res\properties_wnd_hc.ico" />
+    <None Include="res\ribbon.mfcribbon-ms">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="res\ribbon1.mfcribbon-ms">
+      <FileType>Document</FileType>
+    </None>
+    <None Include="res\scene2d_.bmp" />
+    <None Include="res\scene2d_.ico" />
+    <None Include="res\scene3d_.ico" />
+    <None Include="res\sort.bmp" />
+    <None Include="res\sort_hc.bmp" />
+    <None Include="res\texture_.ico" />
+    <None Include="res\Toolbar.bmp" />
+    <None Include="res\toolbar1.bmp" />
+    <None Include="res\Toolbar256.bmp" />
+    <None Include="res\tool_mesh.bmp" />
+    <None Include="res\track_pl.bmp" />
+    <None Include="res\ui_align.bmp" />
+    <None Include="res\ui_curso.ico" />
+    <None Include="res\ui_file_.ico" />
+    <None Include="res\ui_inser.bmp" />
+    <None Include="res\ui_tool1.bmp" />
+    <None Include="res\ui_view_.bmp" />
+    <None Include="res\unit2d_f.ico" />
+    <None Include="res\writelarge.bmp" />
+    <None Include="res\writesmall.bmp" />
+    <None Include="res\xml_action.ico" />
+    <None Include="res\xml_geometry.ico" />
+    <None Include="UserImages.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="my_phantom.rc" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D9BF3EA0-A770-4C15-BC70-285C661B912E}</ProjectGuid>
+    <RootNamespace>phantomgc</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>PhantomEditor</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../bz_output/$(ProjectName)/$(Configuration)Debug\</OutDir>
+    <IntDir>../../bz_output/$(ProjectName)/$(Configuration)Debug\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../bz_output/$(ProjectName)/$(Configuration)\</OutDir>
+    <IntDir>../../bz_output/$(ProjectName)/$(Configuration)\</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>EDITOR_OS;WIN32;DIRECT_X_9;FOREVER_USER;_WINDOWS;_DEBUG;Business_Authorize;ENGINE_LIB_MODE;ZDX_TOOL_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Emulator\DirectX_9_10\Include;./;./scene;..\include;..\dep;..\dep\Box2D;.\LuaEditor;./xml;..\dep\zlib_c;D:\FBX\FBX SDK\2014.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../lib;..\Emulator\DirectX_9_10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9.lib;d3d9.lib;dsound.lib;winmm.lib;comctl32.lib;imm32.lib;strmiids.lib;Iphlpapi.lib;PhantomEngineD.lib;dependenciesD.lib;Win32_EmulatorD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <NoEntryPoint>false</NoEntryPoint>
+      <Profile>true</Profile>
+      <OutputFile>../AllGames/PhantomDebug.exe</OutputFile>
+      <ShowProgress>NotSet</ShowProgress>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>EDITOR_OS;WIN32;DIRECT_X_9;FOREVER_USER;_WINDOWS;_DEBUG;Business_Authorize;ENGINE_LIB_MODE;ZDX_TOOL_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Emulator\DirectX_9_10\Include;./;./scene;..\include;..\dep;..\dep\Box2D;.\LuaEditor;./xml;..\dep\zlib_c;D:\FBX\FBX SDK\2014.1\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>../lib;..\Emulator\DirectX_9_10\lib\X64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9.lib;d3d9.lib;dsound.lib;winmm.lib;comctl32.lib;imm32.lib;strmiids.lib;Iphlpapi.lib;PhantomEnginex64D.lib;dependenciesx64D.lib;Win32_Emulatorx64D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <NoEntryPoint>false</NoEntryPoint>
+      <Profile>true</Profile>
+      <OutputFile>../AllGames/PhantomDebug.exe</OutputFile>
+      <ShowProgress>NotSet</ShowProgress>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>EDITOR_OS;DIRECT_X_9;WIN32;_WINDOWS;NDEBUG;Business_Authorize;ENGINE_LIB_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Emulator\DirectX_9_10\Include;./;./scene;..\include;..\dep;..\dep\Box2D;.\LuaEditor;./xml;..\dep\zlib_c</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../lib;..\Emulator\DirectX_9_10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9.lib;d3d9.lib;dsound.lib;winmm.lib;comctl32.lib;imm32.lib;strmiids.lib;Iphlpapi.lib;PhantomEngineR.lib;dependenciesR.lib;Win32_EmulatorR.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <Profile>true</Profile>
+      <OutputFile>../AllGames/Phantom.exe</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PreprocessorDefinitions>EDITOR_OS;DIRECT_X_9;WIN32;_WINDOWS;NDEBUG;Business_Authorize;ENGINE_LIB_MODE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\Emulator\DirectX_9_10\Include;./;./scene;..\include;..\dep;..\dep\Box2D;.\LuaEditor;./xml;..\dep\zlib_c</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>../lib;..\Emulator\DirectX_9_10\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>dxerr.lib;dxguid.lib;d3dx9.lib;d3d9.lib;dsound.lib;winmm.lib;comctl32.lib;imm32.lib;strmiids.lib;Iphlpapi.lib;PhantomEngineR.lib;dependenciesR.lib;Win32_EmulatorR.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <UACExecutionLevel>AsInvoker</UACExecutionLevel>
+      <Profile>true</Profile>
+      <OutputFile>../AllGames/Phantom.exe</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="phantom-gc.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,34 @@
+// PhantomViewer.idl : PhantomViewer 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(PhantomViewer.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(6FC24DA9-AD97-43FB-86AB-50F74AB06482),
+	version(1.0)	
+]
+library PhantomViewerLib
+{
+	importlib("stdole2.tlb");
+};
+// PhantomViewer.idl : PhantomViewer 的 IDL 源
+//
+
+// 此文件将由 MIDL 工具处理以
+// 产生类型库(PhantomViewer.tlb)和封送处理代码。
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	uuid(52FEF190-E956-4984-9496-FF08C1E6CE60),
+	version(1.0)	
+]
+library PhantomViewerLib
+{
+	importlib("stdole2.tlb");
+};

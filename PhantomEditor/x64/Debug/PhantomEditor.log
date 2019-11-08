@@ -1,0 +1,780 @@
+﻿  stdafx.cpp
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(12): warning C4005: “DXGI_STATUS_OCCLUDED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50092): note: 参见“DXGI_STATUS_OCCLUDED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(13): warning C4005: “DXGI_STATUS_CLIPPED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50101): note: 参见“DXGI_STATUS_CLIPPED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(14): warning C4005: “DXGI_STATUS_NO_REDIRECTION”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50110): note: 参见“DXGI_STATUS_NO_REDIRECTION”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(15): warning C4005: “DXGI_STATUS_NO_DESKTOP_ACCESS”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50119): note: 参见“DXGI_STATUS_NO_DESKTOP_ACCESS”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(16): warning C4005: “DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50128): note: 参见“DXGI_STATUS_GRAPHICS_VIDPN_SOURCE_IN_USE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(17): warning C4005: “DXGI_STATUS_MODE_CHANGED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50137): note: 参见“DXGI_STATUS_MODE_CHANGED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(18): warning C4005: “DXGI_STATUS_MODE_CHANGE_IN_PROGRESS”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50146): note: 参见“DXGI_STATUS_MODE_CHANGE_IN_PROGRESS”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(21): warning C4005: “DXGI_ERROR_INVALID_CALL”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50161): note: 参见“DXGI_ERROR_INVALID_CALL”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(22): warning C4005: “DXGI_ERROR_NOT_FOUND”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50170): note: 参见“DXGI_ERROR_NOT_FOUND”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(23): warning C4005: “DXGI_ERROR_MORE_DATA”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50179): note: 参见“DXGI_ERROR_MORE_DATA”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(24): warning C4005: “DXGI_ERROR_UNSUPPORTED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50188): note: 参见“DXGI_ERROR_UNSUPPORTED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(25): warning C4005: “DXGI_ERROR_DEVICE_REMOVED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50197): note: 参见“DXGI_ERROR_DEVICE_REMOVED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(26): warning C4005: “DXGI_ERROR_DEVICE_HUNG”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50206): note: 参见“DXGI_ERROR_DEVICE_HUNG”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(27): warning C4005: “DXGI_ERROR_DEVICE_RESET”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50216): note: 参见“DXGI_ERROR_DEVICE_RESET”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(28): warning C4005: “DXGI_ERROR_WAS_STILL_DRAWING”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50225): note: 参见“DXGI_ERROR_WAS_STILL_DRAWING”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(29): warning C4005: “DXGI_ERROR_FRAME_STATISTICS_DISJOINT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50235): note: 参见“DXGI_ERROR_FRAME_STATISTICS_DISJOINT”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(30): warning C4005: “DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50244): note: 参见“DXGI_ERROR_GRAPHICS_VIDPN_SOURCE_IN_USE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(31): warning C4005: “DXGI_ERROR_DRIVER_INTERNAL_ERROR”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50254): note: 参见“DXGI_ERROR_DRIVER_INTERNAL_ERROR”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(32): warning C4005: “DXGI_ERROR_NONEXCLUSIVE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50263): note: 参见“DXGI_ERROR_NONEXCLUSIVE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(33): warning C4005: “DXGI_ERROR_NOT_CURRENTLY_AVAILABLE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50272): note: 参见“DXGI_ERROR_NOT_CURRENTLY_AVAILABLE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(34): warning C4005: “DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50282): note: 参见“DXGI_ERROR_REMOTE_CLIENT_DISCONNECTED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dxgitype.h(35): warning C4005: “DXGI_ERROR_REMOTE_OUTOFMEMORY”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50291): note: 参见“DXGI_ERROR_REMOTE_OUTOFMEMORY”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(59): warning C4005: “D2DERR_WRONG_STATE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50511): note: 参见“D2DERR_WRONG_STATE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(64): warning C4005: “D2DERR_NOT_INITIALIZED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50520): note: 参见“D2DERR_NOT_INITIALIZED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(69): warning C4005: “D2DERR_UNSUPPORTED_OPERATION”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50529): note: 参见“D2DERR_UNSUPPORTED_OPERATION”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(74): warning C4005: “D2DERR_SCANNER_FAILED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50538): note: 参见“D2DERR_SCANNER_FAILED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(79): warning C4005: “D2DERR_SCREEN_ACCESS_DENIED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50547): note: 参见“D2DERR_SCREEN_ACCESS_DENIED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(84): warning C4005: “D2DERR_DISPLAY_STATE_INVALID”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50556): note: 参见“D2DERR_DISPLAY_STATE_INVALID”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(89): warning C4005: “D2DERR_ZERO_VECTOR”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50565): note: 参见“D2DERR_ZERO_VECTOR”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(97): warning C4005: “D2DERR_INTERNAL_ERROR”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50574): note: 参见“D2DERR_INTERNAL_ERROR”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(103): warning C4005: “D2DERR_DISPLAY_FORMAT_NOT_SUPPORTED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50583): note: 参见“D2DERR_DISPLAY_FORMAT_NOT_SUPPORTED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(108): warning C4005: “D2DERR_INVALID_CALL”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50592): note: 参见“D2DERR_INVALID_CALL”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(113): warning C4005: “D2DERR_NO_HARDWARE_DEVICE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50601): note: 参见“D2DERR_NO_HARDWARE_DEVICE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(119): warning C4005: “D2DERR_RECREATE_TARGET”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50610): note: 参见“D2DERR_RECREATE_TARGET”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(124): warning C4005: “D2DERR_TOO_MANY_SHADER_ELEMENTS”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50619): note: 参见“D2DERR_TOO_MANY_SHADER_ELEMENTS”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(129): warning C4005: “D2DERR_SHADER_COMPILE_FAILED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50628): note: 参见“D2DERR_SHADER_COMPILE_FAILED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(134): warning C4005: “D2DERR_MAX_TEXTURE_SIZE_EXCEEDED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50637): note: 参见“D2DERR_MAX_TEXTURE_SIZE_EXCEEDED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(139): warning C4005: “D2DERR_UNSUPPORTED_VERSION”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50646): note: 参见“D2DERR_UNSUPPORTED_VERSION”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(144): warning C4005: “D2DERR_BAD_NUMBER”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50655): note: 参见“D2DERR_BAD_NUMBER”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(149): warning C4005: “D2DERR_WRONG_FACTORY”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50664): note: 参见“D2DERR_WRONG_FACTORY”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(154): warning C4005: “D2DERR_LAYER_ALREADY_IN_USE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50673): note: 参见“D2DERR_LAYER_ALREADY_IN_USE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(159): warning C4005: “D2DERR_POP_CALL_DID_NOT_MATCH_PUSH”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50682): note: 参见“D2DERR_POP_CALL_DID_NOT_MATCH_PUSH”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(164): warning C4005: “D2DERR_WRONG_RESOURCE_DOMAIN”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50691): note: 参见“D2DERR_WRONG_RESOURCE_DOMAIN”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(169): warning C4005: “D2DERR_PUSH_POP_UNBALANCED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50700): note: 参见“D2DERR_PUSH_POP_UNBALANCED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(174): warning C4005: “D2DERR_RENDER_TARGET_HAS_LAYER_OR_CLIPRECT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50709): note: 参见“D2DERR_RENDER_TARGET_HAS_LAYER_OR_CLIPRECT”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(179): warning C4005: “D2DERR_INCOMPATIBLE_BRUSH_TYPES”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50718): note: 参见“D2DERR_INCOMPATIBLE_BRUSH_TYPES”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(184): warning C4005: “D2DERR_WIN32_ERROR”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50727): note: 参见“D2DERR_WIN32_ERROR”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(189): warning C4005: “D2DERR_TARGET_NOT_GDI_COMPATIBLE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50736): note: 参见“D2DERR_TARGET_NOT_GDI_COMPATIBLE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(194): warning C4005: “D2DERR_TEXT_EFFECT_IS_WRONG_TYPE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50745): note: 参见“D2DERR_TEXT_EFFECT_IS_WRONG_TYPE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(201): warning C4005: “D2DERR_TEXT_RENDERER_NOT_RELEASED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50754): note: 参见“D2DERR_TEXT_RENDERER_NOT_RELEASED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d2derr.h(206): warning C4005: “D2DERR_EXCEEDS_MAX_BITMAP_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50763): note: 参见“D2DERR_EXCEEDS_MAX_BITMAP_SIZE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d3d10.h(608): warning C4005: “D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50445): note: 参见“D3D10_ERROR_TOO_MANY_UNIQUE_STATE_OBJECTS”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\d3d10.h(609): warning C4005: “D3D10_ERROR_FILE_NOT_FOUND”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50454): note: 参见“D3D10_ERROR_FILE_NOT_FOUND”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dwrite.h(4962): warning C4005: “DWRITE_E_FILEFORMAT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50921): note: 参见“DWRITE_E_FILEFORMAT”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dwrite.h(4967): warning C4005: “DWRITE_E_UNEXPECTED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50930): note: 参见“DWRITE_E_UNEXPECTED”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dwrite.h(4972): warning C4005: “DWRITE_E_NOFONT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50939): note: 参见“DWRITE_E_NOFONT”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dwrite.h(4978): warning C4005: “DWRITE_E_FILENOTFOUND”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50948): note: 参见“DWRITE_E_FILENOTFOUND”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dwrite.h(4983): warning C4005: “DWRITE_E_FILEACCESS”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50957): note: 参见“DWRITE_E_FILEACCESS”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dwrite.h(4988): warning C4005: “DWRITE_E_FONTCOLLECTIONOBSOLETE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50966): note: 参见“DWRITE_E_FONTCOLLECTIONOBSOLETE”的前一个定义
+e:\phantomenginegithub\emulator\directx_9_10\include\dwrite.h(4993): warning C4005: “DWRITE_E_ALREADYREGISTERED”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\shared\winerror.h(50975): note: 参见“DWRITE_E_ALREADYREGISTERED”的前一个定义
+e:\phantomenginegithub\phantomeditor\stdafx.h(120): warning C4996: '_vsnprintf': This function or variable may be unsafe. Consider using _vsnprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1396): note: 参见“_vsnprintf”的声明
+e:\phantomenginegithub\phantomeditor\stdafx.h(126): warning C4996: '_vsnwprintf': This function or variable may be unsafe. Consider using _vsnwprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\corecrt_wstdio.h(1120): note: 参见“_vsnwprintf”的声明
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  MyGameState.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gamemanager.h(23): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\phantomeditor\gamemanager.h(31): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  MyGameInit.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gamemanager.h(23): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\phantomeditor\gamemanager.h(31): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\phantomeditor\mygameinit.cpp(133): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\mygameinit.cpp(287): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”时
+  e:\phantomenginegithub\phantomeditor\mygameinit.cpp(243): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<512>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomeditor\mygameinit.cpp(244): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\mygameinit.cpp(97): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<60>::size(void)”时
+  e:\phantomenginegithub\phantomeditor\mygameinit.cpp(228): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<60>::size(void)”的引用
+  GameManager.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gamemanager.h(23): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\phantomeditor\gamemanager.h(31): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\phantomeditor\gamemanager.cpp(458): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  正在生成代码...
+  phantom-gcView.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\phantom-gcview.cpp(2132): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\phantom-gcview.cpp(2295): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\phantom-gcview.cpp(2184): warning C4101: “szExt”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\phantom-gcview.cpp(2184): warning C4101: “szFileName”: 未引用的局部变量
+  phantom-gcDoc.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  phantom-gc.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\phantom-gc.cpp(425): warning C4101: “ext”: 未引用的局部变量
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<2048>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomeditor\idehttp.h(37): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<2048>::operator =(const char *)”的引用
+  e:\phantomenginegithub\phantomeditor\idehttp.h(27): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<2048>”的引用
+  base_xmlFileW.cpp
+  base_xmlFileA.cpp
+e:\phantomenginegithub\phantomeditor\base_xmlfilea.cpp(217): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+e:\phantomenginegithub\phantomeditor\base_xmlfilea.cpp(310): warning C4800: “int”: 将值强制为布尔值“true”或“false”(性能警告)
+  ViewTree.cpp
+  ViewLayerImages.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  ViewImageManager.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\viewimagemanager.cpp(211): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\viewimagemanager.cpp(68): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<60>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomeditor\viewimagemanager.cpp(99): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  ValueEditor.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  UIPngMaker.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\uipngmaker.cpp(39): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\uipngmaker.cpp(43): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\uipngmaker.cpp(132): warning C4267: “=”: 从“size_t”转换到“DWORD”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\uipngmaker.cpp(218): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\uipngmaker.cpp(222): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\uipngmaker.cpp(788): warning C4267: “初始化”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\uipngmaker.cpp(886): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\uipngmaker.cpp(1327): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\uipngmaker.cpp(1377): warning C4101: “szDir”: 未引用的局部变量
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\uipngmaker.cpp(1262): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  TrackAnimationCtrl.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\trackanimationctrl.cpp(99): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\trackanimationctrl.cpp(381): warning C4267: “参数”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\trackanimationctrl.cpp(471): warning C4311: “类型转换”: 从“LPCTSTR”到“int”的指针截断
+e:\phantomenginegithub\phantomeditor\trackanimationctrl.cpp(471): warning C4302: “类型转换”: 从“LPCTSTR”到“int”截断
+e:\phantomenginegithub\phantomeditor\trackanimationctrl.cpp(472): warning C4311: “类型转换”: 从“LPCTSTR”到“int”的指针截断
+e:\phantomenginegithub\phantomeditor\trackanimationctrl.cpp(472): warning C4302: “类型转换”: 从“LPCTSTR”到“int”截断
+e:\phantomenginegithub\phantomeditor\trackanimationctrl.cpp(474): warning C4311: “类型转换”: 从“LPCTSTR”到“int”的指针截断
+e:\phantomenginegithub\phantomeditor\trackanimationctrl.cpp(474): warning C4302: “类型转换”: 从“LPCTSTR”到“int”截断
+  TgaLoader.cpp
+  SubGeometryEditorDlg.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  SetElementTextureDlg.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  SceneCreateDlg.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  ScaleAxis.cpp
+  RotationAxis.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  PropertyDlgWndBase.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  PropertiesWnd.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  PropertiesUIWnd.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  正在生成代码...
+  正在编译...
+  PropertiesDialogWnd.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  OutputWnd.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  MyMFCPropertyGridProperty.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  MyEdit.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  MultiExportDlg.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  MoveAxis.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  MainFrm.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\mainfrm.cpp(169): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\mainfrm.cpp(173): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\mainfrm.cpp(181): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\mainfrm.cpp(457): warning C4101: “bNameValid”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\mainfrm.cpp(1083): warning C4267: “=”: 从“size_t”转换到“DWORD”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\mainfrm.cpp(1323): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<2048>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomeditor\idehttp.h(37): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<2048>::operator =(const char *)”的引用
+  e:\phantomenginegithub\phantomeditor\idehttp.h(27): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<2048>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\mainfrm.cpp(1340): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  MTreeCtrl.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  ToolTipDialog.cpp
+  MyLuaEditor.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\myluaeditor.cpp(261): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<512>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\luaeditor\myluaeditor.cpp(98): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::setIsFile(void)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+  LuaXmlModule.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\luaeditor\luaxmlmodule.cpp(51): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\luaxmlmodule.cpp(80): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\luaxmlmodule.cpp(118): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\luaxmlmodule.cpp(695): warning C4477: “swprintf”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“Wutf8”
+e:\phantomenginegithub\phantomeditor\luaeditor\luaxmlmodule.cpp(705): warning C4477: “swprintf”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“Wutf8”
+e:\phantomenginegithub\phantomeditor\luaeditor\luaxmlmodule.cpp(653): warning C4101: “gtable_name”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\luaeditor\luaxmlmodule.cpp(653): warning C4101: “gtable_id”: 未引用的局部变量
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”时
+  e:\phantomenginegithub\phantomeditor\luaeditor\luaxmlmodule.cpp(175): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::splitpath(Phantom::NameT<128> *,Phantom::NameT<128> *,Phantom::NameT<128> *)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<60>::size(void)”时
+  e:\phantomenginegithub\phantomeditor\luaeditor\luaxmlmodule.cpp(254): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<60>::size(void)”的引用
+  DlgFindReplace.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  CodeListBox.cpp
+e:\phantomenginegithub\phantomeditor\luaeditor\codelistbox.cpp(87): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codelistbox.cpp(111): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codelistbox.cpp(170): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codelistbox.cpp(404): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  CodeEditor.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(464): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(543): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(885): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(894): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(913): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(921): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(1226): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(1413): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(1508): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(1549): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(1704): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(1854): warning C4101: “lplf”: 未引用的局部变量
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<512>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomeditor\luaeditor\codeeditor.cpp(142): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+  CodeComboBox.cpp
+e:\phantomenginegithub\phantomeditor\luaeditor\codecombobox.cpp(69): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codecombobox.cpp(93): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codecombobox.cpp(152): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  CodeAnalyse.cpp
+e:\phantomenginegithub\phantomeditor\luaeditor\codeanalyse.cpp(514): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeanalyse.cpp(872): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeanalyse.cpp(910): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeanalyse.cpp(976): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\luaeditor\codeanalyse.cpp(1067): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  ListBoxIcon.cpp
+e:\phantomenginegithub\phantomeditor\listboxicon.cpp(61): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\listboxicon.cpp(85): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\listboxicon.cpp(144): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  ListBoxEditor.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  ImportEquipDLG.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  ImageListViewDLG.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\imagelistviewdlg.cpp(73): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\imagelistviewdlg.cpp(294): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+  正在编译...
+  ImageCheck.cpp
+  ImageButton.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  GameScreenSize.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  GCViewUIEditorUnit.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  GCViewUIEditorProperties.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(1904): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(1910): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(2873): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(3080): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(3217): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(4322): warning C4477: “swprintf”: 格式字符串“%s”需要类型“wchar_t *”的参数，但可变参数 1 拥有了类型“const char *”
+  e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(4322): note: 请考虑在格式字符串中使用“%hs”
+  e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(4322): note: 请考虑在格式字符串中使用“%Ts”
+  e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(4322): note: 如果需要 C99 标准语义，请考虑定义 _CRT_STDIO_ISO_WIDE_SPECIFIERS
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<1024>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(942): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<1024>::operator =(const char *)”的引用
+  e:\phantomenginegithub\phantomeditor\gcviewuieditorproperties.cpp(942): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<1024>”的引用
+  GCViewUIEditorProc.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcviewuieditorproc.cpp(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  GCViewUIEditorHtml5.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcviewuieditorhtml5.cpp(75): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewuieditorhtml5.cpp(348): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewuieditorhtml5.cpp(752): warning C4101: “szTemp”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\gcviewuieditorhtml5.cpp(1014): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewuieditorhtml5.cpp(1051): warning C4101: “buf”: 未引用的局部变量
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<60>::operator +=(const char *)”时
+  e:\phantomenginegithub\phantomeditor\gcviewuieditorhtml5.cpp(1073): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<60>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  GCViewUIEditor.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcviewuieditor.cpp(610): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewuieditor.cpp(3275): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewuieditor.cpp(3367): warning C4101: “buf”: 未引用的局部变量
+  GCViewTreeBase.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  GCViewManager.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  GCViewGeometryEditor.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(1006): warning C4101: “newDir”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(1006): warning C4101: “newPath”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(1005): warning C4101: “geomPath”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(1005): warning C4101: “geomDir”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(1038): warning C4101: “newDir”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(1038): warning C4101: “newPath”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(1037): warning C4101: “geomPath”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(1037): warning C4101: “geomDir”: 未引用的局部变量
+e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(3619): warning C4805: “==”: 在操作中将类型“BOOL”与类型“bool”混合不安全
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<256>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(2202): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<256>::setIsFile(void)”的引用
+  e:\phantomenginegithub\include\phantommanager.h(311): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<256>”的引用
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<256>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(2201): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<256>::operator =(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<256>::size(void)”时
+  e:\phantomenginegithub\phantomeditor\gcviewgeometryeditor.cpp(2206): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<256>::size(void)”的引用
+  GCViewBase.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcviewbase.cpp(407): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewbase.cpp(646): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewbase.cpp(656): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewbase.cpp(662): warning C4267: “初始化”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewbase.cpp(673): warning C4267: “初始化”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcviewbase.cpp(674): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  GCTrackEditor.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gctrackeditor.cpp(227): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gctrackeditor.cpp(248): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  GCStateDefault.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(188): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(199): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(240): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(284): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(323): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(325): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(490): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(546): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(564): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(576): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(638): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(641): warning C4267: “参数”: 从“size_t”转换到“uLong”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(646): warning C4267: “初始化”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<2048>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomeditor\idehttp.h(37): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<2048>::operator =(const char *)”的引用
+  e:\phantomenginegithub\phantomeditor\idehttp.h(27): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<2048>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<512>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\gcstatedefault.cpp(40): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::setIsFile(void)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+  GCSceneEditor3D_TextureMode.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3d_texturemode.cpp(124): warning C4551: 缺少参数列表的函数调用
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3d_texturemode.cpp(211): warning C4551: 缺少参数列表的函数调用
+  GCSceneEditor3D_ObjectMode.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3d_objectmode.cpp(834): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3d_objectmode.cpp(899): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3d_objectmode.cpp(919): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3d_objectmode.cpp(921): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  GCSceneEditor3D_LineMode.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  GCSceneEditor3D_HeightMode.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3d_heightmode.cpp(541): warning C4800: “char”: 将值强制为布尔值“true”或“false”(性能警告)
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3d_heightmode.cpp(757): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+  GCSceneEditor3DProperties.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3dproperties.cpp(2304): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3dproperties.cpp(2640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  GCSceneEditor3D.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcsceneeditor3d.cpp(160): warning C4800: “BOOL”: 将值强制为布尔值“true”或“false”(性能警告)
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<512>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\gcsceneeditor3d.cpp(777): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::setIsFile(void)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<128>::size(void)”时
+  e:\phantomenginegithub\phantomeditor\gcsceneeditor3d.cpp(781): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<128>::size(void)”的引用
+  正在生成代码...
+  正在编译...
+  GCRenderSystem.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcrendersystem.cpp(97): warning C4101: “rc”: 未引用的局部变量
+  GCPropertyBase.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  GCPhantomEngine.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gamemanager.h(23): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\phantomeditor\gamemanager.h(31): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  GCMFCHelper.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  GCLanguage.cpp
+e:\phantomenginegithub\phantomeditor\gclanguage.cpp(213): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gclanguage.cpp(231): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gclanguage.cpp(300): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gclanguage.cpp(302): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gclanguage.cpp(332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gclanguage.cpp(334): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+  GCGameService.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcgameservice.cpp(146): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcgameservice.cpp(187): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcgameservice.cpp(198): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcgameservice.cpp(280): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcgameservice.cpp(319): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcgameservice.cpp(326): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcgameservice.cpp(359): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<2048>::operator =(const char *)”时
+  e:\phantomenginegithub\phantomeditor\idehttp.h(37): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<2048>::operator =(const char *)”的引用
+  e:\phantomenginegithub\phantomeditor\idehttp.h(27): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<2048>”的引用
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\gcgameservice.cpp(307): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  GCFloatAnimation.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  GCCodeEditor.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gccodeeditor.cpp(198): warning C4065: switch 语句包含“default”但是未包含“case”标签
+  GCBitmapMgr.cpp
+e:\phantomenginegithub\phantomeditor\gcbitmapmgr.cpp(229): warning C4312: “类型转换”: 从“INT”转换到更大的“LPCTSTR”
+  GCAnimationCtrl.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\gcanimationctrl.cpp(99): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcanimationctrl.cpp(381): warning C4267: “参数”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\gcanimationctrl.cpp(471): warning C4311: “类型转换”: 从“LPCTSTR”到“int”的指针截断
+e:\phantomenginegithub\phantomeditor\gcanimationctrl.cpp(471): warning C4302: “类型转换”: 从“LPCTSTR”到“int”截断
+e:\phantomenginegithub\phantomeditor\gcanimationctrl.cpp(472): warning C4311: “类型转换”: 从“LPCTSTR”到“int”的指针截断
+e:\phantomenginegithub\phantomeditor\gcanimationctrl.cpp(472): warning C4302: “类型转换”: 从“LPCTSTR”到“int”截断
+e:\phantomenginegithub\phantomeditor\gcanimationctrl.cpp(474): warning C4311: “类型转换”: 从“LPCTSTR”到“int”的指针截断
+e:\phantomenginegithub\phantomeditor\gcanimationctrl.cpp(474): warning C4302: “类型转换”: 从“LPCTSTR”到“int”截断
+  FileView.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\fileview.cpp(311): warning C4005: “ON_REG_COMMAND”: 宏重定义
+  e:\phantomenginegithub\phantomeditor\fileview.cpp(47): note: 参见“ON_REG_COMMAND”的前一个定义
+e:\phantomenginegithub\phantomeditor\fileview.cpp(516): warning C4101: “szDir”: 未引用的局部变量
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\fileview.cpp(562): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  DlgSelectDevice.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  DlgSceneObject.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  DlgMixFPS.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  DlgLuaEditor.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\dlgluaeditor.cpp(239): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\phantomeditor\dlgluaeditor.cpp(137): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  DlgGameEditBox.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  DlgFindText.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  DlgEditBox.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  DlgCodeColor.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  DialogBase.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  正在生成代码...
+  正在编译...
+  CreateFileDlg.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  ClassView.cpp
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  ChildFrm.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  ChangeSpinButtonCtrl.cpp
+  BigTextEditor.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+  AlignDialog3D.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  AlignDialog.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+  DlgLog.cpp
+e:\phantomenginegithub\phantomeditor\resource.h(253): warning C4005: “IDC_SIZE”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(10076): note: 参见“IDC_SIZE”的前一个定义
+e:\phantomenginegithub\phantomeditor\mtreectrl.h(39): warning C4267: “return”: 从“size_t”转换到“INT”，可能丢失数据
+e:\phantomenginegithub\win32base\dlglog.cpp(158): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\win32base\dlglog.cpp(167): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\win32base\dlglog.cpp(380): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\win32base\dlglog.cpp(416): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(E:\PhantomEngineGithub\x64\Debug\PhantomEditor.exe) does not match the Linker's OutputFile property value (E:\PhantomEngineGithub\AllGames\PhantomDebug.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(PhantomEditor) does not match the Linker's OutputFile property value (PhantomDebug). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/PROFILE”规范)
+MD5.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/OPT:LBR”规范)
+uafxcwd.lib(afxmem.obj) : warning LNK4006: "void * __cdecl operator new(unsigned __int64)" (??2@YAPEAX_K@Z) 已在 LIBCMTD.lib(new_scalar.obj) 中定义；已忽略第二个定义
+uafxcwd.lib(afxmem.obj) : warning LNK4006: "void __cdecl operator delete(void *)" (??3@YAXPEAX@Z) 已在 LIBCMTD.lib(delete_scalar.obj) 中定义；已忽略第二个定义
+uafxcwd.lib(afxmem.obj) : warning LNK4006: "void * __cdecl operator new[](unsigned __int64)" (??_U@YAPEAX_K@Z) 已在 LIBCMTD.lib(new_array.obj) 中定义；已忽略第二个定义
+uafxcwd.lib(afxmem.obj) : warning LNK4006: "void __cdecl operator delete[](void *)" (??_V@YAXPEAX@Z) 已在 LIBCMTD.lib(delete_array.obj) 中定义；已忽略第二个定义
+../AllGames/PhantomDebug.exe : warning LNK4088: 因 /FORCE 选项生成了映像；映像可能不能运行
+  PhantomEditor.vcxproj -> E:\PhantomEngineGithub\x64\Debug\PhantomEditor.exe
+  PhantomEditor.vcxproj -> E:\PhantomEngineGithub\x64\Debug\PhantomEditor.pdb (Full PDB)

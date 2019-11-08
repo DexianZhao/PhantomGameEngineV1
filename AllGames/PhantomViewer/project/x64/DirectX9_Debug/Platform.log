@@ -1,0 +1,231 @@
+﻿  stdafx.cpp
+d:\program files (x86)\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  d:\program files (x86)\vc\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+  OpenEdit.cpp
+d:\program files (x86)\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  d:\program files (x86)\vc\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+  MyWebBrowser.cpp
+d:\program files (x86)\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  d:\program files (x86)\vc\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mywebbrowser.cpp(24): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\allgames\phantomviewer\project\mywebbrowser.cpp(27): warning C4996: '_splitpath': This function or variable may be unsafe. Consider using _splitpath_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(1096): note: 参见“_splitpath”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mywebbrowser.cpp(28): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: 参见“stricmp”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mywebbrowser.cpp(38): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\allgames\phantomviewer\project\mywebbrowser.cpp(41): warning C4996: '_splitpath': This function or variable may be unsafe. Consider using _splitpath_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(1096): note: 参见“_splitpath”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mywebbrowser.cpp(42): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: 参见“stricmp”的声明
+  MFCGameDlg.cpp
+d:\program files (x86)\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  d:\program files (x86)\vc\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\allgames\base\gamemanager.h(9): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\allgames\base\gamemanager.h(17): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgamedlg.cpp(161): warning C4101: “screenH”: 未引用的局部变量
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgamedlg.cpp(161): warning C4101: “current”: 未引用的局部变量
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgamedlg.cpp(161): warning C4101: “screenW”: 未引用的局部变量
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  mfcgame.cpp
+d:\program files (x86)\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  d:\program files (x86)\vc\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgame.cpp(77): warning C4996: '_splitpath': This function or variable may be unsafe. Consider using _splitpath_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(1096): note: 参见“_splitpath”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgame.cpp(78): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: 参见“strcat”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgame.cpp(80): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 参见“strcpy”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgame.cpp(81): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: 参见“strcat”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgame.cpp(84): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 参见“strcpy”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgame.cpp(87): warning C4996: '_splitpath': This function or variable may be unsafe. Consider using _splitpath_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\stdlib.h(1096): note: 参见“_splitpath”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgame.cpp(89): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 参见“strcpy”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\mfcgame.cpp(90): warning C4996: 'strcat': This function or variable may be unsafe. Consider using strcat_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(90): note: 参见“strcat”的声明
+  DlgWebView.cpp
+d:\program files (x86)\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  d:\program files (x86)\vc\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\dlgwebview.cpp(86): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(579): note: 参见“strnicmp”的声明
+  DlgLog.cpp
+d:\program files (x86)\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  d:\program files (x86)\vc\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\dlglog.cpp(86): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\allgames\phantomviewer\project\dlglog.cpp(87): warning C4996: 'strnicmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strnicmp. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(579): note: 参见“strnicmp”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\dlglog.cpp(133): warning C4996: 'stricmp': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _stricmp. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(568): note: 参见“stricmp”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\dlglog.cpp(140): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(119): note: 参见“strcpy”的声明
+  DlgBindBar.cpp
+d:\program files (x86)\vc\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
+  d:\program files (x86)\vc\atlmfc\include\afx.h(33): note: 参见“MBCS_Support_Deprecated_In_MFC”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\dlgbindbar.cpp(63): warning C4996: 'strlwr': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _strlwr. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\string.h(574): note: 参见“strlwr”的声明
+e:\phantomenginegithub\allgames\phantomviewer\project\dlgbindbar.cpp(119): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  d:\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(1769): note: 参见“sprintf”的声明
+  MyGameInit.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\allgames\base\gamemanager.h(9): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\allgames\base\gamemanager.h(17): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\allgames\phantomviewer\mygameinit.cpp(131): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\allgames\phantomviewer\mygameinit.cpp(281): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\allgames\phantomviewer\mygameinit.cpp(432): warning C4101: “screenH”: 未引用的局部变量
+e:\phantomenginegithub\allgames\phantomviewer\mygameinit.cpp(432): warning C4101: “current”: 未引用的局部变量
+e:\phantomenginegithub\allgames\phantomviewer\mygameinit.cpp(432): warning C4101: “screenW”: 未引用的局部变量
+e:\phantomenginegithub\allgames\phantomviewer\mygameinit.cpp(431): warning C4101: “szIni”: 未引用的局部变量
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(640): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(631): note: 编译类 模板 成员函数“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”时
+  e:\phantomenginegithub\allgames\phantomviewer\mygameinit.cpp(237): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::splitpath(Phantom::NameT<512> *,Phantom::NameT<512> *,Phantom::NameT<512> *)”的引用
+  e:\phantomenginegithub\include\phantomfile.h(141): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<512>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<512>::operator +=(const char *)”时
+  e:\phantomenginegithub\allgames\phantomviewer\mygameinit.cpp(238): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<512>::operator +=(const char *)”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\allgames\phantomviewer\mygameinit.cpp(95): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+e:\phantomenginegithub\include\phantombase.h(562): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(562): note: 编译类 模板 成员函数“int Phantom::NameT<60>::size(void)”时
+  e:\phantomenginegithub\allgames\phantomviewer\mygameinit.cpp(222): note: 参见对正在编译的函数 模板 实例化“int Phantom::NameT<60>::size(void)”的引用
+  NetService.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\allgames\base\gamemanager.h(9): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\allgames\base\gamemanager.h(17): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\allgames\base\netservice.cpp(154): warning C4101: “count”: 未引用的局部变量
+e:\phantomenginegithub\allgames\base\netservice.cpp(396): warning C4101: “authpass”: 未引用的局部变量
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+e:\phantomenginegithub\include\phantombase.h(601): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(600): note: 编译类 模板 成员函数“void Phantom::NameT<128>::operator +=(const char *)”时
+  e:\phantomenginegithub\allgames\base\netservice.cpp(288): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::operator +=(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(119): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<128>”的引用
+e:\phantomenginegithub\include\phantombase.h(602): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(580): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(579): note: 编译类 模板 成员函数“void Phantom::NameT<128>::setIsFile(void)”时
+  e:\phantomenginegithub\allgames\base\netservice.cpp(344): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<128>::setIsFile(void)”的引用
+  MyGameState.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\allgames\base\gamemanager.h(9): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\allgames\base\gamemanager.h(17): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  GameManager.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\allgames\base\gamemanager.h(9): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\allgames\base\gamemanager.h(17): warning C4081: 应输入“newline”；找到“;”
+e:\phantomenginegithub\allgames\base\gamemanager.cpp(468): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<4096>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomhttp.h(39): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<4096>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomhttp.h(29): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<4096>”的引用
+  PhantomOSAndroid.cpp
+e:\phantomenginegithub\include\phantombase.h(64): warning C4005: “MAX_TOUCH_COUNT”: 宏重定义
+  c:\program files (x86)\windows kits\8.1\include\um\winuser.h(6140): note: 参见“MAX_TOUCH_COUNT”的前一个定义
+e:\phantomenginegithub\include\phantombase.h(768): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(801): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(814): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(873): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(1734): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2332): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(2447): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuicombobox.h(51): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(28): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistbox.h(46): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(49): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantomuilistctrl.h(65): warning C4267: “return”: 从“size_t”转换到“unsigned int”，可能丢失数据
+e:\phantomenginegithub\include\phantomfile.h(200): warning C4267: “return”: 从“size_t”转换到“int”，可能丢失数据
+e:\phantomenginegithub\include\phantombase.h(572): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  e:\phantomenginegithub\include\phantombase.h(570): note: 编译类 模板 成员函数“void Phantom::NameT<32>::operator =(const char *)”时
+  e:\phantomenginegithub\include\phantomunit3d.h(74): note: 参见对正在编译的函数 模板 实例化“void Phantom::NameT<32>::operator =(const char *)”的引用
+  e:\phantomenginegithub\include\phantomdevice.h(477): note: 参见对正在编译的类 模板 实例化“Phantom::NameT<32>”的引用
+  正在生成代码...
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1189,5): warning MSB8012: TargetPath(E:\PhantomEngineGithub\x64\DirectX9_Debug\PhantomViewer.exe) does not match the Linker's OutputFile property value (E:\PhantomGameEngine\PhantomEngine3D\AllGames\PhantomSimulator.exe). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(1191,5): warning MSB8012: TargetName(PhantomViewer) does not match the Linker's OutputFile property value (PhantomSimulator). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/FORCE”规范)
+LINK : fatal error LNK1181: 无法打开输入文件“PhantomEngine.lib”

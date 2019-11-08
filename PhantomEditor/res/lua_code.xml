@@ -1,0 +1,2553 @@
+<xml>
+    <class name="AABox" description="幻影三维盒子">
+        <var name="_min" return="float3" description="最小点" />
+        <var name="_max" return="float3" description="最大点" />
+    </class>
+    <class name="CameraData" description="幻影镜头数据">
+        <var name="flags" return="int" description="常数_镜头开关" />
+        <var name="rotButton" return="MouseButton" description="" />
+        <var name="moveButton" return="MouseButton" description="" />
+        <var name="vRotate" return="float3" description="转动率" />
+        <var name="fRotationSpeedMask" return="float" description="" />
+        <var name="vUp" return="float3" description="" />
+        <var name="vTarget" return="float3" description="目标点" />
+        <var name="vEye" return="float3" description="视点" />
+        <var name="fFov" return="float" description="广角" />
+        <var name="nWidth" return="int" description="" />
+        <var name="nHeight" return="int" description="" />
+        <var name="fZNear" return="float" description="" />
+        <var name="fZFar" return="float" description="" />
+        <var name="fMinDistance" return="float" description="视点最近距离目标点" />
+        <var name="fMaxDistance" return="float" description="视点最远距离目标点" />
+        <var name="fMoveSpeed" return="float" description="移动速度" />
+    </class>
+    <class name="color4" description="幻影颜色,操作符重载(+,-,*,/)">
+        <var name="r" return="float" description="" />
+        <var name="g" return="float" description="" />
+        <var name="b" return="float" description="" />
+        <var name="a" return="float" description="" />
+        <method name="fromrgb" args="void			color4::fromrgb(INT r,	INT g,	INT b);" description="设置RGB色( 红色, 绿色, 蓝色)" />
+        <method name="fromrgba" args="void			color4::fromrgba(INT rgb,	float fAlpha);" description="从RGB色( RGB颜色, 透明)" />
+        <method name="rgb" return="INT" args="INT	color4::rgb();" description="返回RGB色()" />
+        <method name="set" args="void			color4::set(float r,	float g,	float b,	float a);" description="设置Global_rgba( r, g, b, a)" />
+        <var name="rgba" return="INT" description="INT color4::rgba;
+Get:颜色_返回ARGB色 s;
+Set:颜色_从BGRA色 s;
+" />
+        <method name="setup" args="void			color4::setup(float r,	float g,	float b,	float a);" description="设置( r, g, b, a)" />
+    </class>
+    <class name="doublePtr" description="幻影双精度小数型数据">
+        <var name="value" return="double" description="值" />
+    </class>
+    <class name="float2" description="幻影二维向量,操作符重载(+,-,*,/)">
+        <var name="x" return="float" description="" />
+        <var name="y" return="float" description="" />
+        <method name="barycentric" args="void			float2::barycentric(float2 pV1,	float2 pV2,	float2 pV3,	float f,	float g);" description="重心( pV1, pV2, pV3, f, g)
+Barycentric coordinates.V1+f(V2-V1)+g(V3-V1)" />
+        <method name="catmullrom" args="void			float2::catmullrom(float2 pV0,	float2 pV1,	float2 pV2,	float2 pV3,	float s);" description="Catmull_Rom插值( pV0, pV1, pV2, pV3, s)
+CatmullRom interpolation between V1(when s == 0)and V2(when s == 1)" />
+        <method name="cross" return="float" args="float	float2::cross(float2 v2);" description="叉乘( 参数2)
+返回向量叉乘" />
+        <method name="dot" return="float" args="float	float2::dot(float2 v2);" description="点乘( 参数2)
+返回向量点乘" />
+        <method name="hermite" args="void			float2::hermite(float2 pV1,	float2 pT1,	float2 pV2,	float2 pT2,	float s);" description="曲线插值( pV1, pT1, pV2, pT2, s)
+Hermite interpolation between position V1,tangent T1(when s == 0//and position V2,tangent T2(when s == 1)." />
+        <method name="length" return="float" args="float	float2::length();" description="长度()
+返回向量长度" />
+        <method name="lerp" args="void			float2::lerp(float2 v1,	float2 v2,	float fLerp);" description="插值( 参数1, 参数2, 变量)
+向量插值，变量0~1之间" />
+        <method name="normalize" args="void			float2::normalize();" description="归一()
+向量归一" />
+        <method name="setup" args="void			float2::setup(float x,	float y);" description="设置( x, y)" />
+        <method name="transformcoord" args="void			float2::transformcoord(float2 pV,	matrix4x4 pM);" description="变换( pV, pM)
+Transform(x,y,0,1)by matrix,project result back into w=1." />
+        <method name="transformnormal" args="void			float2::transformnormal(float2 pV,	matrix4x4 pM);" description="单位化( pV, pM)
+Transform(x,y,0,0)by matrix." />
+    </class>
+    <class name="float3" description="幻影三维向量,操作符重载(+,-,*,/)">
+        <var name="x" return="float" description="" />
+        <var name="y" return="float" description="" />
+        <var name="z" return="float" description="" />
+        <method name="barycentric" args="void			float3::barycentric(float3 pV1,	float3 pV2,	float3 pV3,	float f,	float g);" description="重心( pV1, pV2, pV3, f, g)
+Barycentric coordinates.V1+f(V2-V1)+g(V3-V1)" />
+        <method name="catmullrom" args="void			float3::catmullrom(float3 pV0,	float3 pV1,	float3 pV2,	float3 pV3,	float s);" description="Catmull_Rom插值( pV0, pV1, pV2, pV3, s)
+CatmullRom interpolation between V1(when s == 0)and V2(when s == 1)" />
+        <method name="cross" args="void			float3::cross(float3 v1,	float3 v2);" description="叉乘( 参数1, 参数2)
+返回向量叉乘" />
+        <method name="dot" return="float" args="float	float3::dot(float3 v2);" description="点乘( 参数2)
+返回向量点乘" />
+        <method name="getrotate_z" return="float" args="float	float3::getrotate_z();" description="返回角度Z()" />
+        <method name="hermite" args="void			float3::hermite(float3 pV1,	float3 pT1,	float3 pV2,	float3 pT2,	float s);" description="曲线插值( pV1, pT1, pV2, pT2, s)
+Hermite interpolation between position V1,tangent T1(when s == 0)//and position V2,tangent T2(when s == 1)." />
+        <method name="length" return="float" args="float	float3::length();" description="长度()
+返回向量长度" />
+        <method name="lerp" args="void			float3::lerp(float3 v1,	float3 v2,	float fLerp);" description="插值( 参数1, 参数2, 变量)
+向量插值，变量0~1之间" />
+        <method name="normalize" args="void			float3::normalize();" description="归一()
+向量归一" />
+        <method name="rotateX" args="void			float3::rotateX(float3 v2,	float fDegress);" description="转动X轴( 参数1, 角度)
+向量随X轴转动" />
+        <method name="rotateY" args="void			float3::rotateY(float3 v2,	float fDegress);" description="转动Y轴( 参数1, 角度)
+向量随Y轴转动" />
+        <method name="rotateZ" args="void			float3::rotateZ(float3 v2,	float fDegress);" description="转动Z轴( 参数1, 角度)
+向量随Z轴转动" />
+        <method name="setup" args="void			float3::setup(float x,	float y,	float z);" description="设置( x, y, z)" />
+        <method name="transform" args="void			float3::transform(float3 v2,	matrix4x4 m);" description="矩阵变换( 参数1, 矩阵1)
+向量与矩阵进行变换" />
+        <method name="transform3x3" args="void			float3::transform3x3(float3 v2,	matrix4x4 m);" description="矩阵旋转变换( 参数1, 矩阵1)
+向量与矩阵进行变换" />
+        <method name="transformcoord" args="void			float3::transformcoord(float3 pV,	matrix4x4 pM);" description="变换( pV, pM)
+Transform(x,y,z,1)by matrix,project result back into w=1." />
+        <method name="transformnormal" args="void			float3::transformnormal(float3 pV,	matrix4x4 pM);" description="单位化( pV, pM)
+Transform(x,y,z,0)by matrix.If you transforming a normal by a//non-affine matrix,the matrix you pass to this function should be the//transpose of the inverse of the matrix you would use to transform a coord." />
+    </class>
+    <class name="float4" description="幻影四维向量,操作符重载(+,-,*,/)">
+        <var name="x" return="float" description="" />
+        <var name="y" return="float" description="" />
+        <var name="z" return="float" description="" />
+        <var name="w" return="float" description="" />
+        <method name="barycentric" args="void			float4::barycentric(float4 pV1,	float4 pV2,	float4 pV3,	float f,	float g);" description="重心( pV1, pV2, pV3, f, g)
+Barycentric coordinates.V1+f(V2-V1)+g(V3-V1)" />
+        <method name="catmullrom" args="void			float4::catmullrom(float4 pV0,	float4 pV1,	float4 pV2,	float4 pV3,	float s);" description="Catmull_Rom插值( pV0, pV1, pV2, pV3, s)
+CatmullRom interpolation between V1(when s == 0)and V2(when s == 1)" />
+        <method name="copy" args="void			float4::copy(float4 v1);" description="拷贝( 参数1)
+向量拷贝" />
+        <method name="dot" return="float" args="float	float4::dot(float4 v2);" description="点乘( 参数2)
+返回向量点乘" />
+        <method name="hermite" args="void			float4::hermite(float4 pV1,	float4 pT1,	float4 pV2,	float4 pT2,	float s);" description="曲线插值( pV1, pT1, pV2, pT2, s)
+Hermite interpolation between position V1,tangent T1(when s == 0)//and position V2,tangent T2(when s == 1)." />
+        <method name="length" return="float" args="float	float4::length();" description="长度()
+返回向量长度" />
+        <method name="lerp" args="void			float4::lerp(float4 v1,	float4 v2,	float fLerp);" description="插值( 参数1, 参数2, 变量)
+向量插值，变量0~1之间" />
+        <method name="setup" args="void			float4::setup(float x,	float y,	float z,	float w);" description="设置( x, y, z, w)" />
+        <method name="transform" args="void			float4::transform(float3 pV,	matrix4x4 pM);" description="单位化( pV, pM)
+Transform(x,y,z,0)by matrix.If you transforming a normal by a//non-affine matrix,the matrix you pass to this function should be the//transpose of the inverse of the matrix you would use to transform a coord." />
+    </class>
+    <class name="floatPtr" description="幻影小数型数据">
+        <var name="value" return="float" description="值" />
+    </class>
+    <class name="GameID" description="幻影游戏对象ID">
+        <var name="id" return="short" description="" />
+        <var name="index" return="short" description="" />
+    </class>
+    <class name="intPtr" description="幻影整数型数据">
+        <var name="value" return="INT" description="值" />
+    </class>
+    <class name="matrix4x4" description="幻影矩阵,操作符重载(+,-,*,/)">
+        <var name="_11" return="float" description="" />
+        <var name="_12" return="float" description="" />
+        <var name="_13" return="float" description="" />
+        <var name="_14" return="float" description="" />
+        <var name="_21" return="float" description="" />
+        <var name="_22" return="float" description="" />
+        <var name="_23" return="float" description="" />
+        <var name="_24" return="float" description="" />
+        <var name="_31" return="float" description="" />
+        <var name="_32" return="float" description="" />
+        <var name="_33" return="float" description="" />
+        <var name="_34" return="float" description="" />
+        <var name="_41" return="float" description="" />
+        <var name="_42" return="float" description="" />
+        <var name="_43" return="float" description="" />
+        <var name="_44" return="float" description="" />
+        <method name="affineTransformation" args="void			matrix4x4::affineTransformation(float Scaling,	float3 pRotationCenter,	quaternion pRotation,	float3 pTranslation);" description="在平面创建放射变换( Scaling, pRotationCenter, pRotation, pTranslation)
+Build affine transformation matrix.NULL arguments are treated as identity.//Mout = Ms*Mrc-1*Mr*Mrc*Mt" />
+        <method name="affineTransformation2d" args="void			matrix4x4::affineTransformation2d(float Scaling,	float2 pRotationCenter,	float Rotation,	float2 pTranslation);" description="创建放射变换( Scaling, pRotationCenter, Rotation, pTranslation)
+Build 2D affine transformation matrix in XY Plane.NULL arguments are treated as identity.//Mout = Ms*Mrc-1*Mr*Mrc*Mt" />
+        <method name="decompose" return="bool" args="bool	matrix4x4::decompose(float3 pOutScale,	quaternion pOutRotation,	float3 pOutTranslation);" description="返回缩放旋转平移向量(pOutScale, pOutRotation, pOutTranslation)" />
+        <method name="identity" args="void			matrix4x4::identity();" description="设置单位矩阵()" />
+        <method name="inverse" args="void			matrix4x4::inverse(matrix4x4 pM);" description="逆矩阵( pM)
+Calculate inverse of matrix.Inversion my fail,in which case NULL will//be returned.The determinant of pM is also returned it pfDeterminant//is non-NULL." />
+        <method name="inverse2" args="void			matrix4x4::inverse2(float3 pDeterminant,	matrix4x4 pM);" description="逆矩阵2( pDeterminant, pM)
+Calculate inverse of matrix.Inversion my fail,in which case NULL will//be returned.The determinant of pM is also returned it pfDeterminant//is non-NULL." />
+        <method name="lerp" args="void			matrix4x4::lerp(matrix4x4 v1,	matrix4x4 v2,	float fLerp);" description="插值( 参数1, 参数2, 变量)
+矩阵插值，变量0~1之间" />
+        <method name="lookat_lh" args="void			matrix4x4::lookat_lh(float3 pEye,	float3 pAt,	float3 pUp);" description="左手系观察矩阵( pEye, pAt, pUp)
+Build a lookat matrix.(left-handed)" />
+        <method name="lookat_rh" args="void			matrix4x4::lookat_rh(float3 pEye,	float3 pAt,	float3 pUp);" description="右手系观察矩阵( pEye, pAt, pUp)
+Build a lookat matrix.(right-handed)" />
+        <method name="multiply_transpose" args="void			matrix4x4::multiply_transpose(matrix4x4 pM1,	matrix4x4 pM2);" description="乘积的转置( pM1, pM2)
+Matrix multiplication,followed by a transpose.(Out = T(M1*M2))" />
+        <method name="orth_offcenter_lh" args="void			matrix4x4::orth_offcenter_lh(float l,	float r,	float b,	float t,	float2 znearfar);" description="左手系正交投影_非中心点( l, r, b, t, znearfar)
+Build an ortho projection matrix.(left-handed)" />
+        <method name="ortho_lh" args="void			matrix4x4::ortho_lh(float w,	float h,	float zn,	float zf);" description="左手系正交投影( w, h, zn, zf)
+Build an ortho projection matrix.(left-handed)" />
+        <method name="ortho_offcenter_rh" args="void			matrix4x4::ortho_offcenter_rh(float l,	float r,	float b,	float t,	float2 znearfar);" description="右手系正交投影_非中心点( l, r, b, t, znearfar)
+Build an ortho projection matrix.(right-handed)" />
+        <method name="ortho_rh" args="void			matrix4x4::ortho_rh(float w,	float h,	float zn,	float zf);" description="右手系正交投影( w, h, zn, zf)
+Build an ortho projection matrix.(right-handed)" />
+        <method name="perspective_fovrh" args="void			matrix4x4::perspective_fovrh(float fovy,	float Aspect,	float zn,	float zf);" description="右手系投影矩阵_广角( fovy, Aspect, zn, zf)
+Build a perspective projection matrix.(right-handed)" />
+        <method name="perspective_lv" args="void			matrix4x4::perspective_lv(float w,	float h,	float zn,	float zf);" description="左手系投影矩阵( w, h, zn, zf)
+Build a perspective projection matrix.(left-handed)" />
+        <method name="perspective_offcenter_lh" args="void			matrix4x4::perspective_offcenter_lh(float l,	float r,	float b,	float t,	float2 znearfar);" description="左手系投影矩阵_非中心点( l, r, b, t, znearfar)
+Build a perspective projection matrix.(left-handed)" />
+        <method name="perspective_offcenter_rh" args="void			matrix4x4::perspective_offcenter_rh(float l,	float r,	float b,	float t,	float2 znearfar);" description="右手系投影矩阵_非中心点( l, r, b, t, znearfar)
+Build a perspective projection matrix.(right-handed)" />
+        <method name="perspective_rh" args="void			matrix4x4::perspective_rh(float w,	float h,	float zn,	float zf);" description="右手系投影矩阵( w, h, zn, zf)
+Build a perspective projection matrix.(right-handed)" />
+        <method name="perspectivefov_lh" args="void			matrix4x4::perspectivefov_lh(float fovy,	float Aspect,	float zn,	float zf);" description="左手系投影矩阵_广角( fovy, Aspect, zn, zf)
+Build a perspective projection matrix.(left-handed)" />
+        <method name="reflect" args="void			matrix4x4::reflect(Plane pPlane);" description="平面反射矩阵( pPlane)
+Build a matrix which reflects the coordinate system about a Plane" />
+        <method name="rotation_yawpitchroll" args="void			matrix4x4::rotation_yawpitchroll(float Yaw,	float Pitch,	float Roll);" description="绕XYZ角度旋转( Yaw, Pitch, Roll)
+角度Yaw around the Y axis,a pitch around the X axis,//and a roll around the Z axis." />
+        <method name="rotationaxis" args="void			matrix4x4::rotationaxis(float3 pV,	float fDegress);" description="绕任意轴旋转( pV, 角度)
+Build a matrix which rotates around an arbitrary axis" />
+        <method name="rotationquaternion" args="void			matrix4x4::rotationquaternion(quaternion pQ);" description="根据四元组创建( pQ)
+Build a matrix from a quaternion" />
+        <method name="rotationx" args="void			matrix4x4::rotationx(float fDegress);" description="绕X轴旋转( 角度)
+Build a matrix which rotates around the X axis" />
+        <method name="rotationy" args="void			matrix4x4::rotationy(float fDegress);" description="绕Y轴旋转( 角度)
+Build a matrix which rotates around the Y axis" />
+        <method name="rotationz" args="void			matrix4x4::rotationz(float fDegress);" description="绕Z轴旋转( 角度)
+Build a matrix which rotates around the Z axis" />
+        <method name="scaling" args="void			matrix4x4::scaling(float sx,	float sy,	float sz);" description="缩放( sx, sy, sz)
+Build a matrix which scales by(sx,sy,sz)" />
+        <var name="pos" return="float3" description="float3 matrix4x4::pos;
+Get:矩阵_取得位置 s;
+Set:矩阵_设置位置 s;
+" />
+        <method name="transform" args="void			matrix4x4::transform(float3 pos,	quaternion rot,	float3 scale);" description="根据平移缩放转动创建( pos, rot, scale)
+转变,根据参数" />
+        <method name="translation" args="void			matrix4x4::translation(float x,	float y,	float z);" description="平移( x, y, z)
+Build a matrix which translates by(x,y,z)" />
+        <method name="transpose" args="void			matrix4x4::transpose(matrix4x4 pOut);" description="转置(pOut)" />
+    </class>
+    <class name="Object" description="幻影对象指针">
+        <var name="s1" return="short" description="" />
+        <var name="s2" return="short" description="" />
+        <var name="i1" return="int" description="" />
+        <var name="i2" return="int" description="" />
+    </class>
+    <class name="PickPoint" description="幻影碰撞数据">
+        <var name="pos" return="float3" description="" />
+        <var name="normal" return="float3" description="" />
+        <var name="t" return="float" description="" />
+    </class>
+    <class name="Pixel" description="幻影屏幕坐标数据,操作符重载(+,-,*,/)">
+        <var name="x" return="int" description="左" />
+        <var name="y" return="int" description="上" />
+    </class>
+    <class name="PixelColor" description="幻影屏幕坐标颜色,操作符重载(+,-,*,/)">
+        <var name="x" return="int" description="左" />
+        <var name="y" return="int" description="上" />
+        <var name="color" return="color4" description="颜色" />
+    </class>
+    <class name="PixelUV" description="幻影屏幕坐标数据UV">
+        <var name="x" return="int" description="左" />
+        <var name="y" return="int" description="上" />
+        <var name="u" return="float" description="贴图坐标u" />
+        <var name="v" return="float" description="贴图坐标v" />
+        <var name="c" return="color4" description="颜色" />
+    </class>
+    <class name="Plane" description="幻影平面,操作符重载(+,-,*,/)">
+        <var name="a" return="float" description="" />
+        <var name="b" return="float" description="" />
+        <var name="c" return="float" description="" />
+        <var name="d" return="float" description="" />
+        <method name="dot" return="float" args="float	Plane::dot(float4 p2);" description="与4D向量点乘( p2)
+ax+by+cz+dw平面方程与4D向量的点乘" />
+        <method name="dotcoord" return="float" args="float	Plane::dotcoord(float3 p2);" description="与3D向量点乘_w1( p2)
+ax+by+cz+d平面与3D向量的点乘,w=1" />
+        <method name="dotnormal" return="float" args="float	Plane::dotnormal(float3 p2);" description="与3D向量点乘_w0( p2)
+ax+by+cz平面与3D向量的点乘,w=0" />
+        <method name="from_pointnormal" args="void			Plane::from_pointnormal(float3 pPoint,	float3 pNormal);" description="根据点和法线创建( pPoint, pNormal)
+根据点和法线创建平面" />
+        <method name="from_points" args="void			Plane::from_points(float3 pV1,	float3 pV2,	float3 pV3);" description="根据三个点创建( pV1, pV2, pV3)
+根据三点创建平面" />
+        <method name="intersectline" args="void			Plane::intersectline(float3 r,	float3 pV1,	float3 pV2);" description="计算交点(返回, pV1, pV2)
+找出直线平面交点" />
+        <method name="normalize" args="void			Plane::normalize(Plane pP);" description="归一化( pP)
+规格化平面方程系数以求单位法线" />
+        <method name="scale" args="void			Plane::scale(Plane p1,	float s);" description="缩放( p1, s)" />
+        <method name="transform" args="void			Plane::transform(Plane pP,	matrix4x4 pM);" description="矩阵转制( pP, pM)
+Transform a Plane by a matrix.The vector(a,b,c)must be normal.//M should be the inverse transpose of the transformation desired." />
+    </class>
+    <class name="quaternion" description="幻影四元数,操作符重载(+,-,*,/)">
+        <var name="x" return="float" description="" />
+        <var name="y" return="float" description="" />
+        <var name="z" return="float" description="" />
+        <var name="w" return="float" description="" />
+        <method name="barycentric" args="void			quaternion::barycentric(quaternion pQ1,	quaternion pQ2,	quaternion pQ3,	float f,	float g);" description="重心( pQ1, pQ2, pQ3, f, g)
+Barycentric interpolation.//Slerp(Slerp(Q1,Q2,f+g),Slerp(Q1,Q3,f+g),g/(f+g))" />
+        <method name="exp" args="void			quaternion::exp(quaternion pQ);" description="指数( pQ)
+Expects pure quaternions.(w == 0)w is ignored in calculation.//if q =(0,theta*v);exp(q)=(cos(theta),sin(theta)*v)" />
+        <method name="inverse" args="void			quaternion::inverse(quaternion pQ);" description="共轭变换并规格化( pQ)
+Expects unit quaternions.//if q =(cos(theta),sin(theta)*v);ln(q)=(0,theta*v)" />
+        <method name="ln" args="void			quaternion::ln(quaternion pQ);" description="自然对数( pQ)" />
+        <method name="multiply" args="void			quaternion::multiply(quaternion pQ1,	quaternion pQ2);" description="相乘( pQ1, pQ2)
+Quaternion multiplication.The result represents the rotation Q2//followed by the rotation Q1.(Out = Q2*Q1)" />
+        <method name="normalize" args="void			quaternion::normalize(quaternion pQ);" description="归一化( pQ)
+Conjugate and re-norm" />
+        <method name="rotation_yawpitchroll" args="void			quaternion::rotation_yawpitchroll(float Yaw,	float Pitch,	float Roll);" description="绕XYZ旋转创建( Yaw, Pitch, Roll)
+角度Yaw around the Y axis,a pitch around the X axis,//and a roll around the Z axis." />
+        <method name="rotationaxis" args="void			quaternion::rotationaxis(float3 pV,	float fDegress);" description="绕轴旋转( pV, 角度)
+Rotation about arbitrary axis." />
+        <method name="rotationmatrix" args="void			quaternion::rotationmatrix(matrix4x4 pM);" description="旋转矩阵创建( pM)
+Build a quaternion from a rotation matrix." />
+        <method name="slerp" args="void			quaternion::slerp(quaternion pQ1,	quaternion pQ2,	float t);" description="球面插值( pQ1, pQ2, t)
+Spherical linear interpolation between Q1(t == 0)and Q2(t == 1).//Expects unit quaternions." />
+        <method name="squad" args="void			quaternion::squad(quaternion pQ1,	quaternion pA,	quaternion pB,	quaternion pC,	float t);" description="球面四边形( pQ1, pA, pB, pC, t)
+Spherical quadrangle interpolation.//Slerp(Slerp(Q1,C,t),Slerp(A,B,t),2t(1-t))" />
+    </class>
+    <class name="raydata" description="幻影碰撞返回数据">
+        <var name="t" return="float" description="距离" />
+        <var name="point" return="float3" description="碰撞点" />
+        <var name="normal" return="float3" description="法线" />
+    </class>
+    <class name="Rect" description="幻影矩形数据,操作符重载(+,-,*,/)">
+        <var name="left" return="int" description="左边" />
+        <var name="top" return="int" description="上边" />
+        <var name="right" return="int" description="右边" />
+        <var name="bottom" return="int" description="下边" />
+    </class>
+    <class name="sensordata" description="幻影传感器数据">
+        <var name="acceleration_x" return="double" description="获取手机加速度数据x" />
+        <var name="acceleration_y" return="double" description="获取手机加速度数据y" />
+        <var name="acceleration_z" return="double" description="获取手机加速度数据z" />
+        <var name="gravity_x" return="double" description="获取手机的重力值在各个方向上的分量，根据这个就可以获得手机的空间位置，倾斜角度等x" />
+        <var name="gravity_y" return="double" description="获取手机的重力值在各个方向上的分量，根据这个就可以获得手机的空间位置，倾斜角度等y" />
+        <var name="gravity_z" return="double" description="获取手机的重力值在各个方向上的分量，根据这个就可以获得手机的空间位置，倾斜角度等z" />
+        <var name="theta_z" return="double" description="获取手机的倾斜角度z" />
+        <var name="theta_xy" return="double" description="获取手机的倾斜角度xy" />
+        <var name="rotation_rate_x" return="double" description="获取陀螺仪的数据包括角速度x" />
+        <var name="rotation_rate_y" return="double" description="获取陀螺仪的数据包括角速度y" />
+        <var name="rotation_rate_z" return="double" description="获取陀螺仪的数据包括角速度z" />
+        <var name="roll" return="double" description="获取陀螺仪的数据空间位置的欧拉角x" />
+        <var name="pitch" return="double" description="获取陀螺仪的数据空间位置的欧拉角y" />
+        <var name="yaw" return="double" description="获取陀螺仪的数据空间位置的欧拉角z" />
+        <var name="qx" return="double" description="空间位置的四元数x" />
+        <var name="qy" return="double" description="空间位置的四元数y" />
+        <var name="qz" return="double" description="空间位置的四元数z" />
+        <var name="qw" return="double" description="空间位置的四元数w" />
+    </class>
+    <class name="short2" description="幻影短整数2">
+        <var name="x" return="short" description="" />
+        <var name="y" return="short" description="" />
+    </class>
+    <class name="short4" description="幻影短整数4">
+        <var name="x" return="short" description="" />
+        <var name="y" return="short" description="" />
+        <var name="z" return="short" description="" />
+        <var name="w" return="short" description="" />
+    </class>
+    <class name="shortPtr" description="幻影短整数型数据">
+        <var name="value" return="short" description="值" />
+    </class>
+    <class name="Time" description="幻影时间">
+        <var name="year" return="int" description="年" />
+        <var name="month" return="int" description="月" />
+        <var name="day" return="int" description="日" />
+        <var name="hour" return="int" description="时" />
+        <var name="minute" return="int" description="分" />
+        <var name="second" return="int" description="秒" />
+        <var name="microsecond" return="int" description="毫秒" />
+    </class>
+    <class name="Triangle" description="幻影三角形索引">
+        <var name="v1" return="short" description="顶点索引1" />
+        <var name="v2" return="short" description="顶点索引2" />
+        <var name="v3" return="short" description="顶点索引3" />
+    </class>
+    <class name="ubyte4" description="幻影字节4">
+        <var name="x" return="char" description="" />
+        <var name="y" return="char" description="" />
+        <var name="z" return="char" description="" />
+        <var name="w" return="char" description="" />
+    </class>
+    <class name="Vertex" description="幻影顶点数据">
+        <var name="pos" return="float3" description="位置" />
+        <var name="normal" return="float3" description="法线" />
+        <var name="uv1" return="float2" description="" />
+        <var name="uv2" return="float2" description="" />
+    </class>
+    <class name="DataArray">
+        <var name="context" return="int" description="int DataArray::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool DataArray::equal(DataArray);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool DataArray::isnull();" description="是否为空数据类型" />
+    </class>
+    <class name="DataControl">
+        <var name="context" return="int" description="int DataControl::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool DataControl::equal(DataControl);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool DataControl::isnull();" description="是否为空数据类型" />
+        <method name="add_child" return="DataControl" args="DataControl	DataControl::add_child(string name);" description="创建子数据( 配置项子数据名字)
+创建文件数据子项" />
+        <method name="at" return="DataControl" args="DataControl	DataControl::at(INT index);" description="子数据指针( 配置项子数据名字)
+创建文件数据子项" />
+        <method name="clear" args="void			DataControl::clear();" description="清除所有的数据()" />
+        <method name="count" return="INT" args="INT	DataControl::count();" description="子数据数量()" />
+        <method name="lreadf" return="double" args="double	DataControl::lreadf(INT index);" description="读取数组浮点数( 索引)" />
+        <method name="lreadi" return="INT" args="INT	DataControl::lreadi(INT index);" description="读取数组整数( 索引)" />
+        <method name="lreadt" return="string" args="string	DataControl::lreadt(INT index);" description="读取数组文本( 索引)" />
+        <method name="lwritef" args="void			DataControl::lwritef(INT index,	double fValue);" description="写入数组浮点( 索引, 值)" />
+        <method name="lwritei" args="void			DataControl::lwritei(INT index,	INT nValue);" description="写入数组整数( 索引, 值)" />
+        <method name="lwritet" args="void			DataControl::lwritet(INT index,	string szValue);" description="写入数组文本( 索引, 值)" />
+        <method name="readf" return="double" args="double	DataControl::readf(string name);" description="读取一个浮点数( 配置项名字)" />
+        <method name="readi" return="INT" args="INT	DataControl::readi(string name);" description="读取一个整数( 配置项名字)" />
+        <method name="readt" return="string" args="string	DataControl::readt(string name);" description="读取一个文本( 配置项名字)" />
+        <var name="lcount" return="INT" description="INT DataControl::lcount;
+Get:数据控制_读取数组长度 s;
+Set:数据控制_设置数组长度 s;
+" />
+        <method name="writef" args="void			DataControl::writef(string name,	double fValue);" description="写入一个浮点( 配置项名字, 值)" />
+        <method name="writei" args="void			DataControl::writei(string name,	INT nValue);" description="写入一个整数( 配置项名字, 值)" />
+        <method name="writet" args="void			DataControl::writet(string name,	string szValue);" description="写入一个文本( 配置项名字, 值)" />
+    </class>
+    <class name="FindWay">
+        <var name="context" return="int" description="int FindWay::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool FindWay::equal(FindWay);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool FindWay::isnull();" description="是否为空数据类型" />
+        <method name="point_at" args="void			FindWay::point_at(INT nIndex,	float3 pos);" description="取路经点( 索引, 点)" />
+        <method name="recalc" return="bool" args="bool	FindWay::recalc(float3 ret,	floatPtr retRotation);" description="更新时间( 返回最新位置, 返回转动角度)
+如果返回false表示移动完毕" />
+        <var name="is2dway" return="bool" description="bool FindWay::is2dway;
+Get:寻路_取2D模式 s;
+Set:寻路_设置2D模式 s;
+" />
+        <var name="pause" return="bool" description="bool FindWay::pause;
+Get:寻路_是否暂停 s;
+Set:寻路_设置暂停 s;
+" />
+        <var name="play" return="bool" description="bool FindWay::play;
+Get:寻路_是否播放 s;
+Set:寻路_设置播放 s;
+" />
+        <method name="setpoint_at" args="void			FindWay::setpoint_at(INT nIndex,	float3 pos);" description="设置路经点( 索引, 点)" />
+        <var name="pointcount" return="INT" description="INT FindWay::pointcount;
+Get:寻路_取路经点数量 s;
+Set:寻路_设置路经点数量 s;
+" />
+        <var name="speed" return="float" description="float FindWay::speed;
+Get:寻路_取得速度 s;
+Set:寻路_设置速度 s;
+" />
+    </class>
+    <class name="GameObject">
+        <var name="context" return="int" description="int GameObject::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool GameObject::equal(GameObject);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool GameObject::isnull();" description="是否为空数据类型" />
+        <method name="attack" return="bool" args="bool	GameObject::attack(int actionindex);" description='攻击( 攻击动作组的索引)
+进行攻击动作,动作索引是按照顺序出现的动作类型为"攻击"的索引' />
+        <method name="die" args="void			GameObject::die(IGameObjectPtr enemy);" description="死亡( 敌人)" />
+        <method name="doskill_r" return="bool" args="bool	GameObject::doskill_r(int skillid,	float3 target);" description="使用技能攻击目标点群体( 技能表中的技能ID, 技能施放目标点)
+如果技能ID是0的话则使用默认的物理攻击,技能表skill_table.txt,只有群体技能才能使用这个" />
+        <method name="doskill_t" return="bool" args="bool	GameObject::doskill_t(int skillid);" description="使用技能攻击当前目标( 技能表中的技能ID)
+如果技能ID是0的话则使用默认的物理攻击,技能表skill_table.txt,会自动走进目标最佳攻击距离点" />
+        <method name="height" return="float" args="float	GameObject::height();" description="取得角色高度()
+返回角色高度" />
+        <method name="idle" args="void			GameObject::idle(float fTime);" description="休闲动作( 休闲动作持续时间)
+休闲动作自动选择" />
+        <method name="lookat" args="void			GameObject::lookat(float3 target);" description="面向目标( 位置)
+面向目标转动" />
+        <method name="lookat_t" args="void			GameObject::lookat_t();" description="面向目标对象()
+面向目标对象转动" />
+        <method name="movedir" args="void			GameObject::movedir(float3 dir);" description="设置自动方向移动( 方向)
+自动按照方向移动" />
+        <method name="moveto" return="bool" args="bool	GameObject::moveto(float3 pos);" description="移动到目标点( 位置)
+移动到目标点，如果可以行走到目标点返回true" />
+        <method name="moveto_b" args="void			GameObject::moveto_b();" description="移动到出生点()
+对象移动到出生点" />
+        <method name="moveto_e" return="bool" args="bool	GameObject::moveto_e(string szEvent);" description="移动到事件点( 事件点)
+对象移动到事件点" />
+        <method name="moveto_t" return="bool" args="bool	GameObject::moveto_t();" description="移动到目标对象()
+首先要设置目标对象target，然后调用这个函数，否则返回false，如果目标对象死亡也返回false" />
+        <method name="nextaction" return="bool" args="bool	GameObject::nextaction(ActionType type,	float fTime);" description="下一个动作( 常数_幻影单位动作类型_值, 时间)
+下一个动作进行一定时间的静止" />
+        <method name="nextenemy" return="bool" args="bool	GameObject::nextenemy();" description="选择下一个敌人()
+自动选择下一个敌人，从最后一个攻击我的角色开始选择，然后是在攻击范围内的角色" />
+        <method name="nextidle" return="bool" args="bool	GameObject::nextidle(float fTime);" description="下一个静止( 时间)
+下一个动作进行一定时间的静止" />
+        <method name="nextlookat" args="void			GameObject::nextlookat(float3 pos);" description="循环所有设定( 目标点)
+盯着目标点" />
+        <method name="nextlookat_t" args="void			GameObject::nextlookat_t(IGameObjectPtr obj);" description="循环所有设定( 目标对象)
+盯着目标对象" />
+        <method name="nextloop" args="void			GameObject::nextloop();" description="循环所有设定()
+如果没有打断则一直循环所有的动作" />
+        <method name="nextto" return="bool" args="bool	GameObject::nextto(float3 pos);" description="下一个移动到点( 位置)
+下一个对象移动到点" />
+        <method name="nextto_e" return="bool" args="bool	GameObject::nextto_e(string szEvent);" description="下一个移动到事件点( 事件点)
+下一个对象移动到事件点" />
+        <method name="onhit" args="void			GameObject::onhit(IGameObjectPtr enemy,	int val,	float fPlayTime);" description="被击动作( 敌人, 造成伤害的值, 播放动作最长时间)
+对象被攻击的时候调用" />
+        <method name="pause_t" args="void			GameObject::pause_t(float fSecond);" description="暂停一段时间( 秒)
+暂停计算一段时间,过了这个时间将自动继续" />
+        <method name="read" return="float" args="float	GameObject::read(string szName);" description="读取一个小数变量( 变量名)
+读取一个小数变量" />
+        <method name="sceneobj" return="Map3DItem" args="Map3DItem	GameObject::sceneobj();" description="返回场景对象类()
+从这里返回的场景对象不要直接进行游戏内容和逻辑还有位置设置等操作，将会无效" />
+        <var name="affrange" return="float" description="float GameObject::affrange;
+Get:游戏对象_取得影响范围变量 s;
+Set:游戏对象_设置影响范围变量 s;
+" />
+        <var name="atkrange" return="float" description="float GameObject::atkrange;
+Get:游戏对象_取得攻击范围变量 s;
+Set:游戏对象_设置攻击范围变量 s;
+" />
+        <var name="bornpos" return="float3" description="float3 GameObject::bornpos;
+Get:游戏对象_取得出生点坐标 s;
+Set:游戏对象_设置出生点坐标 s;
+" />
+        <var name="meshheight" return="bool" description="bool GameObject::meshheight;
+Get:游戏对象_取得计算取得模型碰撞盒高度 s;
+Set:游戏对象_设置计算取得模型碰撞盒高度 s;
+" />
+        <var name="movedir_enable" return="bool" description="bool GameObject::movedir_enable;
+Get:游戏对象_取得是否自动按照方向移动 s;
+Set:游戏对象_设置是否自动按照方向移动 s;
+" />
+        <var name="moverun" return="bool" description="bool GameObject::moverun;
+Get:游戏对象_取得是否跑步 s;
+Set:游戏对象_设置是否跑步 s;
+" />
+        <var name="pos" return="float3" description="float3 GameObject::pos;
+Get:游戏对象_取得坐标 s;
+Set:游戏对象_设置坐标 s;
+" />
+        <var name="rot" return="float" description="float GameObject::rot;
+Get:游戏对象_取得沿Z轴转动率变量 s;
+Set:游戏对象_设置沿Z轴转动率变量 s;
+" />
+        <var name="searchway" return="bool" description="bool GameObject::searchway;
+Get:游戏对象_取得是否进行寻路 s;
+Set:游戏对象_设置是否进行寻路 s;
+" />
+        <var name="target" return="GameObject" description="GameObject GameObject::target;
+Get:游戏对象_取得目标对象 s;
+Set:游戏对象_设置目标对象 s;
+" />
+        <method name="update_blood" args="void			GameObject::update_blood(float fProgress);" description="更新场景对象血条信息( 血条显示进度)
+更新血条信息,通常是当前生命值/最大生命值(0到1之间)" />
+        <method name="write" args="void			GameObject::write(string szName,	float nValue);" description="写入一个小数变量( 变量名, 值)
+写入一个小数变量" />
+    </class>
+    <class name="Map3D">
+        <var name="context" return="int" description="int Map3D::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool Map3D::equal(Map3D);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool Map3D::isnull();" description="是否为空数据类型" />
+        <method name="at" return="Map3DItem" args="Map3DItem	Map3D::at(INT index);" description="返回对象( 索引)
+返回第N个对象" />
+        <method name="bind_click" args="void			Map3D::bind_click(string szItemName,	string szLuaFunc);" description="绑定脚本到按下事件( 对象名字, Lua脚本函数名)
+对象点击事件,事件[szLuaFunc(obj)--(obj=Map3DItem)对象点击事件]" />
+        <method name="bind_draw" args="void			Map3D::bind_draw(string szItemName,	IUIDrawMgrPtr drawPtr,	string szBoneName);" description="绑定渲染队列( 对象名字, 组合, 骨骼名字)
+绑定渲染队列到某个对象" />
+        <method name="bind_event" args="void			Map3D::bind_event(EventID nid,	string szItemName,	string szLuaFunc);" description="绑定脚本到事件( 常数_幻影事件类型_值, 对象名字, Lua脚本函数名)
+绑定一个事件,事件查看幻影脚本帮助中的eventid枚举常数说明,事件[szLuaFunc(obj)--(obj=Map3DItem)对象点击事件]" />
+        <method name="bind_eventby" args="void			Map3D::bind_eventby(string szEvent,	string szItemName,	string szLuaFunc);" description="绑定脚本到按下事件( 事件名, 对象名字, Lua脚本函数名)
+绑定一个事件,事件查看幻影脚本帮助中的eventid枚举常数说明,事件[szLuaFunc(obj)--(obj=Map3DItem)对象点击事件]" />
+        <method name="bind_mapevent" args="void			Map3D::bind_mapevent(EventID nid,	string szLuaFunc);" description="绑定场景脚本事件( 常数_幻影事件类型_值, Lua脚本函数名)
+绑定一个事件到场景,事件[szLuaFunc(pos,normal,length)--(pos=Pixel,normal=Pixel)参数是pos是float3类型的命中点位置,normal是命中点法线，length是命中点与视点的距离]" />
+        <method name="bind_mapeventby" args="void			Map3D::bind_mapeventby(string szEvent,	string szLuaFunc);" description="绑定场景脚本事件( 事件名, Lua脚本函数名)
+绑定一个事件到场景,事件[szLuaFunc(pos,normal,length)--(pos=Pixel,normal=Pixel)参数是pos是float3类型的命中点位置,normal是命中点法线，length是命中点与视点的距离]" />
+        <method name="blend_camera" args="void			Map3D::blend_camera(string szCamera,	float fBlendTime);" description="激活摄像机方案( 设置, 混合时间)" />
+        <method name="blend_fog" args="void			Map3D::blend_fog(string szCamera,	float fBlendTime);" description="激活雾方案( 设置, 混合时间)" />
+        <method name="blend_sky" args="void			Map3D::blendky(string szCamera,	float fBlendTime);" description="激活天空方案( 设置, 混合时间)" />
+        <method name="camerafollow" args="void			Map3D::camerafollow(IMap3DItemPtr obj);" description="镜头跟随设置( 对象)
+镜头跟随对象设置" />
+        <method name="classat" return="Map3DItem" args="Map3DItem	Map3D::classat(INT classID,	INT index);" description="返回类聚对象( 类ID, 索引)
+返回第N个类的对象,classID是0到100之间的任意数字" />
+        <method name="classcount" return="INT" args="INT	Map3D::classcount(INT classID);" description="返回类聚对象数量( 类ID)
+返回类聚的数量,classID是0到100之间的任意数字" />
+        <method name="count" return="INT" args="INT	Map3D::count();" description="返回对象数量()
+返回对象数量" />
+        <method name="enable" args="void			Map3D::enable(string szItemName,	BOOL bEnable);" description="让对象有效( 对象名字, 是否有效)" />
+        <method name="enable_s" args="void			Map3D::enable(INT nID,	BOOL bEnable);" description="让静态对象有效( 对象ID, 是否有效)" />
+        <method name="envat" return="Map3DEnv" args="Map3DEnv	Map3D::envat(INT nIndex);" description="取雾( 索引)" />
+        <method name="envcount" return="INT" args="INT	Map3D::envcount();" description="取雾数量()" />
+        <method name="freeskill" return="Map3DSkill" args="Map3DSkill	Map3D::freeskill();" description="返回空闲技能()
+创建一个新的技能，每次技能发起之前都需要调用这个来取得新的空闲技能指针" />
+        <method name="insert" return="Map3DItem" args="Map3DItem	Map3D::insert(string szFileName,	Pixel mappos);" description="插入对象( 模型路径, 地图坐标)" />
+        <method name="remove" args="void			Map3D::remove(IMap3DItemPtr _item);" description="删除对象( 返回)" />
+        <method name="replace_image" args="void			Map3D::replace_image(string szItemName,	string szImageSrc,	string szImageReplace);" description="绑定图片( 对象名字, 原图片文件路径, 替换图片文件路径)
+替换图片" />
+        <method name="scenepos" return="Pixel" args="Pixel	Map3D::scenepos(Pixel screen);" description="返回场景中的位置( 屏幕位置)" />
+        <method name="screenpos" return="Pixel" args="Pixel	Map3D::screenpos(Pixel scene);" description="返回屏幕中的位置( 场景位置)" />
+        <method name="search" return="Map3DItem" args="Map3DItem	Map3D::search(INT id);" description="搜素对象ByID( 返回第一个找到的对象)
+返回第N个对象" />
+        <method name="searchby" return="Map3DItem" args="Map3DItem	Map3D::searchby(string szItemName);" description="搜素对象( 返回第一个找到的对象)
+返回第N个对象" />
+        <method name="searchpoint" return="Map3DPoint" args="Map3DPoint	Map3D::searchpoint(INT id);" description="搜素移动点ByID( 返回第一个找到的对象)
+返回搜素移动点" />
+        <method name="searchpointby" return="Map3DPoint" args="Map3DPoint	Map3D::searchpointby(string szItemName);" description="搜素移动点( 返回第一个找到的对象)
+返回搜素移动点" />
+        <method name="searchpointby_eid" return="Map3DPoint" args="Map3DPoint	Map3D::searchpointby_eid(INT eventid);" description="搜素移动点根据事件类型ID( 返回第一个找到的对象)
+返回搜素移动点,事件ID在event_table.txt中定义，并在编辑器内给移动点设置，只返回第一个" />
+        <var name="activecamera" return="string" description="string Map3D::activecamera;
+Get:地图3D_取得激活摄像机方案 s;
+Set:地图3D_设置激活摄像机方案 s;
+" />
+        <var name="activeEnv" return="Map3DEnv" description="Map3DEnv Map3D::activeEnv;
+Get:地图3D_取得激活雾方案 s;
+Set:地图3D_设置激活雾方案 s;
+" />
+        <var name="activeEnvBy" return="string" description="string Map3D::activeEnvBy;
+Get:地图3D_取得激活雾方案 s;
+Set:地图3D_设置激活雾方案 s;
+" />
+        <method name="setblood" return="bool" args="bool	Map3D::setblood(string szDlgName);" description="设置场景血条对话框( 对象名字)
+设置场景血条对话框,其中blood控件是血条进度条控件,hit控件是伤害控件" />
+        <var name="blooddisplay" return="bool" description="bool Map3D::blooddisplay;
+Get:地图3D_是否显示血条 s;
+Set:地图3D_是否隐藏血条 s;
+" />
+        <var name="bloodsize" return="float" description="float Map3D::bloodsize;
+Get:地图3D_取得血条大小 s;
+Set:地图3D_设置血条大小 s;
+" />
+        <var name="camera" return="Pixel" description="Pixel Map3D::camera;
+Get:地图3D_返回镜头 s;
+Set:地图3D_设置镜头 s;
+" />
+        <var name="clickradius" return="INT" description="INT Map3D::clickradius;
+Get:地图3D_返回点击有效范围 s;
+Set:地图3D_设置点击有效范围 s;
+" />
+        <var name="display" return="bool" description="bool Map3D::display;
+Get:地图3D_是否显示 s;
+Set:地图3D_是否隐藏 s;
+" />
+        <var name="displayterrain" return="bool" description="bool Map3D::displayterrain;
+Get:地图3D_是否显示地形 s;
+Set:地图3D_是否隐藏地形 s;
+" />
+        <var name="enabled" return="bool" description="bool Map3D::enabled;
+Get:地图3D_是否有效并能点击 s;
+Set:地图3D_是否有效并能点击 s;
+" />
+        <var name="enablemyclick" return="bool" description="bool Map3D::enablemyclick;
+Get:地图3D_是否可以点击地形 s;
+Set:地图3D_是否可以点击地形 s;
+" />
+        <var name="findway2d" return="bool" description="bool Map3D::findway2d;
+Get:地图3D_是否2D寻路 s;
+Set:地图3D_设置2D寻路 s;
+" />
+        <var name="hitdisplay" return="bool" description="bool Map3D::hitdisplay;
+Get:地图3D_是否显示被击效果 s;
+Set:地图3D_是否隐藏被击效果 s;
+" />
+        <var name="pause" return="bool" description="bool Map3D::pause;
+Get:地图3D_是否暂停 s;
+Set:地图3D_是否暂停 s;
+" />
+        <var name="sky" return="string" description="string Map3D::sky;
+Get:地图3D_取得激活天空方案 s;
+Set:地图3D_设置激活天空方案 s;
+" />
+        <method name="show" args="void			Map3D::show(string szItemName,	BOOL bShow);" description="显示对象( 对象名字, 是否显示)" />
+        <method name="show_s" args="void			Map3D::show(INT nID,	BOOL bShow);" description="显示静态对象( 对象ID, 是否显示)" />
+        <method name="skyat" return="ISkyPtr" args="ISkyPtr	Map3D::skyat(INT nIndex);" description="取天空( 索引)" />
+        <method name="skycount" return="INT" args="INT	Map3D::skycount();" description="取天空数量()" />
+    </class>
+    <class name="Map3DEnv">
+        <var name="context" return="int" description="int Map3DEnv::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool Map3DEnv::equal(Map3DEnv);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool Map3DEnv::isnull();" description="是否为空数据类型" />
+        <var name="brightness" return="float" description="float Map3DEnv::brightness;
+Get:场景环境3D_是否亮度 s;
+Set:场景环境3D_是否亮度 s;
+" />
+        <var name="color" return="color4" description="color4 Map3DEnv::color;
+Get:场景环境3D_取颜色 s;
+Set:场景环境3D_设置颜色 s;
+" />
+        <var name="contrast" return="float" description="float Map3DEnv::contrast;
+Get:场景环境3D_是否对比度 s;
+Set:场景环境3D_是否对比度 s;
+" />
+        <var name="enabled_brightness" return="bool" description="bool Map3DEnv::enabled_brightness;
+Get:场景环境3D_是否有效亮度 s;
+Set:场景环境3D_是否有效亮度 s;
+" />
+        <var name="enabled_contrast" return="bool" description="bool Map3DEnv::enabled_contrast;
+Get:场景环境3D_是否有效对比度 s;
+Set:场景环境3D_是否有效对比度 s;
+" />
+        <var name="far" return="float" description="float Map3DEnv::far;
+Get:场景环境3D_取最远 s;
+Set:场景环境3D_设置最远 s;
+" />
+        <var name="mode" return="FogMode" description="FogMode Map3DEnv::mode;
+Get:场景环境3D_取雾模式 s;
+Set:场景环境3D_设置雾模式 s;
+" />
+        <var name="name" return="string" description="string Map3DEnv::name;
+Get:场景环境3D_取名字 s;
+Set:场景环境3D_设置名字 s;
+" />
+        <var name="near" return="float" description="float Map3DEnv::near;
+Get:场景环境3D_取最近 s;
+Set:场景环境3D_设置最近 s;
+" />
+    </class>
+    <class name="Map3DItem">
+        <var name="context" return="int" description="int Map3DItem::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool Map3DItem::equal(Map3DItem);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool Map3DItem::isnull();" description="是否为空数据类型" />
+        <method name="addhit" args="void			Map3DItem::addhit(int val);" description="添加被击效果( 值)
+自动添加被击效果,场景开启hitdisplay和载入了血条对话框之后有效,setblood" />
+        <method name="bind_action_begin" args="void			Map3DItem::bind_action_begin(string szLuaBegin);" description="设置动作开始的脚本回调( 动作开始脚本函数)
+播放指定动作,每次循环完毕之后都会被调用调用szLuaFunc脚本函数,脚本参数有三个,第一个是map3ditem,第二个是动作名称,第三个是actiontype,事件[szLuaBegin(obj,type,name)--(obj=Map3DSkill,type=actiontype,name=string)这个调用会清除所有的已经编辑好的actionby,nextaction,nextaction调用]" />
+        <method name="bind_action_end" args="void			Map3DItem::bind_action_end(string szLuaEnd);" description="设置动作结束的脚本回调( 动作结束脚本函数)
+播放指定动作,每次循环完毕之后都会被调用调用szLuaFunc脚本函数,脚本参数有三个,第一个是map3ditem,第二个是动作名称,第三个是actiontype,事件[szLuaEnd(obj,type,name)--(obj=Map3DSkill,type=actiontype,name=string)这个调用会清除所有的已经编辑好的actionby,nextaction,nextaction调用]" />
+        <method name="bind_click" args="void			Map3DItem::bind_click(string szLuaFunc);" description="绑定脚本到事件( Lua脚本函数名)
+绑定点击事件,事件[szLuaFunc(obj)--(obj=Map3DItem)]" />
+        <method name="bind_draw" args="void			Map3DItem::bind_draw(IUIDrawMgrPtr drawPtr,	string szBindBone);" description="绑定渲染队列( 组合, 绑定骨骼)
+绑定渲染队列到某个对象" />
+        <method name="bind_event" args="void			Map3DItem::bind_event(EventID nEvent,	string szLuaFunc);" description="绑定事件( 常数_幻影事件类型_值, 函数)
+绑定一个事件,事件查看幻影脚本帮助中的eventid枚举常数说明,事件[szLuaFunc(obj)--(obj=Map3DItem)]" />
+        <method name="bind_eventby" args="void			Map3DItem::bind_eventby(string szEvent,	string szLuaFunc);" description="绑定事件( 事件名, 函数)
+绑定一个事件,事件查看幻影脚本帮助中的eventid枚举常数说明,事件[szLuaFunc(obj)--(obj=Map3DItem)]" />
+        <method name="bind_mesh" return="bool" args="bool	Map3DItem::bind_mesh(string szBoneName,	IMeshPtr mesh);" description="绑定模型( 骨骼名, 模型)
+绑定模型到一个骨骼上" />
+        <method name="clone" return="Map3DItem" args="Map3DItem	Map3DItem::clone();" description="克隆对象()
+返回克隆一个新的对象，所有属性将会相同" />
+        <method name="deleteme" return="Map3DItem" args="Map3DItem	Map3DItem::deleteme();" description="删除对象()
+删除一个对象" />
+        <method name="Getloop" return="bool" args="bool	Map3DItem::Getloop();" description="是否循环播放()" />
+        <method name="id" return="INT" args="INT	Map3DItem::id();" description="取ID()" />
+        <method name="lookat" args="void			Map3DItem::lookat(Pixel m);" description="设置面向目标( 设置)
+设置面向目标的值" />
+        <method name="mesh" return="Mesh" args="Mesh	Map3DItem::mesh();" description="返回模型()
+返回模型类" />
+        <method name="movedir" args="void			Map3DItem::movedir(Pixel dir);" description="自动移动( 移动到目标)
+自动按照速度和方向移动,无止境的移动,会打断moveto的移动" />
+        <method name="moveto" args="void			Map3DItem::moveto(Pixel pos,	string szFunc);" description="移动到指定位置( 目标点, 移动结束后事件)
+会自动寻路计算,会打断movedir的移动,事件[szFunc(obj)--(obj=Map3DItem)移动完毕之后]" />
+        <method name="pushaction" args="void			Map3DItem::pushaction(ActionType type);" description="设置下一个动作根据动作类型( 常数_幻影单位动作类型_值)
+下一个动作，可以叠加多个，会一个一个自动播放,每个动作播放完毕会自动调用之前设置好的actionby或action中设置的lua回调函数,如果传入是0值则动作将停止，不再进行任何差值操作直到调用actionby或action为止，如果没有特别指令则无限循环播放最后一个动作" />
+        <method name="pushactionby" args="void			Map3DItem::pushactionby(string szName);" description="设置下一个动作( 动作名称)
+下一个动作，可以叠加多个，会一个一个自动播放,每个动作播放完毕会自动调用之前设置好的actionby或action中设置的lua回调函数,如果传入是空值则动作将停止，不再进行任何差值操作直到调用actionby或action为止，如果没有特别指令则无限循环播放最后一个动作" />
+        <method name="replace_image" args="void			Map3DItem::replace_image(string szImageSrc,	string szImageReplace);" description="绑定图片( 原图片文件路径, 替换图片文件路径)
+替换图片" />
+        <var name="action" return="ActionType" description="ActionType Map3DItem::action;
+Get:地图对象3D_取得当前动作根据动作类型 s;
+Set:地图对象3D_设置当前动作根据动作类型 s;
+" />
+        <var name="actionby" return="string" description="string Map3DItem::actionby;
+Get:地图对象3D_取得当前动作 s;
+Set:地图对象3D_设置当前动作 s;
+" />
+        <var name="aspeed" return="float" description="float Map3DItem::aspeed;
+Get:地图对象3D_取动作播放速度 s;
+Set:地图对象3D_设置动作播放速度 s;
+" />
+        <var name="blood" return="float" description="float Map3DItem::blood;
+Get:地图对象3D_返回血条值 s;
+Set:地图对象3D_设置血条值 s;
+" />
+        <var name="blood_display" return="bool" description="bool Map3DItem::blood_display;
+Get:地图对象3D_显示血条 s;
+Set:地图对象3D_显示血条 s;
+" />
+        <var name="bloodcolor" return="color4" description="color4 Map3DItem::bloodcolor;
+Get:地图对象3D_返回血条颜色 s;
+Set:地图对象3D_设置血条颜色 s;
+" />
+        <var name="classid" return="INT" description="INT Map3DItem::classid;
+Get:地图对象3D_设置类聚 s;
+Set:地图对象3D_设置类聚 s;
+" />
+        <var name="display" return="bool" description="bool Map3DItem::display;
+Get:地图对象3D_是否显示 s;
+Set:地图对象3D_显示 s;
+" />
+        <var name="enabled" return="bool" description="bool Map3DItem::enabled;
+Get:地图对象3D_是否有效 s;
+Set:地图对象3D_有效 s;
+" />
+        <var name="height" return="float" description="float Map3DItem::height;
+Get:地图对象3D_取飞行高度 s;
+Set:地图对象3D_设置飞行高度 s;
+" />
+        <method name="Setloop" args="void			Map3DItem::Setloop(INT nLoop);" description="设置循环播放( 循环与否)" />
+        <var name="name" return="string" description="string Map3DItem::name;
+Get:地图对象3D_取名字 s;
+Set:地图对象3D_设置名字 s;
+" />
+        <var name="name_display" return="bool" description="bool Map3DItem::name_display;
+Get:地图对象3D_显示名字 s;
+Set:地图对象3D_显示名字 s;
+" />
+        <var name="opacity" return="float" description="float Map3DItem::opacity;
+Get:地图对象3D__设置所有子模型透明值 s;
+Set:地图对象3D__设置所有子模型透明值 s;
+" />
+        <var name="parent" return="Map3DItem" description="Map3DItem Map3DItem::parent;
+Get:地图对象3D_返回父对象 s;
+Set:地图对象3D_设置父对象 s;
+" />
+        <var name="pause" return="bool" description="bool Map3DItem::pause;
+Get:地图对象3D_是否暂停 s;
+Set:地图对象3D_暂停 s;
+" />
+        <var name="play" return="bool" description="bool Map3DItem::play;
+Get:地图对象3D_是否播放 s;
+Set:地图对象3D_播放 s;
+" />
+        <var name="pos" return="Pixel" description="Pixel Map3DItem::pos;
+Get:地图对象3D_取位置 s;
+Set:地图对象3D_设置位置 s;
+" />
+        <var name="pos3d" return="float3" description="float3 Map3DItem::pos3d;
+Get:地图对象3D_取位置 s;
+Set:地图对象3D_设置位置 s;
+" />
+        <var name="rot" return="float" description="float Map3DItem::rot;
+Get:地图对象3D_取转动Z值角度 s;
+Set:地图对象3D_设置转动Z值角度 s;
+" />
+        <var name="scale" return="float" description="float Map3DItem::scale;
+Get:地图对象3D_取缩放 s;
+Set:地图对象3D_设置缩放 s;
+" />
+        <var name="speed" return="float" description="float Map3DItem::speed;
+Get:地图对象3D_取移动速度 s;
+Set:地图对象3D_设置移动速度 s;
+" />
+        <var name="worldmat" return="matrix4x4" description="matrix4x4 Map3DItem::worldmat;
+Get:地图对象3D_取世界矩阵 s;
+Set:地图对象3D_设置世界矩阵 s;
+" />
+        <method name="stopmove" args="void			Map3DItem::stopmove();" description="停止移动()
+立即停止所有移动操作" />
+        <method name="unbind_mesh" return="bool" args="bool	Map3DItem::unbind_mesh(IMeshPtr mesh);" description="解除绑定模型( 模型)
+解除绑定模型" />
+    </class>
+    <class name="Map3DPoint">
+        <var name="context" return="int" description="int Map3DPoint::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool Map3DPoint::equal(Map3DPoint);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool Map3DPoint::isnull();" description="是否为空数据类型" />
+        <method name="id" return="INT" args="INT	Map3DPoint::id();" description="返回ID()" />
+        <var name="name" return="string" description="string Map3DPoint::name;
+Get:地图移动点3D_返回名字 s;
+Set:地图移动点3D_设置名字 s;
+" />
+        <var name="pos" return="float3" description="float3 Map3DPoint::pos;
+Get:地图移动点3D_返回位置 s;
+Set:地图移动点3D_设置位置 s;
+" />
+        <var name="range" return="float" description="float Map3DPoint::range;
+Get:地图移动点3D_返回区域 s;
+Set:地图移动点3D_设置区域 s;
+" />
+    </class>
+    <class name="Map3DSkill">
+        <var name="context" return="int" description="int Map3DSkill::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool Map3DSkill::equal(Map3DSkill);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool Map3DSkill::isnull();" description="是否为空数据类型" />
+        <method name="bind_collision" args="void			Map3DSkill::bind_collision(int classid,	string szLuaFunc);" description="绑定碰撞检测( 要进行碰撞的目标类型如果是0则全部类型当在技能移动时碰撞了就会被调用, 当在技能移动时碰撞了就会被调用)
+只有在targetpos设置有效值的时候才会触发碰撞检测函数，其他任何情况都不会触发,事件[szLuaFunc(skill,obj,pos)--(skill=Map3DSkill,obj=Map3DItem,pos=PickPoint)碰撞对象，如果碰撞场景则此项返回空，Map3DItem::isnull函数来判断,PickPoint位置,碰撞面法线等,碰撞检测之后将立即结束技能]" />
+        <method name="getsource" return="Map3DItem" args="Map3DItem	Map3DSkill::getsource();" description="设置源对象()
+设置" />
+        <method name="gettarget" return="Map3DItem" args="Map3DItem	Map3DSkill::gettarget();" description="设置目标对象()
+设置" />
+        <var name="continuetime" return="float" description="float Map3DSkill::continuetime;
+Get:地图技能3D_取得持续时间 s;
+Set:地图技能3D_设置持续时间 s;
+" />
+        <var name="movespeed" return="float" description="float Map3DSkill::movespeed;
+Get:地图技能3D_取得跟踪速度 s;
+Set:地图技能3D_设置跟踪速度 s;
+" />
+        <var name="size" return="float" description="float Map3DSkill::size;
+Get:地图技能3D_设置准备技能高度位移 s;
+Set:地图技能3D_设置准备技能高度位移 s;
+" />
+        <var name="source_zscale" return="float" description="float Map3DSkill::source_zscale;
+Get:地图技能3D_设置准备技能高度位移 s;
+Set:地图技能3D_设置准备技能高度位移 s;
+" />
+        <var name="sourcepos" return="float3" description="float3 Map3DSkill::sourcepos;
+Get:地图技能3D_取得源对象位置 s;
+Set:地图技能3D_设置源对象位置 s;
+" />
+        <var name="target_zscale" return="float" description="float Map3DSkill::target_zscale;
+Get:地图技能3D_设置准备技能高度位移 s;
+Set:地图技能3D_设置准备技能高度位移 s;
+" />
+        <var name="targetpos" return="float3" description="float3 Map3DSkill::targetpos;
+Get:地图技能3D_设置目标对象位置 s;
+Set:地图技能3D_设置目标对象位置 s;
+" />
+        <var name="waittime" return="float" description="float Map3DSkill::waittime;
+Get:地图技能3D_取得等待时间 s;
+Set:地图技能3D_设置等待时间 s;
+" />
+        <method name="source" args="void			Map3DSkill::source(string szSkillMesh,	IMap3DItemPtr item,	string szBoneLike);" description="设置源对象( 技能模型, 目标对象, 骨骼名字)
+设置发射技能、准备技能、命中技能等的对象，这个调用之后sourcepos设置的值将无效,骨骼名字可以类似r hand abc可以填r hand" />
+        <method name="start" args="void			Map3DSkill::start(string szFinishFunc);" description="开始播放技能( 到达目标点之后被调用的函数)
+设置,事件[szFinishFunc(skill)--(skill=Map3DSkill)到达目标点之后被调用的函数]" />
+        <method name="stop" args="void			Map3DSkill::stop();" description="停止播放技能()" />
+        <method name="target" args="void			Map3DSkill::target(IMap3DItemPtr item,	string szBoneLike);" description="设置目标对象( 目标对象, 骨骼名字)
+设置发射技能技能的目标对象，设置后即能将会始终跟踪目标直到到达目标才会消失，这个调用之后targetpos设置的值将无效" />
+    </class>
+    <class name="Mesh">
+        <var name="context" return="int" description="int Mesh::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool Mesh::equal(Mesh);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool Mesh::isnull();" description="是否为空数据类型" />
+        <method name="aabox" return="AABox" args="AABox	Mesh::aabox();" description="返回碰撞盒子()
+取得模型碰撞盒子" />
+        <method name="bind_draw" args="void			Mesh::bind_draw(IUIDrawMgrPtr drawPtr,	string szBoneName);" description="绑定渲染队列( 组合, 骨骼名字)
+绑定渲染队列到某个对象" />
+        <method name="bind_mesh" return="bool" args="bool	Mesh::bind_mesh(string szBoneName,	IMeshPtr mesh);" description="绑定模型( 骨骼名, 模型)
+绑定模型到一个骨骼上" />
+        <method name="bonecount" return="INT" args="INT	Mesh::bonecount();" description="取骨骼ID数量()" />
+        <method name="bonemat_at" return="matrix4x4" args="matrix4x4	Mesh::bonemat_at(INT index);" description="根据ID取骨骼矩阵( 索引)" />
+        <method name="bonename_at" return="string" args="string	Mesh::bonename_at(INT index);" description="根据骨骼ID取骨骼名称( 索引)" />
+        <method name="clearParent" args="void			Mesh::clearParent();" description="清除父模型()
+取消父模型" />
+        <method name="clone" return="Mesh" args="Mesh	Mesh::clone();" description="克隆()" />
+        <method name="getfilepath" return="string" args="string	Mesh::getfilepath();" description="取名称()" />
+        <method name="height" return="float" args="float	Mesh::height();" description="返回模型高度()
+取得模型高度" />
+        <method name="isskeleton" return="bool" args="bool	Mesh::isskeleton();" description="是否有骨骼绑定()" />
+        <method name="isunwalkable" return="bool" args="bool	Mesh::isunwalkable(float3 pos);" description="是否禁止移动( 当前位置)
+根据disable_开头的模型，检测是否可以移动到此点" />
+        <method name="ray" return="bool" args="bool	Mesh::ray(Pixel pixel);" description="碰撞检测_仅与碰撞子模型( 屏幕坐标位置)
+collision_开头的子模型都属于碰撞模型，对这些模型进行相交运算" />
+        <method name="ray_dir" return="bool" args="bool	Mesh::ray_dir(float3 orig,	float3 dir);" description="碰撞检测_仅与碰撞子模型( 原点, 方向)
+collision_开头的子模型都属于碰撞模型，对这些模型进行相交运算" />
+        <method name="replace_image" args="void			Mesh::replace_image(string szImageSrc,	string szImageReplace);" description="绑定图片( 原图片文件路径, 替换图片文件路径)
+替换图片" />
+        <method name="s_action_at" return="MeshAction" args="MeshAction	Mesh::s_action_at(INT index);" description="共享数据_取动作( 索引)
+共享数据返回之后，如果其中的某个值改变，则所有模型的值也会改变" />
+        <method name="s_actioncount" return="INT" args="INT	Mesh::s_actioncount();" description="共享数据_取动作数量()" />
+        <method name="searchboneid" return="INT" args="INT	Mesh::searchboneid(string szName);" description="查找骨骼索引( 骨骼名)" />
+        <method name="searchboneid_like" return="INT" args="INT	Mesh::searchboneid_like(string szName);" description="查找写入文本名类似的骨骼ID( 类似名)
+比如有一个骨骼bone_abc_1,写入_abc_会搜索到这个" />
+        <var name="action" return="ActionType" description="ActionType Mesh::action;
+Get:模型_取当前动作根据动作ID s;
+Set:模型_设置当前动作根据动作ID s;
+" />
+        <var name="actionby" return="string" description="string Mesh::actionby;
+Get:模型_取当前动作 s;
+Set:模型_设置当前动作 s;
+" />
+        <var name="color" return="color4" description="color4 Mesh::color;
+Get:模型_取漫射光颜色 s;
+Set:模型_设置漫射光颜色 s;
+" />
+        <var name="defaultaction" return="INT" description="INT Mesh::defaultaction;
+Get:模型_取默认动作 s;
+Set:模型_设置默认动作 s;
+" />
+        <var name="destblend" return="BlendMode" description="BlendMode Mesh::destblend;
+Get:模型_设置目标混合 s;
+Set:模型_设置目标混合 s;
+" />
+        <var name="display" return="bool" description="bool Mesh::display;
+Get:模型_是否显示 s;
+Set:模型_显示 s;
+" />
+        <var name="enabled" return="bool" description="bool Mesh::enabled;
+Get:模型_是否有效 s;
+Set:模型_有效 s;
+" />
+        <var name="opacity" return="float" description="float Mesh::opacity;
+Get:模型_设置所有子模型透明值 s;
+Set:模型_设置所有子模型透明值 s;
+" />
+        <var name="parent" return="Mesh" description="Mesh Mesh::parent;
+Get:模型_取消父模型 s;
+Set:模型_设置父模型 s;
+" />
+        <var name="pause" return="bool" description="bool Mesh::pause;
+Get:模型_是否暂停 s;
+Set:模型_暂停 s;
+" />
+        <var name="play" return="bool" description="bool Mesh::play;
+Get:模型_是否播放 s;
+Set:模型_播放 s;
+" />
+        <var name="pos" return="float3" description="float3 Mesh::pos;
+Get:模型_取位置 s;
+Set:模型_设置位置 s;
+" />
+        <var name="rot" return="float3" description="float3 Mesh::rot;
+Get:模型_取旋转 s;
+Set:模型_设置旋转 s;
+" />
+        <var name="s_lodhide_onexceed" return="bool" description="bool Mesh::s_lodhide_onexceed;
+Get:模型_共享数据_LOD最大距离是否有效 s;
+Set:模型_共享数据_设置LOD最大距离有效 s;
+" />
+        <var name="s_lodinterval_length" return="float" description="float Mesh::s_lodinterval_length;
+Get:模型_共享数据_取LOD区间长度 s;
+Set:模型_共享数据_设置LOD区间长度 s;
+" />
+        <var name="s_lodmaxvisible" return="float" description="float Mesh::s_lodmaxvisible;
+Get:模型_共享数据_取LOD最大可见距离 s;
+Set:模型_共享数据_设置最大可见长度 s;
+" />
+        <var name="scale" return="float3" description="float3 Mesh::scale;
+Get:模型_取缩放 s;
+Set:模型_设置缩放 s;
+" />
+        <var name="selfluminous" return="color4" description="color4 Mesh::selfluminous;
+Get:模型_设置自发光色 s;
+Set:模型_设置自发光色 s;
+" />
+        <var name="specular" return="color4" description="color4 Mesh::specular;
+Get:模型_设置高光色 s;
+Set:模型_设置高光色 s;
+" />
+        <var name="speed" return="float" description="float Mesh::speed;
+Get:模型_取动作播放速度 s;
+Set:模型_动作播放速度 s;
+" />
+        <var name="srcblend" return="BlendMode" description="BlendMode Mesh::srcblend;
+Get:模型_设置源混合 s;
+Set:模型_设置源混合 s;
+" />
+        <var name="worldmat" return="matrix4x4" description="matrix4x4 Mesh::worldmat;
+Get:模型_取矩阵 s;
+Set:模型_设置矩阵 s;
+" />
+        <method name="submesh_at" return="SubMesh" args="SubMesh	Mesh::submesh_at(INT index);" description="取子模型( 子模型索引)" />
+        <method name="submeshcount" return="INT" args="INT	Mesh::submeshcount();" description="子模型数量()" />
+        <method name="unbind_mesh" args="void			Mesh::unbind_mesh(IMeshPtr mesh);" description="取消绑定模型( 模型)
+绑定模型到一个骨骼上" />
+    </class>
+    <class name="MeshAction">
+        <var name="context" return="int" description="int MeshAction::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool MeshAction::equal(MeshAction);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool MeshAction::isnull();" description="是否为空数据类型" />
+        <method name="keycount" return="INT" args="INT	MeshAction::keycount();" description="共享数据_取动作关键帧数量()" />
+        <var name="keybegin" return="INT" description="INT MeshAction::keybegin;
+Get:模型动作_共享数据_取循环开始关键帧 s;
+Set:模型动作_共享数据_动作循环设置 s;
+" />
+        <var name="keyend" return="INT" description="INT MeshAction::keyend;
+Get:模型动作_共享数据_取循环结束关键帧 s;
+Set:模型动作_共享数据_动作循环设置 s;
+" />
+        <var name="lerptime" return="float" description="float MeshAction::lerptime;
+Get:模型数据_共享数据_取动作平滑过渡时间 s;
+Set:模型数据_共享数据_设置动作平滑过渡时间 s;
+" />
+        <var name="speed" return="float" description="float MeshAction::speed;
+Get:模型动作_共享数据_取动作速度 s;
+Set:模型动作_共享数据_设置动作速度 s;
+" />
+    </class>
+    <class name="MeshMaterial">
+        <var name="context" return="int" description="int MeshMaterial::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool MeshMaterial::equal(MeshMaterial);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool MeshMaterial::isnull();" description="是否为空数据类型" />
+        <var name="color" return="color4" description="color4 MeshMaterial::color;
+Get:子模型材质_设置漫射光颜色 s;
+Set:子模型材质_设置漫射光颜色 s;
+" />
+        <var name="cullmode" return="CullMode" description="CullMode MeshMaterial::cullmode;
+Get:子模型材质_渲染面 s;
+Set:子模型材质_设置渲染面 s;
+" />
+        <var name="destblend" return="BlendMode" description="BlendMode MeshMaterial::destblend;
+Get:子模型材质_设置目标混合 s;
+Set:子模型材质_设置目标混合 s;
+" />
+        <var name="normal_texture" return="Texture" description="Texture MeshMaterial::normal_texture;
+Get:子模型材质_取法线纹理 s;
+Set:子模型材质_设置法线纹理 s;
+" />
+        <var name="opacitymode" return="AlphaMode" description="AlphaMode MeshMaterial::opacitymode;
+Get:子模型材质_取透明模式 s;
+Set:子模型材质_设置透明模式 s;
+" />
+        <var name="reflect_texture" return="Texture" description="Texture MeshMaterial::reflect_texture;
+Get:子模型材质_取反射纹理 s;
+Set:子模型材质_设置反射纹理 s;
+" />
+        <var name="selfluminous" return="color4" description="color4 MeshMaterial::selfluminous;
+Get:子模型材质_设置自发光色 s;
+Set:子模型材质_设置自发光色 s;
+" />
+        <var name="specular" return="color4" description="color4 MeshMaterial::specular;
+Get:子模型材质_设置高光色 s;
+Set:子模型材质_设置高光色 s;
+" />
+        <var name="specular_texture" return="Texture" description="Texture MeshMaterial::specular_texture;
+Get:子模型材质_取高光纹理 s;
+Set:子模型材质_设置高光纹理 s;
+" />
+        <var name="srcblend" return="BlendMode" description="BlendMode MeshMaterial::srcblend;
+Get:子模型材质_设置源混合 s;
+Set:子模型材质_设置源混合 s;
+" />
+        <var name="texture" return="Texture" description="Texture MeshMaterial::texture;
+Get:子模型材质_取默认纹理 s;
+Set:子模型材质_设置默认纹理 s;
+" />
+    </class>
+    <class name="SubMesh">
+        <var name="context" return="int" description="int SubMesh::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool SubMesh::equal(SubMesh);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool SubMesh::isnull();" description="是否为空数据类型" />
+        <method name="getname" return="string" args="string	SubMesh::getname();" description="取名称()
+HELP[取名称]用途：取得一个子模型名称，很少用到。" />
+        <method name="isskeleton" return="bool" args="bool	SubMesh::isskeleton();" description="是否有骨骼动画()
+HELP[是否有骨骼动画]用途：获取子模型是否存在骨骼动画，很少用到" />
+        <method name="lod_exists" return="bool" args="bool	SubMesh::lod_exists();" description="是否有LOD信息()
+HELP[是否存在LOD模型]用途：返回对象是否存在LOD模型" />
+        <method name="material_at" return="MeshMaterial" args="MeshMaterial	SubMesh::material_at(INT index);" description="取子模型材质( 索引)" />
+        <method name="materialcount" return="INT" args="INT	SubMesh::materialcount();" description="取材质数量()
+用途：取一个子模型的纹理数量，一个子模型可以由多个纹理渲染而成，此项可以查看3dsmax的设置" />
+        <var name="display" return="bool" description="bool SubMesh::display;
+Get:子模型_是否显示 s;
+Set:子模型_显示 s;
+" />
+        <var name="worldmat" return="matrix4x4" description="matrix4x4 SubMesh::worldmat;
+Get:子模型_取子模型矩阵 s;
+Set:子模型_取子模型矩阵 s;
+" />
+        <method name="triangle_at" return="Triangle" args="Triangle	SubMesh::triangle_at(INT nIndex);" description="取三角形数据( 面索引)
+HELP[返回模型中的三角形索引数据]用途：如果想获得模型的三角形数据，需要根据[SubMeshAction_GetFaceCount]获得三角形数量一个一个循环获取， nIndex(面索引)实际上是索引值" />
+        <method name="trianglecount" return="INT" args="INT	SubMesh::trianglecount();" description="取三角形数量()
+HELP[返回模型中的三角形数量]用途：如果想获得模型的三角形索引数据，需要根据三角形数量一个一个循环获取，使用[SubMeshAction_GetFacePtr]" />
+        <method name="vertex_at" return="Vertex" args="Vertex	SubMesh::vertex_at(INT nIndex);" description="取顶点数据( 顶点索引)
+HELP[返回模型顶点数据]用途：如果想获得模型的顶点数据，需要根据[SubMeshAction_GetVertexCount]获得顶点数量一个一个循环获取， nIndex(顶点索引)实际上是索引值" />
+        <method name="vertexcount" return="INT" args="INT	SubMesh::vertexcount();" description="取顶点数量()
+HELP[返回模型中的顶点数量]用途：如果想获得模型的顶点数据，需要根据顶点数量一个一个循环获取，使用[SubMeshAction_GetVertex]" />
+    </class>
+    <class name="Table">
+        <var name="context" return="int" description="int Table::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool Table::equal(Table);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool Table::isnull();" description="是否为空数据类型" />
+        <method name="id_f" return="float" args="float	Table::id_f(INT id,	string colName);" description="读小数根据ID( ID值, 返回列名)" />
+        <method name="id_i" return="INT" args="INT	Table::id_i(INT id,	string colName);" description="读整数根据ID( ID值, 返回列名)" />
+        <method name="id_t" return="string" args="string	Table::id_t(INT id,	string colName);" description="读文本根据ID( ID值, 返回列名)" />
+        <method name="linecount" return="INT" args="INT	Table::linecount();" description="取行数()" />
+        <method name="name_f" return="float" args="float	Table::name_f(string szName,	string colName);" description="读小数根据Name( 名值, 返回列名)" />
+        <method name="name_i" return="INT" args="INT	Table::name_i(string szName,	string colName);" description="读整数根据Name( 名值, 返回列名)" />
+        <method name="name_t" return="string" args="string	Table::name_t(string szName,	string colName);" description="读文本根据Name( 名值, 返回列名)" />
+        <method name="read_f" return="float" args="float	Table::read_f(INT row,	int col);" description="读小数( 行索引, 列索引)" />
+        <method name="read_i" return="INT" args="INT	Table::read_i(INT row,	int col);" description="读整数( 行索引, 列索引)" />
+        <method name="read_t" return="string" args="string	Table::read_t(INT row,	int col);" description="读文本( 行索引, 列索引)" />
+        <method name="search_col" return="INT" args="INT	Table::search_col(string colName);" description="取列标题索引( 列标题)" />
+        <method name="search_f" return="float" args="float	Table::search_f(string st_colName,	string st_rowValue,	string colName);" description="读小数根据搜索( 列标题, 行值, 返回列名)
+搜索szHeaderName列的szLineValue行，然后返回szFindHeader列的值" />
+        <method name="search_i" return="INT" args="INT	Table::search_i(string st_colName,	string st_rowValue,	string colName);" description="读整数根据搜索( 列标题, 行值, 返回列名)
+搜索szHeaderName列的szLineValue行，然后返回szFindHeader列的值" />
+        <method name="search_t" return="string" args="string	Table::search_t(string st_colName,	string st_rowValue,	string colName);" description="读文本根据搜索( 列标题, 行值, 返回列名)
+搜索szHeaderName列的szLineValue行，然后返回szFindHeader列的值" />
+    </class>
+    <class name="Texture">
+        <var name="context" return="int" description="int Texture::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool Texture::equal(Texture);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool Texture::isnull();" description="是否为空数据类型" />
+        <method name="commit" return="bool" args="bool	Texture::commit(TextureStage samplerIndex);" description="更新到设备( 常数_幻影纹理索引_值)" />
+        <method name="getfilepath" return="string" args="string	Texture::getfilepath();" description="取纹理路径()" />
+        <method name="getheight" return="INT" args="INT	Texture::getheight();" description="取高度()" />
+        <method name="getwidth" return="INT" args="INT	Texture::getwidth();" description="取宽度()" />
+    </class>
+    <class name="UIAvatar">
+        <var name="context" return="int" description="int UIAvatar::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool UIAvatar::equal(UIAvatar);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool UIAvatar::isnull();" description="是否为空数据类型" />
+    </class>
+    <class name="UIBodyPart">
+        <var name="context" return="int" description="int UIBodyPart::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool UIBodyPart::equal(UIBodyPart);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool UIBodyPart::isnull();" description="是否为空数据类型" />
+    </class>
+    <class name="UIControl">
+        <var name="context" return="int" description="int UIControl::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool UIControl::equal(UIControl);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool UIControl::isnull();" description="是否为空数据类型" />
+        <method name="bind3d_clear" args="void			UIControl::bind3d_clear();" description="绑定3D清除()
+清除所有3D位置绑定" />
+        <method name="bind3d_maxdist" args="void			UIControl::bind3d_maxdist(float fMaxDist);" description="绑定3D的最远距离显示设置( 最远距离)
+如果超过这个最远距离将不会显示出来，控件大小会按照这个距离自动调整，如果设置成小于1则始终固定大小，默认是100米" />
+        <method name="bind3d_obj" args="void			UIControl::bind3d_obj(IGameObjectPtr obj,	float fHeightAdd);" description="绑定3D对象位置( obj, 高度增加)
+按照最新的镜头值自动调整3D位置转换2D位置" />
+        <method name="bind3d_pos" args="void			UIControl::bind3d_pos(float3 pos);" description="绑定3D位置( 固定位置)
+按照最新的镜头值自动调整3D位置转换2D位置" />
+        <method name="bind_click" args="void			UIControl::bind_click(string szLuaFunc);" description="绑定脚本到事件( Lua脚本函数名)
+,事件[szLuaFunc(obj,eid,pos)--(obj=UIControl,eid=int,pos=Pixel)控件事件,eid=EventID]" />
+        <method name="bind_draw" args="void			UIControl::bind_draw(IUIDrawMgrPtr drawPtr);" description="绑定渲染队列( 组合)
+绑定渲染队列到某个控件" />
+        <method name="bind_event" args="void			UIControl::bind_event(EventID nid,	string szLuaFunc);" description="绑定脚本到按下事件( 常数_幻影事件类型_值, Lua脚本函数名)
+绑定一个事件,事件查看幻影脚本帮助中的eventid枚举常数说明,事件[szLuaFunc(obj,eid,pos)--(obj=UIControl,eid=int,pos=Pixel)控件事件,eid=EventID]" />
+        <method name="bind_eventby" args="void			UIControl::bind_eventby(string szEvent,	string szLuaFunc);" description="绑定脚本到按下事件( 事件名, Lua脚本函数名)
+绑定一个事件,事件查看幻影脚本帮助中的eventid枚举常数说明,事件[szLuaFunc(obj,eid,pos)--(obj=UIControl,eid=int,pos=Pixel)控件事件,eid=EventID]" />
+        <method name="bind_image" args="void			UIControl::bind_image(string szImageFile);" description="绑定图片( 图片文件路径)
+只绑定到第一个图片，其他图片自己调用element元素类的相关设置" />
+        <method name="clone" return="UIControl" args="UIControl	UIControl::clone();" description="克隆()" />
+        <method name="cloneto" return="UIControl" args="UIControl	UIControl::cloneto(IDialogPtr dest);" description="克隆到其他对话框( 目标对话框)" />
+        <method name="dialog" return="UIDialog" args="UIDialog	UIControl::dialog();" description="取对话框()" />
+        <method name="element_at" return="UIElement" args="UIElement	UIControl::element_at(INT index);" description="取元素( 索引)" />
+        <method name="elementcount" return="INT" args="INT	UIControl::elementcount();" description="取元素数量()" />
+        <method name="geteventsound" return="string" args="string	UIControl::geteventsound(UISoundPlay st);" description="取2D声效( 常数_幻影界面声音格式_值)" />
+        <method name="getId" return="INT" args="INT	UIControl::getId();" description="取控件ID()" />
+        <method name="gettype" return="UIControlType" args="INT/*UIControlType*/	UIControl::gettype();" description="取控件类型()" />
+        <method name="innermesh_clear" args="void			UIControl::innermesh_clear();" description="清除控件内部模型()" />
+        <method name="isfocus" return="bool" args="bool	UIControl::isfocus();" description="取是否被激活()" />
+        <method name="mousepoint" return="Pixel" args="Pixel	UIControl::mousepoint();" description="按照控件对齐的鼠标点()" />
+        <method name="pick" return="bool" args="bool	UIControl::pick(INT x,	INT y);" description="像素级点击( x, y)
+像素级别的点击函数" />
+        <method name="progress_time" args="void			UIControl::progress_time(float fTimeSecond);" description="时间内转进度条( 秒)
+在这个指定的秒内转完进度条,自动显示并在播放完毕之后自动隐藏" />
+        <method name="removeChild" args="void			UIControl::removeChild();" description="取消子窗体()
+设置子窗体在控件内部显示" />
+        <method name="rot2d_dir" args="void			UIControl::rot2d_dir(float2 dir);" description="设置角度根据方向( 角度)" />
+        <var name="action" return="ActionType" description="ActionType UIControl::action;
+Get:界面控件_取播放动作 s;
+Set:界面控件_设置播放动作 s;
+" />
+        <var name="actionby" return="string" description="string UIControl::actionby;
+Get:界面控件_取当前动作根据名称 s;
+Set:界面控件_设置当前动作根据名称 s;
+" />
+        <var name="actiontime" return="float" description="float UIControl::actiontime;
+Get:界面控件_取播放动作时间 s;
+Set:界面控件_设置播放动作时间 s;
+" />
+        <var name="active" return="bool" description="bool UIControl::active;
+Get:界面控件_取是否可以被激活 s;
+Set:界面控件_设置是否可以被激活 s;
+" />
+        <var name="bottom" return="INT" description="INT UIControl::bottom;
+Get:界面控件_取下 s;
+Set:界面控件_设置下 s;
+" />
+        <var name="center" return="Pixel" description="Pixel UIControl::center;
+Get:界面控件_取得中心位置 s;
+Set:界面控件_设置中心位置 s;
+" />
+        <method name="setChild" args="void			UIControl::setChild(IDialogPtr dlg);" description="设置子窗体( 子窗体)
+设置子窗体在控件内部显示" />
+        <var name="color" return="color4" description="color4 UIControl::color;
+Get:界面控件_取颜色 s;
+Set:界面控件_设置颜色 s;
+" />
+        <var name="display" return="bool" description="bool UIControl::display;
+Get:界面控件_是否显示 s;
+Set:界面控件_设置显示 s;
+" />
+        <var name="effect_loop" return="INT" description="INT UIControl::effect_loop;
+Get:界面控件_特效播放次数 s;
+Set:界面控件_特效播放次数 s;
+" />
+        <var name="effect_stop" return="bool" description="bool UIControl::effect_stop;
+Get:界面控件_停止释放粒子 s;
+Set:界面控件_停止释放粒子 s;
+" />
+        <var name="enabled" return="bool" description="bool UIControl::enabled;
+Get:界面控件_是否有效 s;
+Set:界面控件_设置有效 s;
+" />
+        <method name="seteventsound" args="void			UIControl::seteventsound(UISoundPlay st,	string szFile);" description="设置2D声效( 常数_幻影界面声音格式_值, 文件)" />
+        <var name="group" return="UIGroup" description="UIGroup UIControl::group;
+Get:界面控件_取控件组 s;
+Set:界面控件_设置控件组 s;
+" />
+        <var name="groupid" return="INT" description="INT UIControl::groupid;
+Get:界面控件_取组ID s;
+Set:界面控件_设置组ID s;
+" />
+        <var name="groupname" return="string" description="string UIControl::groupname;
+Get:界面控件_取组 s;
+Set:界面控件_设置组 s;
+" />
+        <var name="height" return="INT" description="INT UIControl::height;
+Get:界面控件_取高 s;
+Set:界面控件_设置高 s;
+" />
+        <var name="innermesh" return="Mesh" description="Mesh UIControl::innermesh;
+Get:界面控件_取控件内部模型 s;
+Set:界面控件_设置控件内部模型 s;
+" />
+        <var name="layer" return="INT" description="INT UIControl::layer;
+Get:界面控件_取层级 s;
+Set:界面控件_设置层级 s;
+" />
+        <var name="left" return="INT" description="INT UIControl::left;
+Get:界面控件_取左 s;
+Set:界面控件_设置左 s;
+" />
+        <var name="movebottom" return="INT" description="INT UIControl::movebottom;
+Get:界面控件_取下 s;
+Set:界面控件_设置下 s;
+" />
+        <var name="movedialog" return="bool" description="bool UIControl::movedialog;
+Get:界面控件_设置移动对话框 s;
+Set:界面控件_取移动对话框ID s;
+" />
+        <var name="moveleft" return="INT" description="INT UIControl::moveleft;
+Get:界面控件_取左 s;
+Set:界面控件_设置左 s;
+" />
+        <var name="moveright" return="INT" description="INT UIControl::moveright;
+Get:界面控件_取右 s;
+Set:界面控件_设置右 s;
+" />
+        <var name="movetop" return="INT" description="INT UIControl::movetop;
+Get:界面控件_取上 s;
+Set:界面控件_设置上 s;
+" />
+        <var name="name" return="string" description="string UIControl::name;
+Get:界面控件_取名字 s;
+Set:界面控件_设置名字 s;
+" />
+        <var name="nextaction" return="ActionType" description="ActionType UIControl::nextaction;
+Get:界面控件_取下一个播放动作 s;
+Set:界面控件_设置下一个播放动作 s;
+" />
+        <var name="opacity" return="float" description="float UIControl::opacity;
+Get:界面控件_取透明值 s;
+Set:界面控件_设置透明值 s;
+" />
+        <var name="pixelpick" return="bool" description="bool UIControl::pixelpick;
+Get:界面控件_设置像素级点击 s;
+Set:界面控件_取像素级点击ID s;
+" />
+        <var name="pos" return="Pixel" description="Pixel UIControl::pos;
+Get:界面控件_取位置左 s;
+Set:界面控件_设置对话框位置 s;
+" />
+        <var name="rect" return="Rect" description="Rect UIControl::rect;
+Get:界面控件_取控件区域 s;
+Set:界面控件_设置控件区域 s;
+" />
+        <var name="right" return="INT" description="INT UIControl::right;
+Get:界面控件_取右 s;
+Set:界面控件_设置右 s;
+" />
+        <var name="rot" return="float" description="float UIControl::rot;
+Get:界面控件_设置转动率 s;
+Set:界面控件_设置转动率 s;
+" />
+        <var name="rot2d" return="float" description="float UIControl::rot2d;
+Get:界面控件_取得角度 s;
+Set:界面控件_设置角度 s;
+" />
+        <var name="rotcenter" return="Pixel" description="Pixel UIControl::rotcenter;
+Get:界面控件_取转动中心 s;
+Set:界面控件_设置转动中心 s;
+" />
+        <var name="rotenable" return="bool" description="bool UIControl::rotenable;
+Get:界面控件_设置转动率 s;
+Set:界面控件_设置转动率 s;
+" />
+        <var name="scale" return="float" description="float UIControl::scale;
+Get:界面控件_缩放 s;
+Set:界面控件_缩放 s;
+" />
+        <var name="scalex" return="float" description="float UIControl::scalex;
+Get:界面控件_缩放x s;
+Set:界面控件_缩放x s;
+" />
+        <var name="scaley" return="float" description="float UIControl::scaley;
+Get:界面控件_缩放y s;
+Set:界面控件_缩放y s;
+" />
+        <var name="scroll_extend" return="bool" description="bool UIControl::scroll_extend;
+Get:界面控件_取滚动速度 s;
+Set:界面控件_滚动条是否可以拽出 s;
+" />
+        <var name="scroll_firstspeed" return="float" description="float UIControl::scroll_firstspeed;
+Get:界面控件_取滚动初始速度 s;
+Set:界面控件_滚动初始速度 s;
+" />
+        <var name="scroll_h" return="UIControl" description="UIControl UIControl::scroll_h;
+Get:界面控件_设置横向滚动条 s;
+Set:界面控件_设置横向滚动条 s;
+" />
+        <var name="scroll_max" return="INT" description="INT UIControl::scroll_max;
+Get:界面控件_滚动条最大 s;
+Set:界面控件_滚动条最大 s;
+" />
+        <var name="scroll_min" return="INT" description="INT UIControl::scroll_min;
+Get:界面控件_滚动条最小 s;
+Set:界面控件_滚动条最小 s;
+" />
+        <var name="scroll_speed" return="float" description="float UIControl::scroll_speed;
+Get:界面控件_取滚动速度 s;
+Set:界面控件_滚动速度 s;
+" />
+        <var name="scroll_v" return="UIControl" description="UIControl UIControl::scroll_v;
+Get:界面控件_设置纵向滚动条 s;
+Set:界面控件_设置纵向滚动条 s;
+" />
+        <var name="speed" return="float" description="float UIControl::speed;
+Get:界面控件_取得动作播放速度 s;
+Set:界面控件_设置动作播放速度 s;
+" />
+        <var name="text" return="string" description="string UIControl::text;
+Get:界面控件_取文本 s;
+Set:界面控件_设置文本 s;
+" />
+        <var name="textalign" return="DrawTextAlign" description="DrawTextAlign UIControl::textalign;
+Get:界面控件_设置文本格式 s;
+Set:界面控件_设置文本格式 s;
+" />
+        <var name="textcolor" return="color4" description="color4 UIControl::textcolor;
+Get:界面控件_取文本颜色 s;
+Set:界面控件_设置文本颜色 s;
+" />
+        <var name="texturecolor" return="color4" description="color4 UIControl::texturecolor;
+Get:界面控件_取纹理颜色 s;
+Set:界面控件_设置纹理颜色 s;
+" />
+        <var name="top" return="INT" description="INT UIControl::top;
+Get:界面控件_取上 s;
+Set:界面控件_设置上 s;
+" />
+        <var name="valf" return="float" description="float UIControl::valf;
+Get:界面控件_取得浮点值 s;
+Set:界面控件_设置浮点值 s;
+" />
+        <var name="vali" return="INT" description="INT UIControl::vali;
+Get:界面控件_取得整数值 s;
+Set:界面控件_设置整数值 s;
+" />
+        <var name="valt" return="string" description="string UIControl::valt;
+Get:界面控件_取得文本值 s;
+Set:界面控件_设置文本值 s;
+" />
+        <var name="waitbefore_actionplay" return="float" description="float UIControl::waitbefore_actionplay;
+Get:界面控件_取得播放前等待 s;
+Set:界面控件_设置播放前等待 s;
+" />
+        <var name="width" return="INT" description="INT UIControl::width;
+Get:界面控件_取宽 s;
+Set:界面控件_设置宽 s;
+" />
+        <method name="sort_draws" args="void			UIControl::sort_draws();" description="排序渲染列表()" />
+    </class>
+    <class name="UIDialog">
+        <var name="context" return="int" description="int UIDialog::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool UIDialog::equal(UIDialog);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool UIDialog::isnull();" description="是否为空数据类型" />
+        <method name="at" return="UIControl" args="UIControl	UIDialog::at(INT index);" description="取控件指针( 索引)" />
+        <method name="bind_click" args="void			UIDialog::bind_click(string szControl,	string szLuaFunc);" description="绑定脚本到事件( 控件名字, Lua脚本函数名)
+,事件[szLuaFunc(obj,eid,pos)--(obj=UIControl,eid=int,pos=Pixel)控件事件,eid=EventID]" />
+        <method name="bind_draw" args="void			UIDialog::bind_draw(string szControl,	IUIDrawMgrPtr drawPtr);" description="绑定渲染队列( 控件名字, 组合)
+绑定渲染队列到某个控件" />
+        <method name="bind_event" args="void			UIDialog::bind_event(string szControl,	EventID nid,	string szLuaFunc);" description="绑定脚本到按下事件( 控件名字, 常数_幻影事件类型_值, Lua脚本函数名)
+绑定一个事件,事件查看幻影脚本帮助中的eventid枚举常数说明,事件[szLuaFunc(obj,eid,pos)--(obj=UIControl,eid=int,pos=Pixel)控件事件,eid=EventID]" />
+        <method name="bind_eventby" args="void			UIDialog::bind_eventby(string szControl,	string szEvent,	string szLuaFunc);" description="绑定脚本到按下事件( 控件名字, 事件名, Lua脚本函数名)
+绑定一个事件,事件查看幻影脚本帮助中的eventid枚举常数说明,事件[szLuaFunc(obj,eid,pos)--(obj=UIControl,eid=int,pos=Pixel)控件事件,eid=EventID]" />
+        <method name="bind_image" args="void			UIDialog::bind_image(string szControl,	string szImageFile);" description="绑定图片( 控件名字, 图片文件路径)
+只绑定到第一个图片，其他图片自己调用element元素类的相关设置" />
+        <method name="count" return="INT" args="INT	UIDialog::count();" description="取控件数量()" />
+        <method name="create" return="UIControl" args="UIControl	UIDialog::create(UIControlType type,	Rect rc);" description="创建控件( 常数_幻影控件类型_值, 创建区域)" />
+        <method name="delete_at" args="void			UIDialog::delete_at(INT index);" description="移除控件( 索引)" />
+        <method name="deleteall" args="void			UIDialog::deleteall();" description="删除所有控件()" />
+        <method name="deleteby" args="void			UIDialog::deleteby(IControlPtr control);" description="移除控件( 控件指针)" />
+        <method name="destroy" return="bool" args="bool	UIDialog::destroy();" description="释放()" />
+        <method name="enable" args="void			UIDialog::enable(string szControl,	BOOL bEnable);" description="让控件有效( 控件名字, 是否有效)" />
+        <method name="gat" return="UIGroup" args="UIGroup	UIDialog::gat(INT nIndex);" description="取得控件组( 索引)" />
+        <method name="gcount" return="INT" args="INT	UIDialog::gcount();" description="取得控件组数量()" />
+        <method name="gcreate" return="UIGroup" args="UIGroup	UIDialog::gcreate();" description="创建新组合()" />
+        <method name="gdelete" args="void			UIDialog::gdelete(IUIGroupPtr group);" description="删除新组合( 组合)" />
+        <method name="getmap_gridflags" return="INT" args="INT	UIDialog::getmap_gridflags(INT x,	INT y);" description="取格子状态( x, y)" />
+        <method name="getmap_gridlevel" return="INT" args="INT	UIDialog::getmap_gridlevel(INT x,	INT y);" description="取格子级别( x, y)" />
+        <method name="getvalf" return="float" args="float	UIDialog::getvalf(string szControl);" description="设置变换有效( 控件名字)
+默认是有效的" />
+        <method name="getvali" return="INT" args="INT	UIDialog::getvali(string szControl);" description="设置变换有效( 控件名字)
+默认是有效的" />
+        <method name="getvalt" return="string" args="string	UIDialog::getvalt(string szControl);" description="设置变换有效( 控件名字)
+默认是有效的" />
+        <method name="gsearch" return="UIGroup" args="UIGroup	UIDialog::gsearch(string szName);" description="取得控件组根据名字( 名字)" />
+        <method name="gsearchbyid" return="UIGroup" args="UIGroup	UIDialog::gsearchbyid(INT nID);" description="取得控件组根据名字( 名字)" />
+        <method name="image_mode" args="void			UIDialog::image_mode(string szControl,	string szMode,	DrawTextAlign align);" description="绑定图片模式( 控件名字, 图片模式, 常数_幻影文本位置_多选_值)
+只绑定到第一个图片，其他图片自己调用element元素类的相关设置" />
+        <method name="istooltip_window" return="bool" args="bool	UIDialog::istooltip_window();" description="是否是提示对话框()" />
+        <method name="map_searchway" return="bool" args="bool	UIDialog::mapearchway(IFindWayPtr fw,	Pixel from,	Pixel to);" description="执行寻路( 寻路接口, 开始, 目标)" />
+        <method name="move" args="void			UIDialog::move(string szControl,	INT left,	INT top);" description="移动控件( 控件名字, 左, 上)" />
+        <method name="pick" return="UIControl" args="UIControl	UIDialog::pick(INT x,	INT y);" description="点选控件( x, y)" />
+        <method name="playani" args="void			UIDialog::playani(string szControl,	string szAniName);" description="播放控件动画( 控件名字, 动画名称)" />
+        <method name="recalc_rect" args="void			UIDialog::recalc_rect(BOOL bIncludeVisible);" description="重新计算矩形区域( 是否包含隐藏控件区域)
+重新计算对话框位置和大小等，计算之后对应滚动条自动调整" />
+        <method name="search" return="UIControl" args="UIControl	UIDialog::search(string szName);" description="查找控件指针( 名称)" />
+        <method name="searchbyid" return="UIControl" args="UIControl	UIDialog::searchbyid(INT nID);" description="查找控件指针( 名称)" />
+        <var name="action" return="ActionType" description="ActionType UIDialog::action;
+Get:界面对话框_取播放动作 s;
+Set:界面对话框_设置播放动作 s;
+" />
+        <var name="actionby" return="string" description="string UIDialog::actionby;
+Get:界面对话框_取播放动作按照动作名 s;
+Set:界面对话框_设置播放动作按照动作名 s;
+" />
+        <var name="center" return="Pixel" description="Pixel UIDialog::center;
+Get:界面对话框_取中心点位置 s;
+Set:界面对话框_设置中心点位置 s;
+" />
+        <var name="color" return="color4" description="color4 UIDialog::color;
+Get:界面对话框_取对话框颜色透明值 s;
+Set:界面对话框_设置对话框颜色透明值 s;
+" />
+        <var name="display" return="bool" description="bool UIDialog::display;
+Get:界面对话框_是否显示 s;
+Set:界面对话框_显示 s;
+" />
+        <var name="domodal" return="bool" description="bool UIDialog::domodal;
+Get:界面对话框_有模式显示 s;
+Set:界面对话框_有模式显示 s;
+" />
+        <var name="enabled" return="bool" description="bool UIDialog::enabled;
+Get:界面对话框_取有效 s;
+Set:界面对话框_设置有效 s;
+" />
+        <var name="height" return="INT" description="INT UIDialog::height;
+Get:界面对话框_取位置高 s;
+Set:界面对话框_设置位置高 s;
+" />
+        <var name="hideon_killfocus" return="bool" description="bool UIDialog::hideon_killfocus;
+Get:界面对话框_是否失去焦点自动隐藏 s;
+Set:界面对话框_设置失去焦点自动隐藏 s;
+" />
+        <var name="layer" return="INT" description="INT UIDialog::layer;
+Get:界面对话框_设置显示层级 s;
+Set:界面对话框_设置显示层级 s;
+" />
+        <var name="left" return="INT" description="INT UIDialog::left;
+Get:界面对话框_取位置左 s;
+Set:界面对话框_设置位置左 s;
+" />
+        <var name="map_display" return="bool" description="bool UIDialog::map_display;
+Get:界面对话框_是否显示地形格子 s;
+Set:界面对话框_显示地形格子 s;
+" />
+        <method name="setmap_gridflags" args="void			UIDialog::setmap_gridflags(INT x,	INT y,	INT n);" description="设置格子状态( x, y, 设置level)" />
+        <method name="setmap_gridlevel" args="void			UIDialog::setmap_gridlevel(INT x,	INT y,	INT n);" description="设置格子级别( x, y, 设置level)" />
+        <var name="name" return="string" description="string UIDialog::name;
+Get:界面对话框_取名字 s;
+Set:界面对话框_设置名字 s;
+" />
+        <var name="opacity" return="float" description="float UIDialog::opacity;
+Get:界面对话框_取对话框透明值 s;
+Set:界面对话框_设置对话框透明值 s;
+" />
+        <var name="pos" return="Pixel" description="Pixel UIDialog::pos;
+Get:界面对话框_取位置左 s;
+Set:界面对话框_设置对话框位置 s;
+" />
+        <var name="rect" return="Rect" description="Rect UIDialog::rect;
+Get:界面对话框_取位置矩形区域 s;
+Set:界面对话框_设置对话框矩形区域 s;
+" />
+        <var name="rotx" return="float" description="float UIDialog::rotx;
+Get:界面对话框_取转动X s;
+Set:界面对话框_设置转动X s;
+" />
+        <var name="roty" return="float" description="float UIDialog::roty;
+Get:界面对话框_取转动Y s;
+Set:界面对话框_设置转动Y s;
+" />
+        <var name="rotz" return="float" description="float UIDialog::rotz;
+Get:界面对话框_取转动Z s;
+Set:界面对话框_设置转动Z s;
+" />
+        <var name="scale" return="float" description="float UIDialog::scale;
+Get:界面对话框_缩放 s;
+Set:界面对话框_缩放 s;
+" />
+        <var name="scalex" return="float" description="float UIDialog::scalex;
+Get:界面对话框_缩放x s;
+Set:界面对话框_缩放x s;
+" />
+        <var name="scaley" return="float" description="float UIDialog::scaley;
+Get:界面对话框_缩放y s;
+Set:界面对话框_缩放y s;
+" />
+        <method name="settooltip_window" args="void			UIDialog::settooltip_window(BOOL b);" description="设置是提示对话框( 设置)" />
+        <var name="top" return="INT" description="INT UIDialog::top;
+Get:界面对话框_取位置上 s;
+Set:界面对话框_设置位置上 s;
+" />
+        <var name="topmost" return="bool" description="bool UIDialog::topmost;
+Get:界面对话框_设置成最顶层 s;
+Set:界面对话框_设置成最顶层 s;
+" />
+        <method name="setvalf" args="void			UIDialog::setvalf(string szControl,	float fValue);" description="设置变换有效( 控件名字, 值)
+设置浮点值,对不同的控件有不同的效果，比如进度条控件是0到1之间的值，拖动条也一样" />
+        <method name="setvali" args="void			UIDialog::setvali(string szControl,	int nValue);" description="设置变换有效( 控件名字, 值)
+设置整数值，对选项框是0，1值" />
+        <method name="setvalt" args="void			UIDialog::setvalt(string szControl,	string szValue);" description="设置变换有效( 控件名字, 值)
+设置文本值" />
+        <var name="width" return="INT" description="INT UIDialog::width;
+Get:界面对话框_取位置宽 s;
+Set:界面对话框_设置位置宽 s;
+" />
+        <method name="show" args="void			UIDialog::show(string szControl,	BOOL bShow);" description="显示控件( 控件名字, 是否显示)" />
+    </class>
+    <class name="UIDrawMgr">
+        <var name="context" return="int" description="int UIDrawMgr::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool UIDrawMgr::equal(UIDrawMgr);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool UIDrawMgr::isnull();" description="是否为空数据类型" />
+        <method name="add_child" return="UIDrawMgr" args="UIDrawMgr	UIDrawMgr::add_child();" description="添加子渲染()
+添加一个子渲染，从这个渲染继承" />
+        <method name="bind_click" args="void			UIDrawMgr::bind_click(string szFunc);" description="绑定点击( 脚本函数)
+,事件[szFunc(obj)--(obj=UIDrawMgr)控件单击事件]" />
+        <method name="bind_dblclick" args="void			UIDrawMgr::bind_dblclick(string szFunc);" description="双击点击( 脚本函数)
+,事件[szFunc(obj)--(obj=UIDrawMgr)控件双击事件]" />
+        <method name="child_count" return="INT" args="INT	UIDrawMgr::child_count();" description="子渲染数量()" />
+        <method name="delete_child" args="void			UIDrawMgr::delete_child(INT nIndex);" description="添加子渲染( 索引)
+删除一个子渲染" />
+        <method name="draw_rect" return="Rect" args="Rect	UIDrawMgr::draw_rect();" description="取得矩形区域()" />
+        <method name="get_child" return="UIDrawMgr" args="UIDrawMgr	UIDrawMgr::get_child(INT nIndex);" description="添加子渲染( 索引)
+返回索引个子渲染" />
+        <method name="get_color" return="color4" args="color4	UIDrawMgr::get_color(int index);" description="取得颜色( 点索引)
+最多可以设置count个点" />
+        <method name="get_point" return="Pixel" args="Pixel	UIDrawMgr::get_point(int index);" description="取得点( 点索引)
+最多可以设置最多count个点" />
+        <method name="get_uv" return="float2" args="float2	UIDrawMgr::get_uv(int index);" description="取得uv( 点索引)
+最多可以设置count个点" />
+        <method name="image" args="void			UIDrawMgr::image(string szTexture);" description="设置图片( 图片)" />
+        <method name="image_mode" args="void			UIDrawMgr::image_mode(string szMode);" description="设置图片矩形( 图片配置信息)" />
+        <method name="image_rect" args="void			UIDrawMgr::image_rect(int left,	int top,	int width,	int height);" description="设置图片矩形( left, top, right, bottom)" />
+        <method name="image_uvani" args="void			UIDrawMgr::image_uvani(int start,	int count,	float speed);" description="设置图片矩形( 开始索引, 图片数量, 播放速度)
+初始化uv动画" />
+        <method name="image_uvmap" args="void			UIDrawMgr::image_uvmap(int width,	int height,	int wcount,	int hcount);" description="设置图片矩形( width, height, 左右数量, 上下数量)" />
+        <method name="number_align" args="void			UIDrawMgr::number_align(string szModeFirst,	string szAlign);" description="设置数字对齐模式( szModeFirst, 对齐模式)
+szAlign可以是(left,top,right,bottom,center,vcenter,middle)其中middle是绝对中间位置是默认值" />
+        <method name="number_mode" args="void			UIDrawMgr::number_mode(string szModeFirst,	int numberHeight,	int spaceX);" description="设置数字渲染模式( szModeFirst, 数字高度, 宽度字间隔)" />
+        <method name="progress" return="float" args="float	UIDrawMgr::progress();" description="设置进度条()
+默认是有效的" />
+        <method name="progress_mode" args="void			UIDrawMgr::progress_mode(float fValue);" description="设置进度条( 值)
+默认是有效的" />
+        <method name="set_color" args="void			UIDrawMgr::set_color(int index,	color4 c);" description="设置颜色( 点索引, 颜色)
+最多可以设置count个点" />
+        <method name="set_point" args="void			UIDrawMgr::set_point(int index,	int x,	int y);" description="设置点( 点索引x位置, x位置y位置, y位置)
+最多可以设置最多count个点" />
+        <method name="set_rect" args="void			UIDrawMgr::set_rect(int left,	int top,	int right,	int bottom);" description="设置矩形( left, left, right, bottom)" />
+        <method name="set_uv" args="void			UIDrawMgr::set_uv(int index,	float u,	float v);" description="设置uv( 点索引, u坐标, v坐标)
+最多可以设置count个点" />
+        <var name="center" return="Pixel" description="Pixel UIDrawMgr::center;
+Get:渲染2D_取得中心坐标 s;
+Set:渲染2D_设置中心坐标 s;
+" />
+        <var name="clickscale" return="float" description="float UIDrawMgr::clickscale;
+Get:渲染2D_点击缩放值 s;
+Set:渲染2D_点击缩放值 s;
+" />
+        <var name="color" return="color4" description="color4 UIDrawMgr::color;
+Get:渲染2D_取得颜色 s;
+Set:渲染2D_设置颜色 s;
+" />
+        <var name="cullmode" return="CullMode" description="CullMode UIDrawMgr::cullmode;
+Get:渲染2D_取得渲染面 s;
+Set:渲染2D_设置渲染面 s;
+" />
+        <var name="display" return="bool" description="bool UIDrawMgr::display;
+Get:渲染2D_取得显示 s;
+Set:渲染2D_设置显示 s;
+" />
+        <var name="enabled" return="bool" description="bool UIDrawMgr::enabled;
+Get:渲染2D_取得有效 s;
+Set:渲染2D_设置有效 s;
+" />
+        <var name="highlight" return="INT" description="INT UIDrawMgr::highlight;
+Get:渲染2D_取得高亮 s;
+Set:渲染2D_设置高亮 s;
+" />
+        <var name="layer" return="INT" description="INT UIDrawMgr::layer;
+Get:渲染2D_取得渲染层次 s;
+Set:渲染2D_设置渲染层次 s;
+" />
+        <var name="number" return="INT" description="INT UIDrawMgr::number;
+Get:渲染2D_返回数字渲染模式 s;
+Set:渲染2D_设置数字渲染模式 s;
+" />
+        <var name="offset3d_z" return="float" description="float UIDrawMgr::offset3d_z;
+Get:渲染2D_位移3D坐标Z s;
+Set:渲染2D_位移3D坐标Z s;
+" />
+        <var name="opacity" return="float" description="float UIDrawMgr::opacity;
+Get:渲染2D_取得透明 s;
+Set:渲染2D_设置透明 s;
+" />
+        <var name="pos" return="Pixel" description="Pixel UIDrawMgr::pos;
+Get:渲染2D_取得位置 s;
+Set:渲染2D_设置位置 s;
+" />
+        <var name="rotx" return="INT" description="INT UIDrawMgr::rotx;
+Get:渲染2D_转动x s;
+Set:渲染2D_转动x s;
+" />
+        <var name="roty" return="INT" description="INT UIDrawMgr::roty;
+Get:渲染2D_转动x s;
+Set:渲染2D_转动x s;
+" />
+        <var name="rotz" return="INT" description="INT UIDrawMgr::rotz;
+Get:渲染2D_转动x s;
+Set:渲染2D_转动x s;
+" />
+        <var name="scale" return="float" description="float UIDrawMgr::scale;
+Get:渲染2D_取得縮放 s;
+Set:渲染2D_设置縮放 s;
+" />
+        <var name="scalex" return="float" description="float UIDrawMgr::scalex;
+Get:渲染2D_取得縮放x s;
+Set:渲染2D_设置縮放x s;
+" />
+        <var name="scaley" return="float" description="float UIDrawMgr::scaley;
+Get:渲染2D_取得縮放y s;
+Set:渲染2D_设置縮放y s;
+" />
+        <var name="text" return="string" description="string UIDrawMgr::text;
+Get:渲染2D_返回数字渲染模式 s;
+Set:渲染2D_设置数字渲染模式 s;
+" />
+        <method name="text_mode" args="void			UIDrawMgr::text_mode(string szValue,	float fFontScale);" description="设置文本( 值, 字体缩放)
+默认是有效的" />
+    </class>
+    <class name="UIElement">
+        <var name="context" return="int" description="int UIElement::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool UIElement::equal(UIElement);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool UIElement::isnull();" description="是否为空数据类型" />
+        <method name="isscale" return="bool" args="bool	UIElement::isscale();" description="是否缩放()" />
+        <var name="destblend" return="BlendMode" description="BlendMode UIElement::destblend;
+Get:界面元素_取目标混合 s;
+Set:界面元素_设置目标混合 s;
+" />
+        <var name="fontid" return="INT" description="INT UIElement::fontid;
+Get:界面元素_取字体ID s;
+Set:界面元素_设置字体ID s;
+" />
+        <method name="setscale" args="void			UIElement::setscale(BOOL bScale,	BOOL bWrap,	INT wrapWidth,	INT wrapHeight);" description="设置缩放( 缩放, 可扩展, 扩展宽度, 扩展高度)" />
+        <var name="srcblend" return="BlendMode" description="BlendMode UIElement::srcblend;
+Get:界面元素_取源混合 s;
+Set:界面元素_设置源混合 s;
+" />
+        <var name="textcolor" return="color4" description="color4 UIElement::textcolor;
+Get:界面元素_取文本颜色 s;
+Set:界面元素_设置文本颜色 s;
+" />
+        <method name="settexture" args="void			UIElement::settexture(string szFileName);" description="设置纹理( 纹理文件)" />
+        <var name="textureblend" return="TextureBlend" description="TextureBlend UIElement::textureblend;
+Get:界面元素_取图片混合 s;
+Set:界面元素_设置图片混合 s;
+" />
+        <var name="texturecolor" return="color4" description="color4 UIElement::texturecolor;
+Get:界面元素_取纹理颜色 s;
+Set:界面元素_设置纹理颜色 s;
+" />
+        <var name="textureid" return="INT" description="INT UIElement::textureid;
+Get:界面元素_取纹理ID s;
+Set:界面元素_设置纹理ID s;
+" />
+        <var name="texturemode" return="string" description="string UIElement::texturemode;
+Get:界面元素_取得方案名字 s;
+Set:界面元素_设置方案名字 s;
+" />
+        <var name="texturerect" return="Rect" description="Rect UIElement::texturerect;
+Get:界面元素_取得纹理区域 s;
+Set:界面元素_设置纹理区域 s;
+" />
+        <var name="tileheight" return="INT" description="INT UIElement::tileheight;
+Get:界面元素_取纵向平铺 s;
+Set:界面元素_设置纵向平铺 s;
+" />
+        <var name="tilewidth" return="INT" description="INT UIElement::tilewidth;
+Get:界面元素_取横向平铺 s;
+Set:界面元素_设置横向平铺 s;
+" />
+        <var name="uvaction" return="string" description="string UIElement::uvaction;
+Get:界面元素_取激活UV动画 s;
+Set:界面元素_设置激活UV动画 s;
+" />
+        <var name="uvspeed" return="float" description="float UIElement::uvspeed;
+Get:界面元素_取UV播放速度 s;
+Set:界面元素_设置UV播放速度 s;
+" />
+        <method name="uvaction_at" return="string" args="string	UIElement::uvaction_at(INT nIndex);" description="取UV动画名字( 索引)" />
+        <method name="uvactioncount" return="INT" args="INT	UIElement::uvactioncount();" description="取UV动画数量()" />
+    </class>
+    <class name="UIGroup">
+        <var name="context" return="int" description="int UIGroup::context
+Get: 取得自定义参数
+Set: 设置自定义参数" />
+        <method name="equal" return="bool" args="bool UIGroup::equal(UIGroup);" description="两个变量指针是否相同" />
+        <method name="isnull" return="bool" args="bool UIGroup::isnull();" description="是否为空数据类型" />
+        <method name="at" return="UIControl" args="UIControl	UIGroup::at(INT nIndex);" description="取得控件( 索引)" />
+        <method name="bind_click" args="void			UIGroup::bind_click(string szControl,	string szLuaFunc);" description="绑定脚本到事件( 控件名字, Lua脚本函数名)
+,事件[szLuaFunc(obj,eid,pos)--(obj=UIControl,eid=int,pos=Pixel)控件事件,eid=EventID]" />
+        <method name="bind_draw" args="void			UIGroup::bind_draw(string szControl,	IUIDrawMgrPtr drawPtr);" description="绑定渲染队列( 控件名字, 组合)
+绑定渲染队列到某个控件" />
+        <method name="bind_event" args="void			UIGroup::bind_event(EventID nid,	string szControl,	string szLuaFunc);" description="绑定脚本到按下事件( 常数_幻影事件类型_值, 控件名字, Lua脚本函数名)
+绑定一个事件,事件查看幻影脚本帮助中的eventid枚举常数说明,事件[szLuaFunc(obj,eid,pos)--(obj=UIControl,eid=int,pos=Pixel)控件事件,eid=EventID]" />
+        <method name="bind_eventby" args="void			UIGroup::bind_eventby(string szEvent,	string szControl,	string szLuaFunc);" description="绑定脚本到按下事件( 事件名, 控件名字, Lua脚本函数名)
+绑定一个事件,事件查看幻影脚本帮助中的eventid枚举常数说明事件[szLuaFunc(obj,eid,pos)--(obj=UIControl,eid=int,pos=Pixel)控件事件,eid=EventID]" />
+        <method name="bind_image" args="void			UIGroup::bind_image(string szControl,	string szImageFile);" description="绑定图片( 控件名字, 图片文件路径)
+只绑定到第一个图片，其他图片自己调用element元素类的相关设置" />
+        <method name="clone" return="UIGroup" args="UIGroup	UIGroup::clone();" description="克隆()" />
+        <method name="cloneto" return="UIGroup" args="UIGroup	UIGroup::cloneto(IDialogPtr dest);" description="克隆到其他对话框( 目标对话框)" />
+        <method name="count" return="INT" args="INT	UIGroup::count();" description="取得控件数量()" />
+        <method name="dialog" return="UIDialog" args="UIDialog	UIGroup::dialog();" description="是否显示()" />
+        <method name="enable" args="void			UIGroup::enable(string szControl,	BOOL bEnable);" description="让控件有效( 控件名字, 是否有效)" />
+        <method name="getvalf" return="float" args="float	UIGroup::getvalf(string szControl);" description="设置变换有效( 控件名字)
+返回浮点值，如果是进度条或者拖动条返回0到1之间" />
+        <method name="getvali" return="INT" args="INT	UIGroup::getvali(string szControl);" description="设置变换有效( 控件名字)
+返回整数值，如果是选项框则返回0，1" />
+        <method name="getvalt" return="string" args="string	UIGroup::getvalt(string szControl);" description="设置变换有效( 控件名字)
+返回文本值" />
+        <method name="height" return="INT" args="INT	UIGroup::height();" description="取得高度()" />
+        <method name="image_mode" args="void			UIGroup::image_mode(string szControl,	string szMode,	DrawTextAlign align);" description="绑定图片模式( 控件名字, 图片模式, 常数_幻影文本位置_多选_值)
+只绑定到第一个图片，其他图片自己调用element元素类的相关设置" />
+        <method name="playani" args="void			UIGroup::playani(string szControl,	string szAniName);" description="播放控件动画( 控件名字, 动画名称)" />
+        <method name="search" return="UIControl" args="UIControl	UIGroup::search(string szName);" description="查找组内控件指针( 名称)" />
+        <var name="action" return="ActionType" description="ActionType UIGroup::action;
+Get:界面控件组_取播放动作 s;
+Set:界面控件组_设置播放动作 s;
+" />
+        <var name="actionby" return="string" description="string UIGroup::actionby;
+Get:界面控件组_取播放动作根据名字 s;
+Set:界面控件组_设置播放动作根据名字 s;
+" />
+        <var name="center" return="Pixel" description="Pixel UIGroup::center;
+Get:界面控件组_取得中心位置 s;
+Set:界面控件组_设置中心位置 s;
+" />
+        <var name="currenttime" return="float" description="float UIGroup::currenttime;
+Get:界面控件组_取得播放时间 s;
+Set:界面控件组_设置播放时间 s;
+" />
+        <var name="display" return="bool" description="bool UIGroup::display;
+Get:界面控件组_是否显示 s;
+Set:界面控件组_设置显示 s;
+" />
+        <var name="enabled" return="bool" description="bool UIGroup::enabled;
+Get:界面控件组_是否有效 s;
+Set:界面控件组_设置有效 s;
+" />
+        <var name="left" return="INT" description="INT UIGroup::left;
+Get:界面控件组_取得左 s;
+Set:界面控件组_设置左 s;
+" />
+        <var name="name" return="string" description="string UIGroup::name;
+Get:界面控件组_取名字 s;
+Set:界面控件组_设置名字 s;
+" />
+        <var name="opacity" return="float" description="float UIGroup::opacity;
+Get:界面控件组_取得透明值 s;
+Set:界面控件组_设置透明值 s;
+" />
+        <var name="pos" return="Pixel" description="Pixel UIGroup::pos;
+Get:界面控件组_取位置左 s;
+Set:界面控件组_设置对话框位置 s;
+" />
+        <var name="rot" return="float" description="float UIGroup::rot;
+Get:界面控件组_取得角度 s;
+Set:界面控件组_设置角度 s;
+" />
+        <method name="setRotDir" args="void			UIGroup::setRotDir(float2 dir);" description="设置角度根据方向( 角度)" />
+        <var name="speed" return="float" description="float UIGroup::speed;
+Get:界面控件组_取得播放速度 s;
+Set:界面控件组_设置播放速度 s;
+" />
+        <var name="top" return="INT" description="INT UIGroup::top;
+Get:界面控件组_取得上 s;
+Set:界面控件组_设置上 s;
+" />
+        <method name="setvalf" args="void			UIGroup::setvalf(string szControl,	float fValue);" description="设置变换有效( 控件名字, 值)
+设置浮点值,对不同的控件有不同的效果，比如进度条控件是0到1之间的值，拖动条也一样" />
+        <method name="setvali" args="void			UIGroup::setvali(string szControl,	int nValue);" description="设置变换有效( 控件名字, 值)
+设置整数值，如果是进度条则设置0或1" />
+        <method name="setvalt" args="void			UIGroup::setvalt(string szControl,	string szValue);" description="设置变换有效( 控件名字, 值)
+设置文本值" />
+        <method name="show" args="void			UIGroup::show(string szControl,	BOOL bShow);" description="显示控件( 控件名字, 是否显示)" />
+        <method name="width" return="INT" args="INT	UIGroup::width();" description="取得宽度()" />
+    </class>
+    <class name="Camera">
+        <method name="aaboxin" return="bool" args="bool	Camera::aaboxin(AABox p);" description="检测盒子是否可见(点)" />
+        <method name="dither" args="void			Camera::dither(float3 offset,	float fMaxOffsetTime);" description="设置进行抖动值(抖动值, 抖动的时间)" />
+        <method name="get2d_from3d" return="bool" args="bool	Camera::get2d_from3d(Pixel point,	float3 pos);" description="三维坐标转屏幕坐标(取屏幕坐标, 三维坐标)" />
+        <method name="get3d_from2d" args="void			Camera::get3d_from2d(float3 orig,	float3 dir,	Pixel point);" description="屏幕坐标转3D坐标(射线原点, 射线方向, 屏幕坐标)" />
+        <method name="isdisplay" return="bool" args="bool	Camera::isdisplay(float3 pos,	float fRadius,	float fMaxDistance);" description="判断是否可见(位置, 物体半径, 最远距离)" />
+        <method name="isortho" return="bool" args="bool	Camera::isortho();" description="是否2D投影视图()" />
+        <method name="isperspective" return="bool" args="bool	Camera::isperspective();" description="是否3D投影视图()" />
+        <method name="nextdist" args="void			Camera::nextdist(float fDistance,	float fMoveSpeed);" description="加入下一个远近(目标距离, 远近移动速度)
+设置镜头的远近" />
+        <method name="nextdither" args="void			Camera::nextdither(float offset,	float fMaxOffsetTime);" description="加入下一个剧烈抖动(抖动范围, 抖动的时间)
+设置镜头的抖动" />
+        <method name="nextrot" args="void			Camera::nextrot(float rotZ,	float rotX,	float fRotSpeed);" description="加入下一个转动(Z轴转动, X轴转动, 转动速度角度)
+设置镜头的转动" />
+        <method name="nextto" args="void			Camera::nextto(float3 pos,	float fMoveSpeed);" description="加入下一个位置(位置, 移动速度)
+设置镜头的位置移动" />
+        <method name="orthoproj" args="void			Camera::orthoproj(int w,	int h,	float znear,	float zfar);" description="设置为2D投影视图(宽度, 高度, 最近可见, 最远可见)" />
+        <method name="perspectiveproj" args="void			Camera::perspectiveproj(float fov,	int w,	int h,	float znear,	float zfar);" description="设置为3D投影视图(广角_弧度宽度, 宽度, 高度, 最近可见, 最远可见)" />
+        <method name="planein" return="bool" args="bool	Camera::planein(float3 p1,	float3 p2,	float3 p3,	float3 p4);" description="检测面是否可见(点1, 点2, 点3, 点4)" />
+        <method name="play" args="void			Camera::play(string szLuaFunc,	INT nParam);" description="开始播放镜头动作(脚本函数, 参数)
+设置镜头的远近,事件[szLuaFunc(param)--(param=int)镜头动作播放完毕]" />
+        <method name="pointin" return="bool" args="bool	Camera::pointin(float3 p);" description="检测点是否可见(点)" />
+        <var name="area" return="Rect" description="Rect Camera::area;
+Get:镜头_取观目标点限制区域 s;
+Set:镜头_设置目标点限制区域 s;
+" />
+        <var name="data" return="CameraData" description="CameraData Camera::data;
+Get:镜头_取数据 s;
+Set:镜头_设置数据 s;
+" />
+        <var name="distance" return="float" description="float Camera::distance;
+Get:镜头_取视距离 s;
+Set:镜头_设置视距离 s;
+" />
+        <var name="distance_max" return="float" description="float Camera::distance_max;
+Get:镜头_取视距离最远 s;
+Set:镜头_设置视距离最远 s;
+" />
+        <var name="distance_min" return="float" description="float Camera::distance_min;
+Get:镜头_取视距离最近 s;
+Set:镜头_设置视距离最近 s;
+" />
+        <var name="eye" return="float3" description="float3 Camera::eye;
+Get:镜头_取观察点 s;
+Set:镜头_设置观察点 s;
+" />
+        <var name="fov" return="float" description="float Camera::fov;
+Get:镜头_取广角 s;
+Set:镜头_设置广角 s;
+" />
+        <var name="height" return="INT" description="INT Camera::height;
+Get:镜头_取高度 s;
+Set:镜头_设置高度 s;
+" />
+        <var name="intersect_eye" return="bool" description="bool Camera::intersect_eye;
+Get:镜头_取镜头碰撞 s;
+Set:镜头_设置镜头碰撞 s;
+" />
+        <var name="lookat" return="float3" description="float3 Camera::lookat;
+Get:镜头_取视点 s;
+Set:镜头_设置视点 s;
+" />
+        <var name="offset_down" return="float" description="float Camera::offset_down;
+Get:镜头_取观自动移动速度降速 s;
+Set:镜头_设置自动移动速度降速 s;
+" />
+        <var name="offset_enable" return="bool" description="bool Camera::offset_enable;
+Get:镜头_取观自动移动速度有效 s;
+Set:镜头_设置自动移动速度有效 s;
+" />
+        <var name="pos" return="float3" description="float3 Camera::pos;
+Get:镜头_取观位置 s;
+Set:镜头_设置位置 s;
+" />
+        <var name="projmat" return="matrix4x4" description="matrix4x4 Camera::projmat;
+Get:镜头_取投影矩阵 s;
+Set:镜头_强制设置投影矩阵 s;
+" />
+        <method name="Setrot" args="void			Camera::Setrot(float rotZ,	float rotX);" description="设置目标点(Z轴转动, X轴转动)" />
+        <var name="target" return="float3" description="float3 Camera::target;
+Get:镜头_取目标点 s;
+Set:镜头_设置目标点 s;
+" />
+        <var name="viewmat" return="matrix4x4" description="matrix4x4 Camera::viewmat;
+Get:镜头_取观察矩阵 s;
+Set:镜头_强制设置观察矩阵 s;
+" />
+        <var name="width" return="INT" description="INT Camera::width;
+Get:镜头_取宽度 s;
+Set:镜头_设置宽度 s;
+" />
+        <var name="zfar" return="float" description="float Camera::zfar;
+Get:镜头_取最远可见距离 s;
+Set:镜头_设置取最远可见距离 s;
+" />
+        <var name="znearest" return="float" description="float Camera::znearest;
+Get:镜头_最近可见距离 s;
+Set:镜头_设置最近可见距离 s;
+" />
+        <method name="spherein" return="bool" args="bool	Camera::spherein(float3 p,	float fRadius);" description="检测圆是否可见(点, 半径)" />
+        <method name="stop" args="void			Camera::stop();" description="停止播放镜头动作并且清除所有动作()
+停止的时候不会自动调用结束脚本函数,并且清除所有动作" />
+    </class>
+    <class name="GameMgr">
+        <method name="create" return="bool" args="bool	GameMgr::create(int sceneID);" description="创建游戏系统数据(场景ID)
+创建游戏系统数据，需要提供scene_table.txt文件中对应的场景ID" />
+        <method name="framemove" return="INT" args="INT	GameMgr::framemove(IGameObjectPtr obj,	string szLuaFunc,	INT nMaxMillisecond);" description="循环引发(对象, 脚本函数名, 最大调用毫秒时间)
+时时引发，每次循环都会被调用引发一次，会持续引发，毫秒记,频率很高,脚本第一个参数是时间,按{秒}计算的持续时间,一个函数只能创建一个实例,事件[szLuaFunc(tm,endof,obj,maxtm)--(obj=GameObject,endof=bool,tm=float,maxtm=float)tm是秒计数的小数,maxtm=是最大时间,endof只有在计时器结束的时候被调用一次];返回TimeID" />
+        <method name="interval" return="INT" args="INT	GameMgr::interval(IGameObjectPtr obj,	string szLuaFunc,	INT nMillisecond,	INT nMaxMillisecond);" description="间隔引发(对象, 脚本函数名, 毫秒, 最大调用次数)
+间隔引发，每间隔一段时间引发一次，会持续引发，毫秒记,脚本第一个参数是时间,按{秒}计算的持续时间,一个函数只能创建一个实例,事件[szLuaFunc(tm,endof,obj,maxtm)--(obj=GameObject,endof=bool,tm=float,maxtm=float)tm是秒计数的小数,maxtm=是最大时间,endof只有在计时器结束的时候被调用一次];返回TimeID" />
+        <method name="leader" return="GameObject" args="GameObject	GameMgr::leader();" description="返回主角对象()
+返回主角对象数据" />
+        <method name="loadtext" return="string" args="string	GameMgr::loadtext(INT nID,	string szCol);" description="返回文本表中的文本根据ID(ID, 列)
+返回文本表中的文本,text_list.txt" />
+        <method name="loadtextby" return="string" args="string	GameMgr::loadtextby(string szName,	string szCol);" description="返回文本表中的文本(名字, 列)
+返回文本表中的文本,text_list.txt" />
+        <method name="objectat" return="GameObject" args="GameObject	GameMgr::objectat(int index);" description="返回对象(索引)
+返回某个对象数据" />
+        <method name="objectcount" return="INT" args="INT	GameMgr::objectcount();" description="返回对象数量()
+返回当前场景可控制对象数量" />
+        <method name="plotfinish" args="void			GameMgr::plotfinish();" description="结束剧情系统()
+调用onscene_plotfinish" />
+        <method name="plotid" return="INT" args="INT	GameMgr::plotid();" description="当前剧情脚本ID()
+返回当前剧情脚本" />
+        <method name="plotnext" args="void			GameMgr::plotnext();" description="进入下一个剧情脚本()
+调用onscene_plot" />
+        <method name="plotto" args="void			GameMgr::plotto(int id);" description="进入下一个剧情脚本(剧情id)
+调用onscene_plot" />
+        <method name="reborn" args="void			GameMgr::reborn(IGameObjectPtr obj,	float fRebornTime);" description="重新刷怪(对象, 重新复活等待时间)
+重新复活计时某个游戏对象" />
+        <method name="resetAll" args="void			GameMgr::resetAll();" description="重置所有角色的位置信息血条，状态等()
+重置所有角色的位置信息血条（除了主角），状态等，适用于一段剧情结束之后" />
+        <method name="scene" return="Map3D" args="Map3D	GameMgr::scene();" description="返回场景()
+返回当前场景指针" />
+        <method name="search" return="GameObject" args="GameObject	GameMgr::search(INT nID);" description="返回对象根据场景对象ID(ID)
+返回对象根据场景对象ID" />
+        <method name="searchby" return="GameObject" args="GameObject	GameMgr::searchby(string szName);" description="返回对象(名字)
+返回某个对象数据" />
+        <var name="camerafollow" return="bool" description="bool GameMgr::camerafollow;
+Get:游戏_返回镜头跟随对象是否有效 s;
+Set:游戏_设置镜头跟随对象是否有效 s;
+" />
+        <var name="cameratarget" return="GameObject" description="GameObject GameMgr::cameratarget;
+Get:游戏_返回镜头跟随对象 s;
+Set:游戏_设置镜头跟随对象 s;
+" />
+        <var name="plotenable" return="bool" description="bool GameMgr::plotenable;
+Get:游戏_返回剧情是否有效 s;
+Set:游戏_设置剧情是否有效 s;
+" />
+        <method name="timeout" return="INT" args="INT	GameMgr::timeout(IGameObjectPtr obj,	string szLuaFunc,	INT nMillisecond);" description="定时引发(对象, 脚本函数名, 毫秒)
+定时引发，只引发一次，毫秒记,脚本无参数,一个函数可以创建多个实例,事件[szLuaFunc(obj)--(obj=GameObject)定期事件,只引发一次];返回TimeID" />
+    </class>
+    <class name="MyGlobal" />
+    <class name="System">
+        <method name="fps" return="INT" args="INT	System::fps();" description="返回当前FPS()" />
+        <var name="backcolor" return="color4" description="color4 System::backcolor;
+Get:系统_设置背景清除色 s;
+Set:系统_设置背景清除色 s;
+" />
+        <var name="cullmode" return="CullMode" description="CullMode System::cullmode;
+Get:系统_取得渲染面 s;
+Set:系统_设置渲染面 s;
+" />
+        <var name="enablevr" return="bool" description="bool System::enablevr;
+Get:系统_是否开启VR渲染模式 s;
+Set:系统_开启VR渲染模式 s;
+" />
+        <var name="enablez" return="bool" description="bool System::enablez;
+Get:系统_是否开启Z缓冲 s;
+Set:系统_开启Z缓冲 s;
+" />
+        <var name="maxfps" return="INT" description="INT System::maxfps;
+Get:系统_取得最高FPS s;
+Set:系统_设置最高FPS s;
+" />
+        <var name="mute" return="bool" description="bool System::mute;
+Get:系统_是否静音 s;
+Set:系统_设置静音 s;
+" />
+        <var name="opacitymode" return="AlphaMode" description="AlphaMode System::opacitymode;
+Get:系统_取透明混合模式 s;
+Set:系统_设置透明混合模式 s;
+" />
+        <var name="showfps" return="bool" description="bool System::showfps;
+Get:系统_是否显示FPS s;
+Set:系统_显示FPS s;
+" />
+        <var name="showui" return="bool" description="bool System::showui;
+Get:系统_是否渲染UI s;
+Set:系统_渲染UI s;
+" />
+        <var name="uioffset" return="float2" description="float2 System::uioffset;
+Get:系统_取界面总体位移 s;
+Set:系统_设置界面总体位移 s;
+" />
+        <var name="uiscale" return="float2" description="float2 System::uiscale;
+Get:系统_取界面总体缩放 s;
+Set:系统_设置界面总体缩放 s;
+" />
+        <var name="vrdistance" return="float" description="float System::vrdistance;
+Get:系统_是否开启VR间距 s;
+Set:系统_开启VR间距 s;
+" />
+    </class>
+    <class name="Global">
+        <method name="apptime" return="double" args="double	apptime();" description="当前时间()
+返回当前全局时间[R:时间控制]" />
+        <method name="elapsedtime" return="float" args="float	elapsedtime();" description="当前更新时间差()
+返回当前全局更新时间差" />
+        <method name="timeout" return="INT" args="INT	timeout(string szLuaFunc,	INT nMillisecond);" description="定时引发(脚本函数名, 毫秒)
+定时引发，只引发一次，毫秒记,脚本无参数,一个函数可以创建多个实例,事件[szLuaFunc()--定期事件,只引发一次];返回TimeID" />
+        <method name="interval" return="INT" args="INT	interval(string szLuaFunc,	INT nMillisecond,	INT nMaxMillisecond);" description="间隔引发(脚本函数名, 毫秒, 最大调用次数)
+间隔引发，每间隔一段时间引发一次，会持续引发，毫秒记,脚本第一个参数是时间,按{秒}计算的持续时间,一个函数只能创建一个实例,事件[szLuaFunc(tm,endof,maxtm)--tm是秒计数的小数,maxtm最大时间,endof只有在计时器结束的时候被调用一次];返回TimeID" />
+        <method name="framemove" return="INT" args="INT	framemove(string szLuaFunc,	INT nMaxMillisecond);" description="循环引发(脚本函数名, 最大调用毫秒时间)
+时时引发，每次循环都会被调用引发一次，会持续引发，毫秒记,频率很高,脚本第一个参数是时间,按{秒}计算的持续时间,一个函数只能创建一个实例,事件[szLuaFunc(tm,endof,maxtm)--tm是秒计数的小数,maxtm最大时间,endof只有在计时器结束的时候被调用一次];返回TimeID" />
+        <method name="timeout2" return="INT" args="INT	timeout2(string szLuaFunc,	INT nMillisecond,	string param);" description="定时引发带一个文本参数(脚本函数名, 毫秒, 文本参数)
+定时引发，只引发一次，毫秒记,代替以前的timeout_1,脚本第一个参数是传入的参数,文本,一个函数可以创建多个实例,事件[szLuaFunc(param)--传入的自定义参数];返回TimeID" />
+        <method name="interval2" return="INT" args="INT	interval2(string szLuaFunc,	INT nMillisecond,	INT nMaxMillisecond,	string param);" description="间隔引发带一个文本参数(脚本函数名, 毫秒, 最大调用毫秒时间, 文本参数)
+间隔引发，每间隔一段时间引发一次，会持续引发，毫秒记,代替以前的interval_1,参数为之有所改动,事件[szLuaFunc(tm,endof,param,maxtm)--tm是秒计数的小数,maxtm最大时间,endof只有在计时器结束的时候被调用一次,param是自定义传入的参数];返回TimeID" />
+        <method name="framemove2" return="INT" args="INT	framemove2(string szLuaFunc,	INT nMaxMillisecond,	string param);" description="循环引发(脚本函数名, 最大调用毫秒时间, 文本参数)
+时时引发，每次循环都会被调用引发一次，会持续引发，毫秒记,频率很高,脚本第一个参数是时间,按{秒}计算的持续时间,第二个参数是传入的参数,文本,一个函数只能创建一个,事件[szLuaFunc(tm,endof,param,maxtm)--tm是秒计数的小数,maxtm最大时间,endof只有在计时器结束的时候被调用一次,param是自定义传入的参数];返回TimeID" />
+        <method name="cleartimeby" args="void	cleartimeby(string szFunc);" description="关闭任何定时和间隔引发(szFunc)
+关闭任何定时和间隔引发,相同函数的注册都会全部清除" />
+        <method name="cleartimeby2" args="void	cleartimeby2(string szFunc,	string param);" description='关闭任何定时和间隔引发(szFunc, 删除对应参数的)
+关闭任何定时和间隔引发,替代cleartime_1,如果param=""空字符串则相关的计时器全部被删除' />
+        <method name="cleartime" args="void	cleartime(INT timeid);" description="关闭任何定时和间隔引发根据ID(定时器返回ID)
+关闭任何定时和间隔引发,只清除指定id的一个定时器,返回自timeout或者interval等函数" />
+        <method name="breaktime" args="void	breaktime();" description="关闭任何定时和间隔引发()
+关闭当前的时钟计时器,在interval和timeout等计时器函数内部使用" />
+        <method name="cleartime_all" args="void	cleartime_all();" description="清除所有定时器()
+清除所有定时器" />
+        <method name="localtime" return="Time" args="Time	localtime();" description="返回当前时间()
+返回当前时间" />
+        <method name="timediff_d" return="INT" args="INT	timediff_d(Time t1,	Time t2);" description="返回时间差_日(时间1, 时间2)
+返回当前时间" />
+        <method name="timediff_h" return="INT" args="INT	timediff_h(Time t1,	Time t2);" description="返回时间差_时(时间1, 时间2)
+返回当前时间" />
+        <method name="timediff_m" return="INT" args="INT	timediff_m(Time t1,	Time t2);" description="返回时间差_分(时间1, 时间2)
+返回当前时间" />
+        <method name="timediff_s" return="INT" args="INT	timediff(Time t1,	Time t2);" description="返回时间差_秒(时间1, 时间2)
+返回当前时间" />
+        <method name="pause" args="void	pause(BOOL bPause);" description="暂停整个游戏(是否暂停)
+暂停整个游戏,所有的物体将停止动作" />
+        <method name="speed" args="void	speed(float fSpeed);" description="单个时间的加速(速度)
+设置整个过程的速度,如果速度0则和暂停一样的效果" />
+        <method name="mousepoint" return="Pixel" args="Pixel	mousepoint(INT nIndex);" description="返回鼠标或者手指的位置(手指索引)
+[R:系统相关]手机全局中可以很多个手指位置同时获取" />
+        <method name="mousepoint2d" return="Pixel" args="Pixel	mousepoint2d(INT nIndex);" description="返回2D鼠标或者手指的位置(手指索引)
+手机全局中可以很多个手指位置同时获取，点选对话框之类的时候有用" />
+        <method name="screenwidth" return="INT" args="INT	screenwidth();" description="取得窗体宽度()" />
+        <method name="screenheight" return="INT" args="INT	screenheight();" description="取得窗体高度()" />
+        <method name="gamewidth" return="INT" args="INT	gamewidth();" description="取得游戏需要宽度()" />
+        <method name="gameheight" return="INT" args="INT	gameheight();" description="取得游戏需要高度()" />
+        <method name="exit" args="void	exit();" description="调用退出游戏函数()" />
+        <method name="alert" return="string" args="string	alert(string szMessage,	string szTitle,	string szType);" description="消息框(szMessage, szTitle, szType)
+弹出系统消息框，szTitle是标题，szType是类型比如(ok,yesno,okcancel,yesnocancel)，返回被按下的按钮类型" />
+        <method name="get_sensor" return="sensordata" args="sensordata	getensor();" description="获取传感器数据()
+获取传感器数据，包括陀螺仪角速度和空间位置等数据" />
+        <method name="get_gravity" return="float2" args="float2	get_gravity(int jd);" description="获取传感器调整之后重力感应值(传感器精度0是默认)
+获取传感器重力感应数据，左右和前后控制，向左是x值接近-1，向右是x值接近1，直立是y值接近0，前倾是y值接近-1，后倾y值接近1" />
+        <method name="vibrator" args="void	vibrator(float fSecond);" description="振动器(秒)
+手机振动" />
+        <method name="msgbox" args="void	msgbox(string szTitle,	string szMsg,	string szFlags,	string script);" description="弹出游戏信息框(szTitle, szMsg, szFlags, script)" />
+        <method name="lan" return="string" args="string	lan(string szName);" description="读取文本(指针)" />
+        <method name="setlanguage" args="void	setlanguage(string szlanPath);" description="设置地区语言所在目录(函数)
+cn=dlgs/cn/...rpgui,language/cn.txt等" />
+        <method name="language_image" return="string" args="string	language_image(string szFileName);" description="返回当前语言对应的路径名(名字)" />
+        <method name="bind_input" args="void	bind_input(string szEvent,	string szFunc);" description='全局绑定(事件名, 函数)
+szEvent="down,up,move",参数是，Pixel,事件[szFunc(pos)--(pos=Pixel)pos是Pixel类型参数]' />
+        <method name="infile" return="bool" args="bool	infile(string szFile);" description='是否在某个脚本中运行(szFile)
+是否在某个文件中，比如infile("main");是否在sc/main.lua文件中运行' />
+        <method name="insystem" return="bool" args="bool	insystem(string szSystem);" description='是否在某个系统中(szSystem)
+是否在某个系统中，参数"windows","ios","android"' />
+        <method name="goto" args="void	goto(string szLuaFile);" description="进入下一个脚本(szLuaFile)" />
+        <method name="payment" args="void	payment(string szBuyName,	string szFunc);" description="购买产品(购买名称, 购买反馈函数)
+反馈有一个参数,1表示成功,0表示失败,失败情况可查看调试输出,事件[szFunc(val)--val是0或1,1表示成功]" />
+        <method name="payment_restore" args="void	payment_restore(string szBuyName,	string szFunc);" description="购买恢复(购买名称, 恢复反馈函数)
+反馈有一个参数,1表示成功,0表示失败,失败情况可查看调试输出,事件[szFunc(val)--val是0或1,1表示成功]" />
+        <method name="ad_show" args="void	adhow(INT nType,	BOOL bShow);" description="显示广告条(类型, 显示)
+nType 0=banner,1=插屏,2=积分墙" />
+        <method name="ad_setpos" args="void	adetpos(INT x,	INT y);" description="设置显示位置(x, y)
+banner的位置" />
+        <method name="openurl" args="void	openurl(string url);" description="打开浏览器(url)" />
+        <method name="gotocomment" args="void	gotocomment();" description="进入评论页面()" />
+        <method name="openrank" args="void	openrank(string rank);" description="显示排行榜(rank)
+显示排行榜，设置排行榜名字，IOS开启gamecenter才会有效，android没有这个功能" />
+        <method name="rankscore" args="void	rankscore(string rank,	int nValue);" description="设置排行榜值(rank, nValue)
+设置排行榜积分，IOS开启gamecenter才会有效，android没有这个功能" />
+        <method name="achievement" args="void	achievement(string achievement,	int percent);" description="设置取得成就(achievement, percent)
+设置某个成就成功取得和其值，IOS开启gamecenter才会有效，android没有这个功能" />
+        <method name="worldmat" return="matrix4x4" args="matrix4x4	worldmat();" description="取世界矩阵()
+[R:计算相关]" />
+        <method name="viewmat" return="matrix4x4" args="matrix4x4	viewmat();" description="取观察矩阵()" />
+        <method name="projmat" return="matrix4x4" args="matrix4x4	projmat();" description="取投影矩阵()" />
+        <method name="round" return="INT" args="INT	round(float d);" description="四舍五入(d)
+四舍五入" />
+        <method name="abs" return="INT" args="INT	abs(double n);" description="取正值(n)
+取得正值" />
+        <method name="symbol" return="INT" args="INT	symbol(double n);" description="取符号(n)
+取得数字正负符号" />
+        <method name="atoi" return="INT" args="INT	atoi(string v);" description="文本到数字(v)
+文本到数字" />
+        <method name="int" return="INT" args="INT	int(double d);" description="浮点到整数(d)
+浮点数到整数，非四舍五入,0.1=0,1.9=1,2.0=2,2.1=2,..." />
+        <method name="point_in" return="bool" args="bool	point_in(Rect rect,	Pixel point);" description="判断点是否在矩形内(矩形, 点)" />
+        <method name="tovalue" return="float" args="float	tovalue(float meter);" description="到坐标(米)
+从米计算到坐标(返回 meter*10);" />
+        <method name="tometer" return="float" args="float	tometer(float v);" description="到米(坐标)
+从坐标计算到米(返回 v*0.1)" />
+        <method name="rgba" return="INT" args="INT	rgba(INT r,	INT g,	INT b,	INT a);" description="rgba(r, g, b, a)
+0~255,r=红，g=绿，b=蓝" />
+        <method name="rgbaf" return="INT" args="INT	rgbaf(float r,	float g,	float b,	float a);" description="rgba_F(r, g, b, a)
+0~1,r=红，g=绿，b=蓝，a=透明值" />
+        <method name="clamp_angle" return="float" args="float	clamp_angle(float fDegress);" description="弧度限制(fDegress)" />
+        <method name="clamp" return="float" args="float	clamp(float fValue,	float fMin,	float fMax);" description="值限制(值, 最小, 最大)
+设置值在某个范围内" />
+        <method name="dlg_create" return="UIDialog" args="UIDialog	dlg_create();" description="创建空对话框()
+[R:2D资源相关]" />
+        <method name="dlg_delete" args="void	dlg_delete(IDialogPtr ptr);" description="删除对话框(对话框)" />
+        <method name="dlg_load" return="UIDialog" args="UIDialog	dlg_load(string szFileName);" description="载入对话框仅一次(文件名)
+如果之前已经载入过则不再载入" />
+        <method name="dlg_loadnew" return="UIDialog" args="UIDialog	dlg_loadnew(string szFileName);" description="载入新的对话框(文件名)" />
+        <method name="dlg_search" return="UIDialog" args="UIDialog	dlgearch(string szDlgName);" description="搜索对话框(对话框名字)" />
+        <method name="dlg_at" return="UIDialog" args="UIDialog	dlg_at(INT index);" description="返回索引对话框(索引值)" />
+        <method name="dlg_count" return="INT" args="INT	dlg_count();" description="返回对话框个数()" />
+        <method name="avatar_create" return="UIAvatar" args="UIAvatar	avatar_create(string szFileName);" description="创建纸娃娃(rpgui文件名)" />
+        <method name="avatar_delete" args="void	avatar_delete(IAvatarPtr ptr);" description="删除纸娃娃(纸娃娃)" />
+        <method name="draw_create" return="UIDrawMgr" args="UIDrawMgr	draw_create();" description="创建寻路类()" />
+        <method name="findway_create" return="FindWay" args="FindWay	findway_create();" description="创建寻路类()" />
+        <method name="findway_delete" args="void	findway_delete(IFindWayPtr ptr);" description="删除寻路类(接口)" />
+        <method name="table_load" return="Table" args="Table	table_load(string szFile);" description="表格数据_载入(表格文件)
+[R:资源相关]" />
+        <method name="table_delete" args="void	table_delete(ITableReaderPtr ptr);" description="表格数据_释放(指针)" />
+        <method name="texture_load" return="Texture" args="Texture	texture_load(string szFile);" description="纹理_载入(文件名)" />
+        <method name="texture_delete" args="void	texture_delete(ITexturePtr ptr);" description="纹理_释放(纹理ID)" />
+        <method name="mesh_load" return="Mesh" args="Mesh	mesh_load(string szFile);" description="模型_载入(rpgmesh文件路径)
+载入并分配段内存" />
+        <method name="mesh_delete" args="void	mesh_delete(IMeshPtr mesh);" description="模型_释放(渲染组ID)" />
+        <method name="mesh_autorender" args="void	mesh_autorender(IMeshPtr mesh,	BOOL bRender);" description="模型_设置自动渲染(渲染组ID, 是否自动渲染)
+如果没有载入任何场景,这个将其作用" />
+        <method name="map3d_load" return="Map3D" args="Map3D	map3d_load(string szName);" description="地图3d_载入(文件名字)
+载入并分配段内存" />
+        <method name="map3d_delete" args="void	map3d_delete(IMap3DPtr mesh);" description="地图3d_释放(渲染组ID)" />
+        <method name="text_create" return="INT" args="INT	text_create(string szText,	int x,	int y);" description='文本创建(文本, 左, 上)
+返回文本ID，文本最长不能超过250个字节,文本必须使用utf8("中文")才能显示中文,文本实时渲染效率低，请在测试时使用，在UIControl控件中固定的文本渲染效率是很快的' />
+        <method name="text_create2" return="INT" args="INT	text_create2(string szText,	int x,	int y,	color4 c,	int size);" description='文本创建2(文本, 左, 上, 颜色, 文字大小)
+返回文本ID，文本最长不能超过250个字节,文本必须使用utf8("中文")才能显示中文，请在测试时使用，在UIControl控件中固定的文本渲染效率是很快的' />
+        <method name="text_update" args="void	text_update(int nID,	string szText);" description='文本创建(nID, 文本)
+刷新文本内容,文本必须使用utf8("中文")才能显示中文，请在测试时使用，在UIControl控件中固定的文本渲染效率是很快的' />
+        <method name="text_delete" args="void	text_delete(int nID);" description="文本删除(nID)
+根据ID删除文本，从text_create中返回" />
+        <method name="include" return="bool" args="bool	include(string szFile);" description="载入脚本文件(脚本文件)
+动态载入脚本文件到脚本系统，默认要放到sc目录下面，比如sc/base.lua则参数需要设置为base.lua,而且脚本文件必须得是utf8格式的" />
+        <method name="config" return="DataControl" args="DataControl	config(string name);" description="返回配置文件的类(配置项子数据名字)
+[R:IO相关]创建文件数据子项" />
+        <method name="isconfig" return="bool" args="bool	isconfig(string name);" description="从配置文件查找变量是否存在(配置项名字)
+从配置文件查找变量是否存在" />
+        <method name="readt" return="string" args="string	readt(string name);" description="从配置文件读取一个文本(配置项名字)" />
+        <method name="readf" return="double" args="double	readf(string name);" description="从配置文件读取一个浮点数(配置项名字)" />
+        <method name="readi" return="INT" args="INT	readi(string name);" description="从配置文件读取一个整数(配置项名字)" />
+        <method name="writet" args="void	writet(string name,	string szValue);" description="写入一个文本到配置文件(配置项名字, 值)" />
+        <method name="writef" args="void	writef(string name,	double fValue);" description="写入一个浮点到配置文件(配置项名字, 值)" />
+        <method name="writei" args="void	writei(string name,	INT nValue);" description="写入一个整数到配置文件(配置项名字, 值)" />
+        <method name="valdata" return="DataControl" args="DataControl	valdata(string name);" description="返回内存变量的类(配置项子数据名字)
+[R:内存数据脚本之间共享相关]创建文件数据子项" />
+        <method name="isval" return="bool" args="bool	isval(string name);" description="从内存查找变量是否存在(配置项名字)
+从内存查找变量是否存在" />
+        <method name="getvalt" return="string" args="string	getvalt(string name);" description="从内存读取一个文本(配置项名字)" />
+        <method name="getvalf" return="double" args="double	getvalf(string name);" description="从内存读取一个浮点数(配置项名字)" />
+        <method name="getvali" return="INT" args="INT	getvali(string name);" description="从内存读取一个整数(配置项名字)" />
+        <method name="setvalt" args="void	setvalt(string name,	string szValue);" description="写入一个文本到内存(配置项名字, 值)" />
+        <method name="setvalf" args="void	setvalf(string name,	double fValue);" description="写入一个浮点到内存(配置项名字, 值)" />
+        <method name="setvali" args="void	setvali(string name,	INT nValue);" description="写入一个整数到内存(配置项名字, 值)" />
+        <method name="playwave" return="INT" args="INT	playwave(string szName);" description="播放(WAV文件)
+必须得是名字比如beep会自动选择sound\\beep.wav[R:声音相关]" />
+        <method name="playmp3" return="INT" args="INT	playmp3(string szFile);" description="播放(WAV_MP3文件)
+必须得是名字比如beep会自动选择sound\\beep.mp3，只播放一次" />
+        <method name="playbgm" return="INT" args="INT	playbgm(string szFile);" description="循环播放背景音乐(WAV_MP3文件)
+必须得是名字比如beep会自动选择sound\\beep.mp3,使用stopsnd来停止播放音乐" />
+        <method name="playmp3_2" return="INT" args="INT	playmp3_2(string szFile,	INT nLoop);" description="播放(WAV_MP3文件循环次数, 循环次数)
+必须得是名字比如beep会自动选择sound\\beep.mp3" />
+        <method name="playsnd" return="INT" args="INT	playsnd(string szFile,	float fVolume,	float fPan,	float fRate);" description="播放2(WAV_MP3文件, 音量, 声道, 频率)
+可以直接设置名字，比如sound\\beep.wav，音量0~1，声道-1~1,频率1正常" />
+        <method name="stopsnd" args="void	stopsnd(INT s2d);" description="停止音乐(音效2D)" />
+        <method name="stopsndall" args="void	stopsndall();" description="停止所有音乐()" />
+        <method name="setsndvolume" args="void	setsndvolume(INT snd,	float fVolume);" description="设置音量(音效2D, 音量)
+音量值是0到1之间，取false表示此声音已经过期无效,声道值是-1到1之间,-1左声道，1右声道，取false表示此声音已经过期无效" />
+        <method name="setsndvolumepan" args="void	setsndvolumepan(INT s2d,	float fVolume,	float fPan);" description="设置音量声道(音效2D, 音量, fPan)
+音量值是0到1之间，取false表示此声音已经过期无效,声道值是-1到1之间,-1左声道，1右声道，取false表示此声音已经过期无效" />
+        <method name="setsndrate" args="void	setsndrate(INT snd,	float fRate);" description="设置频率(音效2D, 速度)
+音量值是0到1之间，播放速度" />
+        <method name="draw_bind" args="void	draw_bind(string szLuaFunc);" description="绑定渲染函数(渲染函数)
+[R:渲染相关]注册渲染函数，只能注册一次，如果要去掉设置空文本就可以了,事件[szLuaFunc(elapsed)--每次渲染循环函数中被调用];返回TimeID" />
+        <method name="draw2d_rect" args="void	draw2d_rect(Rect _rect,	color4 c,	BOOL bFill);" description="渲染矩形(矩形, 颜色, 是否填充内部)
+仅在Global_draw_bind函数的回调函数中调用有效" />
+        <method name="draw2d_line" args="void	draw2d_line(Pixel p1,	Pixel p2,	color4 c);" description="渲染2D线条(屏幕坐标1, 屏幕坐标2, 颜色)
+仅在Global_draw_bind函数的回调函数中调用有效" />
+        <method name="draw2d_linec" args="void	draw2d_linec(PixelColor p1,	PixelColor p2);" description="渲染一个带颜色线条(屏幕坐标1, 屏幕坐标2)
+仅在Global_draw_bind函数的回调函数中调用有效" />
+        <method name="draw2d_text" args="void	draw2d_text(Rect _rect,	string szText,	color4 c);" description="渲染文本(屏幕区域, 文本, 颜色)
+仅在Global_draw_bind函数的回调函数中调用有效" />
+        <method name="draw2d_texture" args="void	draw2d_texture(ITexturePtr texture,	Rect _rect,	Rect _textureRect,	color4 c);" description="渲染纹理(纹理, 屏幕区域, 纹理区域_默认0, 颜色_默认负1)
+仅在Global_draw_bind函数的回调函数中调用有效" />
+        <method name="draw2d_triangle" args="void	draw2d_triangle(ITexturePtr texture,	PixelUV p1,	PixelUV p2,	PixelUV p3,	BOOL bFill);" description="渲染屏幕中的三角形(纹理, 点1, 点2, 点3, 是否填充)
+仅在Global_draw_bind函数的回调函数中调用有效" />
+        <method name="draw3d_triangle" args="void	draw3d_triangle(float3 p1,	float3 p2,	float3 p3,	color4 c);" description="渲染三角形(点1, 点2, 点3, 颜色)
+仅在Global_draw_bind函数的回调函数中调用有效" />
+        <method name="draw3d_box" args="void	draw3d_box(AABox box,	color4 c,	BOOL bFill);" description="渲染盒子(盒子, 颜色, 是否填充)
+仅在Global_draw_bind函数的回调函数中调用有效" />
+        <method name="draw3d_line" args="void	draw3d_line(float3 _from,	float3 _to,	color4 c);" description="渲染3D线条(开始点, 结束点, 颜色)
+仅在Global_draw_bind函数的回调函数中调用有效" />
+        <method name="isunwalkable" return="bool" args="bool	isunwalkable(float3 pos);" description="是否禁止移动(当前位置)
+根据disable_开头的模型，检测是否可以移动到此点[R:3D相关]" />
+        <method name="getheight_3d" return="float" args="float	getheight_3d(float3 pos);" description="根据碰撞子模型取高度(位置)
+在3dsmax导出时已collision_开头的子模型都属于碰撞模型" />
+        <method name="ray3d" return="Mesh" args="Mesh	ray3d(Pixel pixel);" description="碰撞检测_仅与碰撞子模型(屏幕坐标位置)
+collision_开头的子模型都属于碰撞模型，对这些模型进行相交运算，如果没有碰撞任何模型则返回空类，要用isEmpty判断" />
+        <method name="ray3d_dir" return="Mesh" args="Mesh	ray3d_dir(float3 orig,	float3 dir);" description="碰撞检测_仅与碰撞子模型(原点, 方向)
+collision_开头的子模型都属于碰撞模型，对这些模型进行相交运算，如果没有碰撞任何模型则返回空类，要用isEmpty判断" />
+        <method name="ray3d_box" return="bool" args="bool	ray3d_box(float3 vOrig,	float3 vDir,	AABox box,	matrix4x4 pWorld);" description="碰撞检测_盒子(vOrig, vDir, box, pWorld)
+碰撞是否和盒子相交" />
+        <method name="ray3d_getdata" return="raydata" args="raydata	ray3d_getdata();" description="返回上一次碰撞检测之后的值()
+返回上一次碰撞检测之后的值" />
+        <method name="jinit" args="void	jinit(string szHttpInPhpFile);" description="初始化json设置http地址(szHttpInPhpFile)
+绑定一个入口php文件地址，或者其他的asp都可以，只要能返回幻影要求的json数据就可以[R:Ajax+Json网络数据相关]" />
+        <method name="jbind" args="void	jbind(int id,	string szFunc);" description="绑定json返回数据(id, szFunc)
+绑定一个lua函数到ajax返回的id响应,其内部可以调用jget*函数获取数据" />
+        <method name="jget" return="string" args="string	jget(string szName);" description="读取json文本(szName)" />
+        <method name="jgeti" return="INT" args="INT	jgeti(string szName);" description="读取json整数(szName)" />
+        <method name="jgetf" return="float" args="float	jgetf(string szName);" description="读取json浮点(szName)" />
+        <method name="jclear" args="void	jclear(string szName,	float fValue);" description="json记录清空(szName, fValue)" />
+        <method name="jset" args="void	jset(string szName,	string szValue);" description="设置json文本(szName, szValue)" />
+        <method name="jseti" args="void	jseti(string szName,	int nValue);" description="设置json整数(szName, nValue)" />
+        <method name="jsetf" args="void	jsetf(string szName,	float fValue);" description="设置json浮点(szName, fValue)" />
+        <method name="jrequest" args="void	jrequest();" description="json请求数据()
+jrequest之后自动清空记录，就是自动调用一次jclear" />
+        <method name="download" args="void	download(string httpRequest,	string inDocFile);" description="从网络下载文件(请求信息, 文档中的文件相对路径)
+ondownload在完成下载之后被调用脚本参数是(文件名,状态[ok,fail]);//jrequest之后自动清空记录，就是自动调用一次jclear" />
+        <method name="sinit" args="void	sinit(string _onlink,	string _ondislink,	string _onmessage,	int dwGUID);" description="net初始化(连接时触发, 断开连接时触发, 消息接收时触发, dwGUID)
+打开一个端口作为服务器，并设置服务器名字,所有的触发函数都有一个linkid，第一个参数都是linkid,onmessage第二个参数是消息ID,dwGUID是一个整数，用来识别连接数据，服务器端和客户端必须一致[R:Socket网络数据相关]" />
+        <method name="sserver" return="bool" args="bool	sserver(string name,	int port);" description="net启动服务器(name, port)
+打开一个端口作为服务器，并设置服务器名字,返回1表示创建成功" />
+        <method name="ssearch" args="void	ssearch(string _onsearch,	int port);" description='net搜索服务器(_onsearch, port)
+搜索服务器,_onsearch(infostr)//如果infostr是空表示没有搜索到任何服务器,infostr="name,ip,state,playercount";' />
+        <method name="sserver_state" args="void	sservertate(string state);" description="net设置服务器状态(state)
+设置服务器状态，这个状态将被客户搜索服务器的时候搜索到" />
+        <method name="sserver_max_links" args="void	sserver_max_links(INT nMaxLinks);" description="net设置服务器最大可连接客户端数量(nMaxLinks)
+数量" />
+        <method name="sclient" return="INT" args="INT	sclient(string szIP,	int port);" description="net启动客户端(szIP, port)
+启动客户端，并连接指定ip的指定端口" />
+        <method name="sclose" args="void	sclose(INT linkid);" description="net关闭连接(linkid)
+关闭连接" />
+        <method name="sstopall" args="void	sstopall();" description="net关闭所有服务器和客户端()
+关闭所有服务器和客户端" />
+        <method name="sget" return="string" args="string	sget();" description="net读取文本()
+只有消息回调函数(_onmessage)中才能调用" />
+        <method name="sgeti" return="INT" args="INT	sgeti();" description="net读取整数()
+只有消息回调函数(_onmessage)中才能调用" />
+        <method name="sgetf" return="float" args="float	sgetf();" description="net读取浮点()
+只有消息回调函数(_onmessage)中才能调用" />
+        <method name="sclear" args="void	sclear();" description="net清除缓存数据()
+清除缓存数据之后数据就可以重新写入" />
+        <method name="sset" args="void	sset(string szValue);" description="net写入文本(szValue)
+任何地方都能调用，但是必须先sclear清除之前的数据" />
+        <method name="sseti" args="void	sseti(int nValue);" description="net写入整数(nValue)
+任何地方都能调用，但是必须先sclear清除之前的数据" />
+        <method name="ssetf" args="void	ssetf(float fValue);" description="net写入浮点(fValue)
+任何地方都能调用，但是必须先sclear清除之前的数据" />
+        <method name="ssend" args="void	ssend(INT linkid,	short msgid);" description="net发送数据(linkid, msgid)
+发送到某个连接,使用消息ID发送，对方会接收到这个消息ID,消息ID必须大于0" />
+        <method name="random_init" args="void	random_init(int number);" description="随机数权重初始化(number)
+[R:随机数相关];" />
+        <method name="random_weight" args="void	random_weight(int index,	int weight);" description="随机数设置权重(index, weight)" />
+        <method name="random_do" args="void	random_do();" description="随机数计算()" />
+        <method name="random_table" args="void	random_table(int number);" description="随机数非权重初始化(number)" />
+        <method name="random_get" return="INT" args="INT	random_get(int b);" description="返回随机数(b)" />
+        <method name="c_add" args="void	c_add(string szName);" description="统计计数器加1(计数器)
+[R:统计相关]" />
+        <method name="c_set" args="void	cet(string szName,	INT nValue);" description="统计设置记录(计数器, 值)" />
+        <method name="c_get" return="INT" args="INT	c_get(string szName);" description="统计返回记录(计数器)" />
+    </class>
+    <enum name="ActionType" description="幻影单位动作类型">
+        <item name="None" return="0" description="单位动作类型_无," />
+        <item name="Idle" return="1" description="单位动作类型_默认," />
+        <item name="Walk" return="2" description="单位动作类型_走路," />
+        <item name="Run" return="3" description="单位动作类型_跑步," />
+        <item name="Swim" return="4" description="单位动作类型_游泳," />
+        <item name="Jump" return="5" description="单位动作类型_跳跃," />
+        <item name="Hit" return="6" description="单位动作类型_被攻击," />
+        <item name="Die" return="7" description="单位动作类型_死亡," />
+        <item name="Attack" return="8" description="单位动作类型_攻击," />
+        <item name="Fly" return="9" description="单位动作类型_飞行," />
+        <item name="SwimStandard" return="10" description="单位动作类型_游泳默认," />
+        <item name="Hide" return="11" description="单位动作类型_隐藏," />
+        <item name="Downing" return="12" description="单位动作类型_掉落," />
+        <item name="Other3" return="13" description="单位动作类型_其他3," />
+        <item name="Other4" return="14" description="单位动作类型_其他4," />
+        <item name="Other5" return="15" description="单位动作类型_其他5," />
+        <item name="Other6" return="16" description="单位动作类型_其他6," />
+        <item name="Other7" return="17" description="单位动作类型_其他7," />
+        <item name="Other8" return="18" description="单位动作类型_其他8," />
+        <item name="Other9" return="19" description="单位动作类型_其他9," />
+        <item name="Count" return="20" description="单位动作类型_数量," />
+    </enum>
+    <enum name="AlphaMode" description="幻影透明混合模式">
+        <item name="None" return="0" description="透明混合模式_关闭," />
+        <item name="Test" return="1" description="透明混合模式_测试模式," />
+        <item name="Blend" return="2" description="透明混合模式_混合模式," />
+    </enum>
+    <enum name="BlendMode" description="幻影混合模式">
+        <item name="ZERO" return="1" description="混合模式_ZERO," />
+        <item name="ONE" return="2" description="混合模式_ONE," />
+        <item name="SRCCOLOR" return="3" description="混合模式_SRCCOLOR," />
+        <item name="INVSRCCOLOR" return="4" description="混合模式_INVSRCCOLOR," />
+        <item name="SRCALPHA" return="5" description="混合模式_SRCALPHA," />
+        <item name="INVSRCALPHA" return="6" description="混合模式_INVSRCALPHA," />
+        <item name="DESTALPHA" return="7" description="混合模式_DESTALPHA," />
+        <item name="INVDESTALPHA" return="8" description="混合模式_INVDESTALPHA," />
+        <item name="DESTCOLOR" return="9" description="混合模式_DESTCOLOR," />
+        <item name="INVDESTCOLOR" return="10" description="混合模式_INVDESTCOLOR," />
+        <item name="SRCALPHASAT" return="11" description="混合模式_SRCALPHASAT," />
+        <item name="BOTHSRCALPHA" return="12" description="混合模式_BOTHSRCALPHA," />
+        <item name="BOTHINVSRCALPHA" return="13" description="混合模式_BOTHINVSRCALPHA," />
+    </enum>
+    <enum name="CullMode" description="幻影渲染面选择">
+        <item name="Double" return="1" description="渲染面选择_双面,正面和背面都渲染,也就是双面渲染" />
+        <item name="CW" return="2" description="渲染面选择_正面,只渲染正面" />
+        <item name="CCW" return="3" description="渲染面选择_背面,只渲染背面" />
+    </enum>
+    <enum name="DrawTextAlign" description="幻影文本位置_多选">
+        <item name="TOP" return="0" description="文本位置_上对齐," />
+        <item name="LEFT" return="0" description="文本位置_左对齐," />
+        <item name="CENTER" return="1" description="文本位置_横向中间对齐," />
+        <item name="RIGHT" return="2" description="文本位置_右对齐," />
+        <item name="VCENTER" return="4" description="文本位置_纵向中间对齐," />
+        <item name="BOTTOM" return="8" description="文本位置_下对齐," />
+        <item name="WORDBREAK" return="16" description="文本位置_自动换行," />
+        <item name="SINGLELINE" return="32" description="文本位置_仅一行," />
+        <item name="EXPANDTABS" return="64" description="文本位置_TAB键展开," />
+        <item name="TABSTOP" return="128" description="文本位置_TAB停止," />
+        <item name="NOCLIP" return="256" description="文本位置_忽略输出矩形区域," />
+        <item name="CALCRECT" return="1024" description="文本位置_计算举行区域," />
+    </enum>
+    <enum name="EventID" description="幻影事件类型">
+        <item name="Click" return="1" description="界面事件_单击,在bind_eventby中文本参数是onclick" />
+        <item name="Down" return="2" description="界面事件_按下,在bind_eventby中文本参数是ondown" />
+        <item name="Up" return="3" description="界面事件_弹起,onup" />
+        <item name="Move" return="4" description="界面事件_移动,在bind_eventby中文本参数是onmove" />
+        <item name="DoubleClick" return="8" description="界面事件_双击,在bind_eventby中文本参数是ondblclick" />
+        <item name="Changed" return="9" description="界面事件_值变动,在bind_eventby中文本参数是onchanged,如果是按钮此功能有效，在按下之后持续按下状态下会引发此事件，只要是持续按下就会一直逐渐加速触发，触发速度最高会到每秒20次引发" />
+        <item name="PlayOver" return="10" description="界面事件_播放完毕,在bind_eventby中文本参数是onplayover,界面控制动画(并非UV动画)播放完毕会被调用" />
+        <item name="UVPlayOver" return="11" description="界面事件_UV动画播放完毕,在bind_eventby中文本参数是onplayoveruv界面UV动画播放完毕会被调用" />
+    </enum>
+    <enum name="FogMode" description="幻影雾类型">
+        <item name="Fog3D" return="0" description="3D雾模式,3D雾模式" />
+        <item name="Fog3DGray" return="1" description="3D雾模式灰度,3D雾模式" />
+        <item name="Fog3DSub" return="2" description="3D雾模式减值,3D雾模式减值" />
+        <item name="Fog3DHide" return="3" description="3D雾模式隐藏有效,仅隐藏有效，不做任何雾效果增加" />
+        <item name="Fog2D" return="5" description="2D雾模式,2D雾模式，Z周不参与计算" />
+        <item name="Fog2DGray" return="6" description="2D雾模式灰度,2D雾模式，Z不参与计算，远距离对象进行灰度处理" />
+        <item name="Fog2DSub" return="7" description="2D雾模式减值,2D雾模式减值，Z不参与计算" />
+        <item name="Fog2DHide" return="8" description="2D雾模式隐藏有效,仅隐藏有效，不做任何雾效果增加" />
+    </enum>
+    <enum name="MouseButton" description="幻影鼠标按钮类型">
+        <item name="None" return="0" description="鼠标按钮类型_无," />
+        <item name="Left" return="1" description="鼠标按钮类型_左键," />
+        <item name="Right" return="2" description="鼠标按钮类型_右键," />
+        <item name="Middle" return="3" description="鼠标按钮类型_中键," />
+    </enum>
+    <enum name="TextureBlend" description="幻影纹理参数混合">
+        <item name="MODULATE" return="4" description="纹理参数混合_MODULATE,multiply args together" />
+        <item name="MODULATE2X" return="5" description="纹理参数混合_MODULATE2X,multiply and 1 bit" />
+        <item name="MODULATE4X" return="6" description="纹理参数混合_MODULATE4X,multiply and 2 bits" />
+    </enum>
+    <enum name="TextureStage" description="幻影纹理索引">
+        <item name="Channel0" return="0" description="纹理索引_0," />
+        <item name="Channel1" return="1" description="纹理索引_1," />
+        <item name="Channel2" return="2" description="纹理索引_2," />
+        <item name="Channel3" return="3" description="纹理索引_3," />
+        <item name="Channel4" return="4" description="纹理索引_4," />
+    </enum>
+    <enum name="UIControlType" description="幻影控件类型">
+        <item name="NONE" return="0" description="控件类型_无," />
+        <item name="BUTTON" return="1" description="控件类型_按钮," />
+        <item name="CHECKBOX" return="2" description="控件类型_单选框," />
+        <item name="COMBOBOX" return="4" description="控件类型_组合框," />
+        <item name="SLIDER" return="5" description="控件类型_Slider," />
+        <item name="EDITBOX" return="6" description="控件类型_编辑框," />
+        <item name="IMEEDITBOX" return="7" description="控件类型_带有IME的编辑框," />
+        <item name="LISTBOX" return="8" description="控件类型_列表框," />
+        <item name="SCROLLBAR" return="9" description="控件类型_滚动条," />
+        <item name="PROGRESS" return="10" description="控件类型_进度条," />
+        <item name="STATIC" return="11" description="控件类型_文本框," />
+        <item name="FORMAT_EDITBOX" return="14" description="控件类型_格式化编辑框,格式化输入框" />
+        <item name="VIEW_FORMAT_TEXT" return="15" description="控件类型_格式化文本框,格式化显示框" />
+        <item name="LISTCTRL3D" return="16" description="控件类型_行列框,格式化显示框" />
+        <item name="ui2DEffect" return="19" description="控件类型_2D特效," />
+    </enum>
+    <enum name="UISoundPlay" description="幻影界面声音格式">
+        <item name="mouseIn" return="0" description="界面声音格式_鼠标进入," />
+        <item name="buttonDown" return="1" description="界面声音格式_按钮按下," />
+        <item name="count" return="10" description="界面声音格式_数量," />
+    </enum>
+    <usage>
+        <variant content="AABox" args="AABox(float3 __min,float3 __max);" type="AABox" />
+        <variant content="color4" args="color4(float _r,float _g,float _b,float _a);" type="color4" />
+        <variant content="doublePtr" args="doublePtr(double _value);" type="doublePtr" />
+        <variant content="float2" args="float2(float _x,float _y);" type="float2" />
+        <variant content="float3" args="float3(float _x,float _y,float _z);" type="float3" />
+        <variant content="float4" args="float4(float _x,float _y,float _z,float _w);" type="float4" />
+        <variant content="floatPtr" args="floatPtr(float _value);" type="floatPtr" />
+        <variant content="GameID" args="GameID(short _id,short _index);" type="GameID" />
+        <variant content="intPtr" args="intPtr(INT _value);" type="intPtr" />
+        <variant content="Object" args="Object(short 1,short 2,INT _i1,INT _i2);" type="Object" />
+        <variant content="PickPoint" args="PickPoint(float3 _pos,float3 _normal,float _t);" type="PickPoint" />
+        <variant content="Pixel" args="Pixel(INT _x,INT _y);" type="Pixel" />
+        <variant content="PixelColor" args="PixelColor(INT _x,INT _y,color4 _color);" type="PixelColor" />
+        <variant content="PixelUV" args="PixelUV(INT _x,INT _y,float _u,float _v,color4 _c);" type="PixelUV" />
+        <variant content="Plane" args="Plane(float _a,float _b,float _c,float _d);" type="Plane" />
+        <variant content="quaternion" args="quaternion(float _x,float _y,float _z,float _w);" type="quaternion" />
+        <variant content="raydata" args="raydata(float _t,float3 _point,float3 _normal);" type="raydata" />
+        <variant content="Rect" args="Rect(INT _left,INT _top,INT _right,INT _bottom);" type="Rect" />
+        <variant content="short2" args="short2(short _x,short _y);" type="short2" />
+        <variant content="short4" args="short4(short _x,short _y,short _z,short _w);" type="short4" />
+        <variant content="shortPtr" args="shortPtr(short _value);" type="shortPtr" />
+        <variant content="Time" args="Time(INT _year,INT _month,INT _day,INT _hour,INT _minute,INT econd,INT _microsecond);" type="Time" />
+        <variant content="Triangle" args="Triangle(short _v1,short _v2,short _v3);" type="Triangle" />
+        <variant content="ubyte4" args="ubyte4(char _x,char _y,char _z,char _w);" type="ubyte4" />
+        <variant content="Vertex" args="Vertex(float3 _pos,float3 _normal,float2 _uv1,float2 _uv2);" type="Vertex" />
+        <variant content="DataArray" args="DataArray();" type="DataArray" object="class" />
+        <variant content="DataControl" args="DataControl();" type="DataControl" object="class" />
+        <variant content="FindWay" args="FindWay();" type="FindWay" object="class" />
+        <variant content="GameObject" args="GameObject();" type="GameObject" object="class" />
+        <variant content="Map3D" args="Map3D();" type="Map3D" object="class" />
+        <variant content="Map3DEnv" args="Map3DEnv();" type="Map3DEnv" object="class" />
+        <variant content="Map3DItem" args="Map3DItem();" type="Map3DItem" object="class" />
+        <variant content="Map3DPoint" args="Map3DPoint();" type="Map3DPoint" object="class" />
+        <variant content="Map3DSkill" args="Map3DSkill();" type="Map3DSkill" object="class" />
+        <variant content="Mesh" args="Mesh();" type="Mesh" object="class" />
+        <variant content="MeshAction" args="MeshAction();" type="MeshAction" object="class" />
+        <variant content="MeshMaterial" args="MeshMaterial();" type="MeshMaterial" object="class" />
+        <variant content="SubMesh" args="SubMesh();" type="SubMesh" object="class" />
+        <variant content="Table" args="Table();" type="Table" object="class" />
+        <variant content="Texture" args="Texture();" type="Texture" object="class" />
+        <variant content="UIAvatar" args="UIAvatar();" type="UIAvatar" object="class" />
+        <variant content="UIBodyPart" args="UIBodyPart();" type="UIBodyPart" object="class" />
+        <variant content="UIControl" args="UIControl();" type="UIControl" object="class" />
+        <variant content="UIDialog" args="UIDialog();" type="UIDialog" object="class" />
+        <variant content="UIDrawMgr" args="UIDrawMgr();" type="UIDrawMgr" object="class" />
+        <variant content="UIElement" args="UIElement();" type="UIElement" object="class" />
+        <variant content="UIGroup" args="UIGroup();" type="UIGroup" object="class" />
+        <variant content="camera" type="Camera" />
+        <variant content="gamemgr" type="GameMgr" />
+        <variant content="system" type="System" />
+    </usage>
+</xml>

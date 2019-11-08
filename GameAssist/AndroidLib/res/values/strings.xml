@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<resources>
+    <string name="hello">Hello Phantom Game Engine!</string>
+    <string name="app_name">幻影游戏引擎库文件</string>
+   	<string name="xiaoxi">信息</string>
+	<string name="cancel">取消</string>
+</resources>

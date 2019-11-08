@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>OpenGL_V2</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DirectX9_DebugLib|Win32">
+      <Configuration>DirectX9_DebugLib</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DirectX9_Debug|Win32">
+      <Configuration>DirectX9_Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="OpenGL_V1|Win32">
+      <Configuration>OpenGL_V1</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CAA44886-7C8D-41FA-805A-AB4054DB60E5}</ProjectGuid>
+    <RootNamespace>StockAnalyse</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+    <ProjectName>StockAnalyse</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V2|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_DebugLib|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+    <PlatformToolset>v100</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='OpenGL_V2|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_DebugLib|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V2|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../../../bz_output/$(ConfigurationName)/$(ProjectName)</OutDir>
+    <IntDir>../../../../bz_output/$(ConfigurationName)/$(ProjectName)</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../../../bz_output/$(ConfigurationName)/$(ProjectName)_OGL</OutDir>
+    <IntDir>../../../../bz_output/$(ConfigurationName)/$(ProjectName)_OGL</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../../../bz_output/$(ConfigurationName)/$(ProjectName)</OutDir>
+    <IntDir>../../../../bz_output/$(ConfigurationName)/$(ProjectName)</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_DebugLib|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../../../bz_output/$(ConfigurationName)/$(ProjectName)</OutDir>
+    <IntDir>../../../../bz_output/$(ConfigurationName)/$(ProjectName)</IntDir>
+    <IncludePath>$(IncludePath)</IncludePath>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>../../../../bz_output/$(ConfigurationName)/$(ProjectName)</OutDir>
+    <IntDir>../../../../bz_output/$(ConfigurationName)/$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V2|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\dep;../;../../GameDesigner;../../../EngineProtected</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PhantomEngineOGL.lib;Win32_EmulatorOGL.lib;dependencies.lib;libEGL.lib;libGLESv2.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dxguid.lib;dsound.lib;winmm.lib;comctl32.lib;imm32.lib;strmiids.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <OutputFile>../bin/HJ_ChessGL.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Emulator\DirectX_9_10\lib;..\..\..\Emulator\OpenGLES2_Mail\lib;..\..\..\lib;..\..\..\ogl_lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='OpenGL_V1|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\dep;../;../../base</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PhantomEngineOGL.lib;Win32_EmulatorOGL.lib;dependencies.lib;libEGL.lib;libGLESv2.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dxguid.lib;dsound.lib;winmm.lib;comctl32.lib;imm32.lib;strmiids.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <OutputFile>../../PlatformGL.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Emulator\DirectX_9_10\lib;..\..\..\Emulator\OpenGLES2_Mail\lib;..\..\..\lib;..\..\..\ogl_lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;STOCK;_CPUTIME;USE_DLG;_WINDOWS;_DEBUG;DIRECT_X_9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\dep;../../base;../;../../../EngineProtected;F:\趋势分析Project\Trend\include</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PhantomEngineD.lib;Win32_Emulator.lib;dependencies.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dxguid.lib;dsound.lib;winmm.lib;comctl32.lib;imm32.lib;strmiids.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <OutputFile>F:\VRRobot\StockAnalyse_Debug.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Emulator\DirectX_9_10\lib;..\..\..\Emulator\OpenGLES2_Mail\lib;..\..\..\lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DirectX9_DebugLib|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_CPUTIME;ENGINE_LIB_MODE;USE_DLG;_WINDOWS;_DEBUG;DIRECT_X_9;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\dep;../../base;../;../../../EngineProtected</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>PhantomEngine.lib;Win32_Emulator.lib;dependencies.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dxguid.lib;dsound.lib;winmm.lib;comctl32.lib;imm32.lib;strmiids.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <OutputFile>F:\应用设计助手软件\V1.0\StockAnalyse_Debug.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Emulator\DirectX_9_10\lib;..\..\..\Emulator\OpenGLES2_Mail\lib;..\..\..\lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_CPUTIME;USE_DLG;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\dep;../../base;../;../../../EngineProtected</AdditionalIncludeDirectories>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>PhantomEngineR.lib;Win32_EmulatorR.lib;dependenciesR.lib;d3d9.lib;d3dx9.lib;dxerr.lib;dxguid.lib;dsound.lib;winmm.lib;comctl32.lib;imm32.lib;strmiids.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib</AdditionalDependencies>
+      <OutputFile>F:\应用设计助手软件\V1.0\StockAnalyse.exe</OutputFile>
+      <AdditionalLibraryDirectories>..\..\..\Emulator\DirectX_9_11\lib;..\..\..\Emulator\OpenGLES2_Mail\lib;..\..\..\lib</AdditionalLibraryDirectories>
+      <AdditionalOptions>/FORCE:MULTIPLE %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0804</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\..\base\default_init_zip.zip" />
+    <None Include="..\..\base\share_data\default_init_zip.zip" />
+    <None Include="..\..\win32base\res\MFCGame.ico" />
+    <None Include="..\..\win32base\res\MFCGame.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\base\GameManager.h" />
+    <ClInclude Include="..\..\base\MD5.h" />
+    <ClInclude Include="..\..\base\MyStockState.h" />
+    <ClInclude Include="..\..\base\NetService.h" />
+    <ClInclude Include="..\..\base\StockInterface.h" />
+    <ClInclude Include="..\..\win32base\DlgBindBar.h" />
+    <ClInclude Include="..\..\win32base\DlgLog.h" />
+    <ClInclude Include="..\..\win32base\MFCGame.h" />
+    <ClInclude Include="..\..\win32base\MFCGameDlg.h" />
+    <ClInclude Include="..\..\win32base\OpenEdit.h" />
+    <ClInclude Include="..\..\win32base\resource.h" />
+    <ClInclude Include="F:\趋势分析Project\Trend\include\AnalyseThread.h" />
+    <ClInclude Include="F:\趋势分析Project\Trend\include\Base.h" />
+    <ClInclude Include="F:\趋势分析Project\Trend\include\ClientPoint.h" />
+    <ClInclude Include="F:\趋势分析Project\Trend\include\DeepStock.h" />
+    <ClInclude Include="F:\趋势分析Project\Trend\include\ServerPoint.h" />
+    <ClInclude Include="F:\趋势分析Project\Trend\include\ShareID.h" />
+    <ClInclude Include="F:\趋势分析Project\Trend\include\Simulation.h" />
+    <ClInclude Include="F:\趋势分析Project\Trend\include\Socket.h" />
+    <ClInclude Include="F:\趋势分析Project\Trend\include\Stock.h" />
+    <ClInclude Include="F:\趋势分析Project\Trend\include\StockMath.h" />
+    <ClInclude Include="Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\base\GameManager.cpp" />
+    <ClCompile Include="..\..\base\MD5.cpp" />
+    <ClCompile Include="..\..\base\MyStockState.cpp" />
+    <ClCompile Include="..\..\base\NetService.cpp" />
+    <ClCompile Include="..\..\base\StockInterface.cpp" />
+    <ClCompile Include="..\..\win32base\DlgBindBar.cpp" />
+    <ClCompile Include="..\..\win32base\DlgLog.cpp" />
+    <ClCompile Include="..\..\win32base\MFCGame.cpp" />
+    <ClCompile Include="..\..\win32base\MFCGameDlg.cpp" />
+    <ClCompile Include="..\..\win32base\OpenEdit.cpp" />
+    <ClCompile Include="..\MyGameInit.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\AnalyseThread.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\Base.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\ClientPoint.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\DeepStock.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\Formula.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\ServerPoint.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\Simulation.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\Socket.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\SocketAndroid.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\SocketIOS.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\SocketWin32.cpp" />
+    <ClCompile Include="F:\趋势分析Project\Trend\include\Stock.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\win32base\MFCGame.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

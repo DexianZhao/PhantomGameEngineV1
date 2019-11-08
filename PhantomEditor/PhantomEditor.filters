@@ -1,0 +1,952 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Editors">
+      <UniqueIdentifier>{117f9bde-95f1-4462-b912-117e515530db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GCBase">
+      <UniqueIdentifier>{6fb443b7-ce7e-4d4d-95a6-f0d8923b4715}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Language">
+      <UniqueIdentifier>{5fceed36-8882-4e48-b2b5-9a2939eb8927}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers">
+      <UniqueIdentifier>{438aeb52-97d2-43ff-a665-b12d1ae82994}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\GeometryEditor">
+      <UniqueIdentifier>{f2670b21-f49b-4ea1-bcf4-074c3b0f6834}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\UIEditor">
+      <UniqueIdentifier>{3fc28379-94f7-4915-b361-455101893f09}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\SceneEditor3D">
+      <UniqueIdentifier>{82217a33-6050-45d4-8b52-de1a4155165c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\SceneEditor3D\ImageViewer">
+      <UniqueIdentifier>{bee514cf-0e71-464b-8a03-4f43059f26d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\SceneEditor3D\MoveAxis">
+      <UniqueIdentifier>{78eccee6-5591-4e3f-9ec5-dfef7b33ba26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\Unit3D">
+      <UniqueIdentifier>{a131eab5-1165-49be-be22-dc603e6d4751}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="RenderSystem">
+      <UniqueIdentifier>{8d5e60c0-af51-4234-a625-116e832108b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{b2e5387a-175f-49b1-b2c0-20a2809f51f3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{f8893b9b-c1fc-4ede-bc7c-7d1992166065}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{c9dd1f3c-314e-4071-a257-5f10ac7d1b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PhantomEngine">
+      <UniqueIdentifier>{f1da83ee-bbc8-4af2-8bf7-7aa908e3297d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editors\CodeEditor">
+      <UniqueIdentifier>{3601ed63-4452-4081-8ff7-f61a8a8a3cca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Managers\CodeEditor">
+      <UniqueIdentifier>{d5101071-211b-4c6e-9636-3db0447acc9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pvdapp">
+      <UniqueIdentifier>{80ebca3a-3a17-40db-8c1f-d55a080a25af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Editors\CodeEditor\xml">
+      <UniqueIdentifier>{0e440e93-8b15-4db3-a081-aa26f5bfb598}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="BigTextEditor.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeSpinButtonCtrl.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="GCPropertyBase.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewTreeBase.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageButton.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageCheck.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="ListBoxEditor.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="ListBoxIcon.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="MyMFCPropertyGridProperty.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="MTreeCtrl.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesUIWnd.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="ValueEditor.cpp">
+      <Filter>Editors</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogBase.cpp">
+      <Filter>GCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GCBitmapMgr.cpp">
+      <Filter>GCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GCMFCHelper.cpp">
+      <Filter>GCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewBase.cpp">
+      <Filter>GCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewManager.cpp">
+      <Filter>GCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GCLanguage.cpp">
+      <Filter>Language</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewGeometryEditor.cpp">
+      <Filter>Managers\GeometryEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="SubGeometryEditorDlg.cpp">
+      <Filter>Managers\GeometryEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewUIEditorProperties.cpp">
+      <Filter>Managers\UIEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewUIEditor.cpp">
+      <Filter>Managers\UIEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewUIEditorProc.cpp">
+      <Filter>Managers\UIEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewUIEditorUnit.cpp">
+      <Filter>Managers\UIEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="GCSceneEditor3D.cpp">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GCSceneEditor3DProperties.cpp">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GCSceneEditor3D_HeightMode.cpp">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GCSceneEditor3D_LineMode.cpp">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GCSceneEditor3D_ObjectMode.cpp">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GCSceneEditor3D_TextureMode.cpp">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClCompile>
+    <ClCompile Include="SceneCreateDlg.cpp">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageListViewDLG.cpp">
+      <Filter>Managers\SceneEditor3D\ImageViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewImageManager.cpp">
+      <Filter>Managers\SceneEditor3D\ImageViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewLayerImages.cpp">
+      <Filter>Managers\SceneEditor3D\ImageViewer</Filter>
+    </ClCompile>
+    <ClCompile Include="MoveAxis.cpp">
+      <Filter>Managers\SceneEditor3D\MoveAxis</Filter>
+    </ClCompile>
+    <ClCompile Include="RotationAxis.cpp">
+      <Filter>Managers\SceneEditor3D\MoveAxis</Filter>
+    </ClCompile>
+    <ClCompile Include="ScaleAxis.cpp">
+      <Filter>Managers\SceneEditor3D\MoveAxis</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewUnit3D.cpp">
+      <Filter>Managers\Unit3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewUnit3DProperties.cpp">
+      <Filter>Managers\Unit3D</Filter>
+    </ClCompile>
+    <ClCompile Include="GCRenderSystem.cpp">
+      <Filter>RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GCStateDefault.cpp">
+      <Filter>RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="MyEdit.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\local_include\TextCrypts.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ClassView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CreateFileDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgMixFPS.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgViewerHttp.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScreenSize.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ImportEquipDLG.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MultiExportDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="phantom-gc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="phantom-gcDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="phantom-gcView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesDialogWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertiesWnd.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertyDlgWndBase.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SetElementTextureDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TgaLoader.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UIPngMaker.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="GCViewUIEditorHtml5.cpp">
+      <Filter>Managers\UIEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="AlignDialog3D.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhantomEngine3D\PhantomEngine\encrypt.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="IDEHttp.cpp">
+      <Filter>Language</Filter>
+    </ClCompile>
+    <ClCompile Include="IDESocket.cpp">
+      <Filter>Language</Filter>
+    </ClCompile>
+    <ClCompile Include="IDEMd5.cpp">
+      <Filter>Language</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\PhantomEngine3D\AllGames\win32base\DlgLog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGameInit.cpp">
+      <Filter>PhantomEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>PhantomEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="MyGameState.cpp">
+      <Filter>PhantomEngine</Filter>
+    </ClCompile>
+    <ClCompile Include="GCPhantomEngine.cpp">
+      <Filter>RenderSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="GCAnimationCtrl.cpp">
+      <Filter>GCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GCTrackEditor.cpp">
+      <Filter>GCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="GCFloatAnimation.cpp">
+      <Filter>GCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="TrackAnimationCtrl.cpp">
+      <Filter>GCBase</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSceneObject.cpp">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaEditor\src\CodeAnalyse.cpp">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaEditor\src\CodeComboBox.cpp">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaEditor\src\CodeEditor.cpp">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaEditor\src\CodeListBox.cpp">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaEditor\src\DlgFindReplace.cpp">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaEditor\src\LuaXmlModule.cpp">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaEditor\src\MyLuaEditor.cpp">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="..\LuaEditor\src\ToolTipDialog.cpp">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="GCCodeEditor.cpp">
+      <Filter>Managers\CodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgBuyVIP.cpp">
+      <Filter>pvdapp</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgCodeColor.cpp">
+      <Filter>pvdapp</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgSelectDevice.cpp">
+      <Filter>pvdapp</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgUserInfo.cpp">
+      <Filter>pvdapp</Filter>
+    </ClCompile>
+    <ClCompile Include="RegisterDialog.cpp">
+      <Filter>pvdapp</Filter>
+    </ClCompile>
+    <ClCompile Include="LoginDialog.cpp">
+      <Filter>pvdapp</Filter>
+    </ClCompile>
+    <ClCompile Include="GCGameService.cpp" />
+    <ClCompile Include="DlgResDetail.cpp" />
+    <ClCompile Include="DlgResShop.cpp" />
+    <ClCompile Include="base_xmlFileW.cpp">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinystr.cpp">
+      <Filter>Editors\CodeEditor\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxml.cpp">
+      <Filter>Editors\CodeEditor\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxmlerror.cpp">
+      <Filter>Editors\CodeEditor\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxmlparser.cpp">
+      <Filter>Editors\CodeEditor\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="xml\tinyxmlw.cpp">
+      <Filter>Editors\CodeEditor\xml</Filter>
+    </ClCompile>
+    <ClCompile Include="base_xmlFileA.cpp">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="BigTextEditor.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeSpinButtonCtrl.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="GCPropertyBase.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="GCViewTreeBase.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageButton.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageCheck.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="ListBoxEditor.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="ListBoxIcon.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="MyMFCPropertyGridProperty.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="MTreeCtrl.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesUIWnd.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="ValueEditor.h">
+      <Filter>Editors</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogBase.h">
+      <Filter>GCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GCBitmapMgr.h">
+      <Filter>GCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GCDefine.h">
+      <Filter>GCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GCMFCHelper.h">
+      <Filter>GCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GCViewBase.h">
+      <Filter>GCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GCViewManager.h">
+      <Filter>GCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GCLanguage.h">
+      <Filter>Language</Filter>
+    </ClInclude>
+    <ClInclude Include="GCViewGeometryEditor.h">
+      <Filter>Managers\GeometryEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="SubGeometryEditorDlg.h">
+      <Filter>Managers\GeometryEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="GCViewUIEditor.h">
+      <Filter>Managers\UIEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="GCSceneEditor3D.h">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneCreateDlg.h">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClInclude>
+    <ClInclude Include="ImageListViewDLG.h">
+      <Filter>Managers\SceneEditor3D\ImageViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewImageManager.h">
+      <Filter>Managers\SceneEditor3D\ImageViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewLayerImages.h">
+      <Filter>Managers\SceneEditor3D\ImageViewer</Filter>
+    </ClInclude>
+    <ClInclude Include="MoveAxis.h">
+      <Filter>Managers\SceneEditor3D\MoveAxis</Filter>
+    </ClInclude>
+    <ClInclude Include="RotationAxis.h">
+      <Filter>Managers\SceneEditor3D\MoveAxis</Filter>
+    </ClInclude>
+    <ClInclude Include="ScaleAxis.h">
+      <Filter>Managers\SceneEditor3D\MoveAxis</Filter>
+    </ClInclude>
+    <ClInclude Include="GCViewUnit3D.h">
+      <Filter>Managers\Unit3D</Filter>
+    </ClInclude>
+    <ClInclude Include="GCRenderSystem.h">
+      <Filter>RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="GCStateDefault.h">
+      <Filter>RenderSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\local_include\TextCrypts.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ClassView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CreateFileDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgMixFPS.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgViewerHttp.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScreenSize.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ImportEquipDLG.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MultiExportDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyEdit.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="phantom-gc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="phantom-gcDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="phantom-gcView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesDialogWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertiesWnd.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertyDlgWndBase.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SetElementTextureDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UIPngMaker.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TgaLoader.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AlignDialog3D.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="IDESocket.h">
+      <Filter>Language</Filter>
+    </ClInclude>
+    <ClInclude Include="IDEHttp.h">
+      <Filter>Language</Filter>
+    </ClInclude>
+    <ClInclude Include="IDEMd5.h">
+      <Filter>Language</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\PhantomEngine3D\AllGames\win32base\DlgLog.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManager.h">
+      <Filter>PhantomEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="MyGameState.h">
+      <Filter>PhantomEngine</Filter>
+    </ClInclude>
+    <ClInclude Include="GCAnimationCtrl.h">
+      <Filter>GCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GCTrackEditor.h">
+      <Filter>GCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="GCFloatAnimation.h">
+      <Filter>GCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="TrackAnimationCtrl.h">
+      <Filter>GCBase</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSceneObject.h">
+      <Filter>Managers\SceneEditor3D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaEditor\src\CodeAnalyse.h">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaEditor\src\CodeComboBox.h">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaEditor\src\CodeEditor.h">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaEditor\src\CodeListBox.h">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaEditor\src\DlgFindReplace.h">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaEditor\src\LuaXmlModule.h">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaEditor\src\MyLuaEditor.h">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="..\LuaEditor\src\ToolTipDialog.h">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="GCCodeEditor.h">
+      <Filter>Managers\CodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgUserInfo.h">
+      <Filter>pvdapp</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgBuyVIP.h">
+      <Filter>pvdapp</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgCodeColor.h">
+      <Filter>pvdapp</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgSelectDevice.h">
+      <Filter>pvdapp</Filter>
+    </ClInclude>
+    <ClInclude Include="RegisterDialog.h">
+      <Filter>pvdapp</Filter>
+    </ClInclude>
+    <ClInclude Include="LoginDialog.h">
+      <Filter>pvdapp</Filter>
+    </ClInclude>
+    <ClInclude Include="GCGameService.h" />
+    <ClInclude Include="DlgResDetail.h" />
+    <ClInclude Include="DlgResShop.h" />
+    <ClInclude Include="base_xmlFileW.h">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\tinystr.h">
+      <Filter>Editors\CodeEditor\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\tinyxml.h">
+      <Filter>Editors\CodeEditor\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="xml\tinyxmlw.h">
+      <Filter>Editors\CodeEditor\xml</Filter>
+    </ClInclude>
+    <ClInclude Include="base_xmlFileA.h">
+      <Filter>Editors\CodeEditor</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="..\..\execute\default\buydlg.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\execute\default\game_icon.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\execute\default\mainlogo.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp00001.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp00002.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp00003.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp00004.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp00005.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp00006.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp00007.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\bmp00008.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\buttons.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\classview.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\classview_hc.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\class_vi.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\class_view.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\class_view_hc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\effect.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\effect.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\effect_f.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\effect_v.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\explorer.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\explorer_hc.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\filelarge.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\filesmal.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\filesmall.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\fileview.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\fileview_hc.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\file_vie.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\file_view.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\file_view_hc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\gameproj.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\game_icon.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\geometry.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\geometry.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\geometrys.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico00001.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico00002.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico00003.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico00004.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico00005.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico00006.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico00007.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ico00008.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\icon1.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\logic_fi.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\main.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\main1.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\mainfram.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\menuimages.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\menuimages_hc.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\mesh_too.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\output_wnd.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\output_wnd_hc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\phantom-gc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\phantom-gcDoc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\phantomgc.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\plot_bac.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\plot_cal.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\plot_exp.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\properti.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\properti.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\properties.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\properties_hc.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\properties_wnd.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\properties_wnd_hc.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ribbon.mfcribbon-ms">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ribbon1.mfcribbon-ms">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\scene2d_.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\scene2d_.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\scene3d_.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\sort.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\sort_hc.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\texture_.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\toolbar1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\tool_mesh.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\track_pl.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ui_align.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ui_curso.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ui_file_.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ui_inser.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ui_tool1.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\ui_view_.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\unit2d_f.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\writelarge.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\writesmall.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\xml_action.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\xml_geometry.ico">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="UserImages.bmp">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="..\..\execute\default\default.zip" />
+    <None Include="res\lua_code.xml" />
+    <None Include="phantom-gc.reg" />
+    <None Include="..\..\PhantomEngine3D\AllGames\base\default_init_zip.zip" />
+    <None Include="res\ico00009.ico" />
+    <None Include="DlgViewerHttp.htm">
+      <Filter>pvdapp</Filter>
+    </None>
+    <None Include="..\..\PhantomEngine3D\AllGames\base\share_data\default_init_zip.zip" />
+    <None Include="res\bitmap1.bmp" />
+    <None Include="res\bmp00009.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="my_phantom.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

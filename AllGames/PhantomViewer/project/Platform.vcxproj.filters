@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\MyGameInit.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\include\PhantomOSAndroid.cpp">
+      <Filter>project</Filter>
+    </ClCompile>
+    <ClCompile Include="MyWebBrowser.cpp" />
+    <ClCompile Include="DlgBindBar.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgLog.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="mfcgame.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="MFCGameDlg.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenEdit.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="DlgWebView.cpp" />
+    <ClCompile Include="..\..\base\NetService.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\GameManager.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\MyGameState.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\MD5.cpp">
+      <Filter>base</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="MyWebBrowser.h" />
+    <ClInclude Include="DlgBindBar.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgLog.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="mfcgame.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="MFCGameDlg.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenEdit.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgWebView.h" />
+    <ClInclude Include="..\..\base\NetService.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\GameManager.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\MyGameState.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\MD5.h">
+      <Filter>base</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="MyWebBrowser.htm" />
+    <None Include="MFCGame.aps">
+      <Filter>win32</Filter>
+    </None>
+    <None Include="res\MFCGame.ico" />
+    <None Include="..\..\base\default_init_zip.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{b14bd88b-48d1-4e43-b75a-b34b789f07b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="base">
+      <UniqueIdentifier>{005d2c86-4bda-4c68-a6a9-be88b1a83665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="project">
+      <UniqueIdentifier>{c6ff1028-9faa-43fe-afe8-91f5c7b47e22}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MFCGame.rc">
+      <Filter>win32</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

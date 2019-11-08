@@ -1,0 +1,526 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E957C3D1889BA7E00F2C5A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E957C341889BA7E00F2C5A0 /* AppDelegate.m */; };
+		2E957C3E1889BA7E00F2C5A0 /* GameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E957C351889BA7E00F2C5A0 /* GameManager.cpp */; };
+		2E957C3F1889BA7E00F2C5A0 /* MyGameState.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E957C371889BA7E00F2C5A0 /* MyGameState.cpp */; };
+		2E957C401889BA7E00F2C5A0 /* MyStoreKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E957C3A1889BA7E00F2C5A0 /* MyStoreKit.m */; };
+		2E957C411889BA7E00F2C5A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E957C3C1889BA7E00F2C5A0 /* ViewController.m */; };
+		2E957C47188A442000F2C5A0 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E957C42188A442000F2C5A0 /* AudioToolbox.framework */; };
+		2E957C48188A442000F2C5A0 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E957C43188A442000F2C5A0 /* AVFoundation.framework */; };
+		2E957C49188A442000F2C5A0 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E957C44188A442000F2C5A0 /* CoreMedia.framework */; };
+		2E957C4A188A442000F2C5A0 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E957C45188A442000F2C5A0 /* MediaPlayer.framework */; };
+		2E957C4B188A442000F2C5A0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E957C46188A442000F2C5A0 /* SystemConfiguration.framework */; };
+		2E957C85188A449800F2C5A0 /* PhantomEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E957C5C188A449800F2C5A0 /* PhantomEngine.m */; };
+		2E957C86188A449800F2C5A0 /* PhantomImp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E957C62188A449800F2C5A0 /* PhantomImp.cpp */; };
+		2E957C87188A449800F2C5A0 /* PhantomOSAndroid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E957C6B188A449800F2C5A0 /* PhantomOSAndroid.cpp */; };
+		2E957C89188A44D000F2C5A0 /* MyGameInit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2E957C88188A44D000F2C5A0 /* MyGameInit.cpp */; };
+		2E957C8B188A456600F2C5A0 /* libPhantomGameEngine.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E957C8A188A456600F2C5A0 /* libPhantomGameEngine.a */; };
+		2E957C8D188A457A00F2C5A0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E957C8C188A457A00F2C5A0 /* StoreKit.framework */; };
+		2EAD0CD61889AE0500FBDD5C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAD0CD51889AE0500FBDD5C /* UIKit.framework */; };
+		2EAD0CD81889AE0500FBDD5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAD0CD71889AE0500FBDD5C /* Foundation.framework */; };
+		2EAD0CDA1889AE0500FBDD5C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAD0CD91889AE0500FBDD5C /* CoreGraphics.framework */; };
+		2EAD0CDC1889AE0500FBDD5C /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAD0CDB1889AE0500FBDD5C /* GLKit.framework */; };
+		2EAD0CDE1889AE0500FBDD5C /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EAD0CDD1889AE0500FBDD5C /* OpenGLES.framework */; };
+		2EAD0CE41889AE0500FBDD5C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD0CE21889AE0500FBDD5C /* InfoPlist.strings */; };
+		2EAD0CE61889AE0500FBDD5C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EAD0CE51889AE0500FBDD5C /* main.m */; };
+		2EAD0CEC1889AE0500FBDD5C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD0CEB1889AE0500FBDD5C /* Default.png */; };
+		2EAD0CEE1889AE0500FBDD5C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD0CED1889AE0500FBDD5C /* Default@2x.png */; };
+		2EAD0CF01889AE0500FBDD5C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD0CEF1889AE0500FBDD5C /* Default-568h@2x.png */; };
+		2EAD0CF21889AE0500FBDD5C /* Shader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD0CF11889AE0500FBDD5C /* Shader.fsh */; };
+		2EAD0CF41889AE0500FBDD5C /* Shader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD0CF31889AE0500FBDD5C /* Shader.vsh */; };
+		2EAD0CFA1889AE0500FBDD5C /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD0CF81889AE0500FBDD5C /* ViewController_iPhone.xib */; };
+		2EAD0CFD1889AE0500FBDD5C /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2EAD0CFB1889AE0500FBDD5C /* ViewController_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E957C331889BA7E00F2C5A0 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = ../../base/AppDelegate.h; sourceTree = "<group>"; };
+		2E957C341889BA7E00F2C5A0 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = ../../base/AppDelegate.m; sourceTree = "<group>"; };
+		2E957C351889BA7E00F2C5A0 /* GameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameManager.cpp; path = ../../base/GameManager.cpp; sourceTree = "<group>"; };
+		2E957C361889BA7E00F2C5A0 /* GameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameManager.h; path = ../../base/GameManager.h; sourceTree = "<group>"; };
+		2E957C371889BA7E00F2C5A0 /* MyGameState.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MyGameState.cpp; path = ../../base/MyGameState.cpp; sourceTree = "<group>"; };
+		2E957C381889BA7E00F2C5A0 /* MyGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyGameState.h; path = ../../base/MyGameState.h; sourceTree = "<group>"; };
+		2E957C391889BA7E00F2C5A0 /* MyStoreKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyStoreKit.h; path = ../../base/MyStoreKit.h; sourceTree = "<group>"; };
+		2E957C3A1889BA7E00F2C5A0 /* MyStoreKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyStoreKit.m; path = ../../base/MyStoreKit.m; sourceTree = "<group>"; };
+		2E957C3B1889BA7E00F2C5A0 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewController.h; path = ../../base/ViewController.h; sourceTree = "<group>"; };
+		2E957C3C1889BA7E00F2C5A0 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewController.m; path = ../../base/ViewController.m; sourceTree = "<group>"; };
+		2E957C42188A442000F2C5A0 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		2E957C43188A442000F2C5A0 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2E957C44188A442000F2C5A0 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2E957C45188A442000F2C5A0 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		2E957C46188A442000F2C5A0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		2E957C4F188A449800F2C5A0 /* Box2D_Usage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Box2D_Usage.h; path = ../../include/Box2D_Usage.h; sourceTree = "<group>"; };
+		2E957C50188A449800F2C5A0 /* CInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CInclude.h; path = ../../include/CInclude.h; sourceTree = "<group>"; };
+		2E957C51188A449800F2C5A0 /* LuaManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LuaManager.h; path = ../../include/LuaManager.h; sourceTree = "<group>"; };
+		2E957C52188A449800F2C5A0 /* MyInclude.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyInclude.h; path = ../../include/MyInclude.h; sourceTree = "<group>"; };
+		2E957C53188A449800F2C5A0 /* PhantomAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomAction.h; path = ../../include/PhantomAction.h; sourceTree = "<group>"; };
+		2E957C54188A449800F2C5A0 /* PhantomAStarPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomAStarPath.h; path = ../../include/PhantomAStarPath.h; sourceTree = "<group>"; };
+		2E957C55188A449800F2C5A0 /* PhantomBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomBase.h; path = ../../include/PhantomBase.h; sourceTree = "<group>"; };
+		2E957C56188A449800F2C5A0 /* PhantomBone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomBone.h; path = ../../include/PhantomBone.h; sourceTree = "<group>"; };
+		2E957C57188A449800F2C5A0 /* PhantomCamera.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomCamera.h; path = ../../include/PhantomCamera.h; sourceTree = "<group>"; };
+		2E957C58188A449800F2C5A0 /* PhantomDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomDB.h; path = ../../include/PhantomDB.h; sourceTree = "<group>"; };
+		2E957C59188A449800F2C5A0 /* PhantomDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomDefine.h; path = ../../include/PhantomDefine.h; sourceTree = "<group>"; };
+		2E957C5A188A449800F2C5A0 /* PhantomDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomDevice.h; path = ../../include/PhantomDevice.h; sourceTree = "<group>"; };
+		2E957C5B188A449800F2C5A0 /* PhantomEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomEffect.h; path = ../../include/PhantomEffect.h; sourceTree = "<group>"; };
+		2E957C5C188A449800F2C5A0 /* PhantomEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PhantomEngine.m; path = ../../include/PhantomEngine.m; sourceTree = "<group>"; };
+		2E957C5D188A449800F2C5A0 /* PhantomEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomEnum.h; path = ../../include/PhantomEnum.h; sourceTree = "<group>"; };
+		2E957C5E188A449800F2C5A0 /* PhantomFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomFile.h; path = ../../include/PhantomFile.h; sourceTree = "<group>"; };
+		2E957C5F188A449800F2C5A0 /* PhantomFloatAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomFloatAnimation.h; path = ../../include/PhantomFloatAnimation.h; sourceTree = "<group>"; };
+		2E957C60188A449800F2C5A0 /* PhantomFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomFont.h; path = ../../include/PhantomFont.h; sourceTree = "<group>"; };
+		2E957C61188A449800F2C5A0 /* PhantomHttp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomHttp.h; path = ../../include/PhantomHttp.h; sourceTree = "<group>"; };
+		2E957C62188A449800F2C5A0 /* PhantomImp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhantomImp.cpp; path = ../../include/PhantomImp.cpp; sourceTree = "<group>"; };
+		2E957C63188A449800F2C5A0 /* PhantomLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomLanguage.h; path = ../../include/PhantomLanguage.h; sourceTree = "<group>"; };
+		2E957C64188A449800F2C5A0 /* PhantomManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomManager.h; path = ../../include/PhantomManager.h; sourceTree = "<group>"; };
+		2E957C65188A449800F2C5A0 /* PhantomMap2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomMap2D.h; path = ../../include/PhantomMap2D.h; sourceTree = "<group>"; };
+		2E957C66188A449800F2C5A0 /* PhantomMapBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomMapBase.h; path = ../../include/PhantomMapBase.h; sourceTree = "<group>"; };
+		2E957C67188A449800F2C5A0 /* PhantomMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomMath.h; path = ../../include/PhantomMath.h; sourceTree = "<group>"; };
+		2E957C68188A449800F2C5A0 /* PhantomMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomMesh.h; path = ../../include/PhantomMesh.h; sourceTree = "<group>"; };
+		2E957C69188A449800F2C5A0 /* PhantomMusic2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomMusic2D.h; path = ../../include/PhantomMusic2D.h; sourceTree = "<group>"; };
+		2E957C6A188A449800F2C5A0 /* PhantomOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomOS.h; path = ../../include/PhantomOS.h; sourceTree = "<group>"; };
+		2E957C6B188A449800F2C5A0 /* PhantomOSAndroid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PhantomOSAndroid.cpp; path = ../../include/PhantomOSAndroid.cpp; sourceTree = "<group>"; };
+		2E957C6C188A449800F2C5A0 /* PhantomScene3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomScene3D.h; path = ../../include/PhantomScene3D.h; sourceTree = "<group>"; };
+		2E957C6D188A449800F2C5A0 /* PhantomSceneDefine3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomSceneDefine3D.h; path = ../../include/PhantomSceneDefine3D.h; sourceTree = "<group>"; };
+		2E957C6E188A449800F2C5A0 /* PhantomSceneRegion3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomSceneRegion3D.h; path = ../../include/PhantomSceneRegion3D.h; sourceTree = "<group>"; };
+		2E957C6F188A449800F2C5A0 /* PhantomSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomSocket.h; path = ../../include/PhantomSocket.h; sourceTree = "<group>"; };
+		2E957C70188A449800F2C5A0 /* PhantomSubMesh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomSubMesh.h; path = ../../include/PhantomSubMesh.h; sourceTree = "<group>"; };
+		2E957C71188A449800F2C5A0 /* PhantomUIAnalyseText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIAnalyseText.h; path = ../../include/PhantomUIAnalyseText.h; sourceTree = "<group>"; };
+		2E957C72188A449800F2C5A0 /* PhantomUIBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIBase.h; path = ../../include/PhantomUIBase.h; sourceTree = "<group>"; };
+		2E957C73188A449800F2C5A0 /* PhantomUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIButton.h; path = ../../include/PhantomUIButton.h; sourceTree = "<group>"; };
+		2E957C74188A449800F2C5A0 /* PhantomUICheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUICheckBox.h; path = ../../include/PhantomUICheckBox.h; sourceTree = "<group>"; };
+		2E957C75188A449800F2C5A0 /* PhantomUIComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIComboBox.h; path = ../../include/PhantomUIComboBox.h; sourceTree = "<group>"; };
+		2E957C76188A449800F2C5A0 /* PhantomUIControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIControl.h; path = ../../include/PhantomUIControl.h; sourceTree = "<group>"; };
+		2E957C77188A449800F2C5A0 /* PhantomUIDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIDialog.h; path = ../../include/PhantomUIDialog.h; sourceTree = "<group>"; };
+		2E957C78188A449800F2C5A0 /* PhantomUIEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIEffect.h; path = ../../include/PhantomUIEffect.h; sourceTree = "<group>"; };
+		2E957C79188A449800F2C5A0 /* PhantomUIListBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIListBox.h; path = ../../include/PhantomUIListBox.h; sourceTree = "<group>"; };
+		2E957C7A188A449800F2C5A0 /* PhantomUIListCtrl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIListCtrl.h; path = ../../include/PhantomUIListCtrl.h; sourceTree = "<group>"; };
+		2E957C7B188A449800F2C5A0 /* PhantomUIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIManager.h; path = ../../include/PhantomUIManager.h; sourceTree = "<group>"; };
+		2E957C7C188A449800F2C5A0 /* PhantomUIProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIProgress.h; path = ../../include/PhantomUIProgress.h; sourceTree = "<group>"; };
+		2E957C7D188A449800F2C5A0 /* PhantomUIScrollBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIScrollBar.h; path = ../../include/PhantomUIScrollBar.h; sourceTree = "<group>"; };
+		2E957C7E188A449800F2C5A0 /* PhantomUISlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUISlider.h; path = ../../include/PhantomUISlider.h; sourceTree = "<group>"; };
+		2E957C7F188A449800F2C5A0 /* PhantomUIStatic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIStatic.h; path = ../../include/PhantomUIStatic.h; sourceTree = "<group>"; };
+		2E957C80188A449800F2C5A0 /* PhantomUIStaticFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUIStaticFormat.h; path = ../../include/PhantomUIStaticFormat.h; sourceTree = "<group>"; };
+		2E957C81188A449800F2C5A0 /* PhantomUITextFormat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUITextFormat.h; path = ../../include/PhantomUITextFormat.h; sourceTree = "<group>"; };
+		2E957C82188A449800F2C5A0 /* PhantomUnit3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUnit3D.h; path = ../../include/PhantomUnit3D.h; sourceTree = "<group>"; };
+		2E957C83188A449800F2C5A0 /* PhantomUnit3DElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PhantomUnit3DElement.h; path = ../../include/PhantomUnit3DElement.h; sourceTree = "<group>"; };
+		2E957C84188A449800F2C5A0 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sqlite3.h; path = ../../include/sqlite3.h; sourceTree = "<group>"; };
+		2E957C88188A44D000F2C5A0 /* MyGameInit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyGameInit.cpp; sourceTree = SOURCE_ROOT; };
+		2E957C8A188A456600F2C5A0 /* libPhantomGameEngine.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPhantomGameEngine.a; path = "../../lib/-iphoneos/libPhantomGameEngine.a"; sourceTree = "<group>"; };
+		2E957C8C188A457A00F2C5A0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		2EAD0CD21889AE0500FBDD5C /* PhantomPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhantomPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAD0CD51889AE0500FBDD5C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2EAD0CD71889AE0500FBDD5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2EAD0CD91889AE0500FBDD5C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2EAD0CDB1889AE0500FBDD5C /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		2EAD0CDD1889AE0500FBDD5C /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		2EAD0CE11889AE0500FBDD5C /* PhantomPlatform-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhantomPlatform-Info.plist"; sourceTree = "<group>"; };
+		2EAD0CE31889AE0500FBDD5C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2EAD0CE51889AE0500FBDD5C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2EAD0CE71889AE0500FBDD5C /* PhantomPlatform-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhantomPlatform-Prefix.pch"; sourceTree = "<group>"; };
+		2EAD0CEB1889AE0500FBDD5C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		2EAD0CED1889AE0500FBDD5C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		2EAD0CEF1889AE0500FBDD5C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		2EAD0CF11889AE0500FBDD5C /* Shader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.fsh; path = Shaders/Shader.fsh; sourceTree = "<group>"; };
+		2EAD0CF31889AE0500FBDD5C /* Shader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; name = Shader.vsh; path = Shaders/Shader.vsh; sourceTree = "<group>"; };
+		2EAD0CF91889AE0500FBDD5C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		2EAD0CFC1889AE0500FBDD5C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EAD0CCF1889AE0500FBDD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E957C8D188A457A00F2C5A0 /* StoreKit.framework in Frameworks */,
+				2E957C47188A442000F2C5A0 /* AudioToolbox.framework in Frameworks */,
+				2E957C48188A442000F2C5A0 /* AVFoundation.framework in Frameworks */,
+				2E957C49188A442000F2C5A0 /* CoreMedia.framework in Frameworks */,
+				2E957C4A188A442000F2C5A0 /* MediaPlayer.framework in Frameworks */,
+				2E957C4B188A442000F2C5A0 /* SystemConfiguration.framework in Frameworks */,
+				2EAD0CDA1889AE0500FBDD5C /* CoreGraphics.framework in Frameworks */,
+				2EAD0CD61889AE0500FBDD5C /* UIKit.framework in Frameworks */,
+				2EAD0CD81889AE0500FBDD5C /* Foundation.framework in Frameworks */,
+				2EAD0CDC1889AE0500FBDD5C /* GLKit.framework in Frameworks */,
+				2EAD0CDE1889AE0500FBDD5C /* OpenGLES.framework in Frameworks */,
+				2E957C8B188A456600F2C5A0 /* libPhantomGameEngine.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E957C4E188A448600F2C5A0 /* imp */ = {
+			isa = PBXGroup;
+			children = (
+				2E957C4F188A449800F2C5A0 /* Box2D_Usage.h */,
+				2E957C50188A449800F2C5A0 /* CInclude.h */,
+				2E957C51188A449800F2C5A0 /* LuaManager.h */,
+				2E957C52188A449800F2C5A0 /* MyInclude.h */,
+				2E957C53188A449800F2C5A0 /* PhantomAction.h */,
+				2E957C54188A449800F2C5A0 /* PhantomAStarPath.h */,
+				2E957C55188A449800F2C5A0 /* PhantomBase.h */,
+				2E957C56188A449800F2C5A0 /* PhantomBone.h */,
+				2E957C57188A449800F2C5A0 /* PhantomCamera.h */,
+				2E957C58188A449800F2C5A0 /* PhantomDB.h */,
+				2E957C59188A449800F2C5A0 /* PhantomDefine.h */,
+				2E957C5A188A449800F2C5A0 /* PhantomDevice.h */,
+				2E957C5B188A449800F2C5A0 /* PhantomEffect.h */,
+				2E957C5C188A449800F2C5A0 /* PhantomEngine.m */,
+				2E957C5D188A449800F2C5A0 /* PhantomEnum.h */,
+				2E957C5E188A449800F2C5A0 /* PhantomFile.h */,
+				2E957C5F188A449800F2C5A0 /* PhantomFloatAnimation.h */,
+				2E957C60188A449800F2C5A0 /* PhantomFont.h */,
+				2E957C61188A449800F2C5A0 /* PhantomHttp.h */,
+				2E957C62188A449800F2C5A0 /* PhantomImp.cpp */,
+				2E957C63188A449800F2C5A0 /* PhantomLanguage.h */,
+				2E957C64188A449800F2C5A0 /* PhantomManager.h */,
+				2E957C65188A449800F2C5A0 /* PhantomMap2D.h */,
+				2E957C66188A449800F2C5A0 /* PhantomMapBase.h */,
+				2E957C67188A449800F2C5A0 /* PhantomMath.h */,
+				2E957C68188A449800F2C5A0 /* PhantomMesh.h */,
+				2E957C69188A449800F2C5A0 /* PhantomMusic2D.h */,
+				2E957C6A188A449800F2C5A0 /* PhantomOS.h */,
+				2E957C6B188A449800F2C5A0 /* PhantomOSAndroid.cpp */,
+				2E957C6C188A449800F2C5A0 /* PhantomScene3D.h */,
+				2E957C6D188A449800F2C5A0 /* PhantomSceneDefine3D.h */,
+				2E957C6E188A449800F2C5A0 /* PhantomSceneRegion3D.h */,
+				2E957C6F188A449800F2C5A0 /* PhantomSocket.h */,
+				2E957C70188A449800F2C5A0 /* PhantomSubMesh.h */,
+				2E957C71188A449800F2C5A0 /* PhantomUIAnalyseText.h */,
+				2E957C72188A449800F2C5A0 /* PhantomUIBase.h */,
+				2E957C73188A449800F2C5A0 /* PhantomUIButton.h */,
+				2E957C74188A449800F2C5A0 /* PhantomUICheckBox.h */,
+				2E957C75188A449800F2C5A0 /* PhantomUIComboBox.h */,
+				2E957C76188A449800F2C5A0 /* PhantomUIControl.h */,
+				2E957C77188A449800F2C5A0 /* PhantomUIDialog.h */,
+				2E957C78188A449800F2C5A0 /* PhantomUIEffect.h */,
+				2E957C79188A449800F2C5A0 /* PhantomUIListBox.h */,
+				2E957C7A188A449800F2C5A0 /* PhantomUIListCtrl.h */,
+				2E957C7B188A449800F2C5A0 /* PhantomUIManager.h */,
+				2E957C7C188A449800F2C5A0 /* PhantomUIProgress.h */,
+				2E957C7D188A449800F2C5A0 /* PhantomUIScrollBar.h */,
+				2E957C7E188A449800F2C5A0 /* PhantomUISlider.h */,
+				2E957C7F188A449800F2C5A0 /* PhantomUIStatic.h */,
+				2E957C80188A449800F2C5A0 /* PhantomUIStaticFormat.h */,
+				2E957C81188A449800F2C5A0 /* PhantomUITextFormat.h */,
+				2E957C82188A449800F2C5A0 /* PhantomUnit3D.h */,
+				2E957C83188A449800F2C5A0 /* PhantomUnit3DElement.h */,
+				2E957C84188A449800F2C5A0 /* sqlite3.h */,
+			);
+			name = imp;
+			sourceTree = "<group>";
+		};
+		2EAD0CC91889AE0400FBDD5C = {
+			isa = PBXGroup;
+			children = (
+				2E957C4E188A448600F2C5A0 /* imp */,
+				2EAD0CDF1889AE0500FBDD5C /* PhantomPlatform */,
+				2EAD0CD41889AE0500FBDD5C /* Frameworks */,
+				2EAD0CD31889AE0500FBDD5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2EAD0CD31889AE0500FBDD5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EAD0CD21889AE0500FBDD5C /* PhantomPlatform.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EAD0CD41889AE0500FBDD5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2E957C8C188A457A00F2C5A0 /* StoreKit.framework */,
+				2E957C8A188A456600F2C5A0 /* libPhantomGameEngine.a */,
+				2E957C42188A442000F2C5A0 /* AudioToolbox.framework */,
+				2E957C43188A442000F2C5A0 /* AVFoundation.framework */,
+				2E957C44188A442000F2C5A0 /* CoreMedia.framework */,
+				2E957C45188A442000F2C5A0 /* MediaPlayer.framework */,
+				2E957C46188A442000F2C5A0 /* SystemConfiguration.framework */,
+				2EAD0CD51889AE0500FBDD5C /* UIKit.framework */,
+				2EAD0CD71889AE0500FBDD5C /* Foundation.framework */,
+				2EAD0CD91889AE0500FBDD5C /* CoreGraphics.framework */,
+				2EAD0CDB1889AE0500FBDD5C /* GLKit.framework */,
+				2EAD0CDD1889AE0500FBDD5C /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2EAD0CDF1889AE0500FBDD5C /* PhantomPlatform */ = {
+			isa = PBXGroup;
+			children = (
+				2E957C88188A44D000F2C5A0 /* MyGameInit.cpp */,
+				2E957C331889BA7E00F2C5A0 /* AppDelegate.h */,
+				2E957C341889BA7E00F2C5A0 /* AppDelegate.m */,
+				2E957C351889BA7E00F2C5A0 /* GameManager.cpp */,
+				2E957C361889BA7E00F2C5A0 /* GameManager.h */,
+				2E957C371889BA7E00F2C5A0 /* MyGameState.cpp */,
+				2E957C381889BA7E00F2C5A0 /* MyGameState.h */,
+				2E957C391889BA7E00F2C5A0 /* MyStoreKit.h */,
+				2E957C3A1889BA7E00F2C5A0 /* MyStoreKit.m */,
+				2E957C3B1889BA7E00F2C5A0 /* ViewController.h */,
+				2E957C3C1889BA7E00F2C5A0 /* ViewController.m */,
+				2EAD0CF11889AE0500FBDD5C /* Shader.fsh */,
+				2EAD0CF31889AE0500FBDD5C /* Shader.vsh */,
+				2EAD0CF81889AE0500FBDD5C /* ViewController_iPhone.xib */,
+				2EAD0CFB1889AE0500FBDD5C /* ViewController_iPad.xib */,
+				2EAD0CE01889AE0500FBDD5C /* Supporting Files */,
+			);
+			path = PhantomPlatform;
+			sourceTree = "<group>";
+		};
+		2EAD0CE01889AE0500FBDD5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2EAD0CE11889AE0500FBDD5C /* PhantomPlatform-Info.plist */,
+				2EAD0CE21889AE0500FBDD5C /* InfoPlist.strings */,
+				2EAD0CE51889AE0500FBDD5C /* main.m */,
+				2EAD0CE71889AE0500FBDD5C /* PhantomPlatform-Prefix.pch */,
+				2EAD0CEB1889AE0500FBDD5C /* Default.png */,
+				2EAD0CED1889AE0500FBDD5C /* Default@2x.png */,
+				2EAD0CEF1889AE0500FBDD5C /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EAD0CD11889AE0500FBDD5C /* PhantomPlatform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EAD0D001889AE0500FBDD5C /* Build configuration list for PBXNativeTarget "PhantomPlatform" */;
+			buildPhases = (
+				2EAD0CCE1889AE0500FBDD5C /* Sources */,
+				2EAD0CCF1889AE0500FBDD5C /* Frameworks */,
+				2EAD0CD01889AE0500FBDD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhantomPlatform;
+			productName = PhantomPlatform;
+			productReference = 2EAD0CD21889AE0500FBDD5C /* PhantomPlatform.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EAD0CCA1889AE0400FBDD5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Phantom Game Studios";
+			};
+			buildConfigurationList = 2EAD0CCD1889AE0400FBDD5C /* Build configuration list for PBXProject "PhantomPlatform" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2EAD0CC91889AE0400FBDD5C;
+			productRefGroup = 2EAD0CD31889AE0500FBDD5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EAD0CD11889AE0500FBDD5C /* PhantomPlatform */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EAD0CD01889AE0500FBDD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAD0CE41889AE0500FBDD5C /* InfoPlist.strings in Resources */,
+				2EAD0CEC1889AE0500FBDD5C /* Default.png in Resources */,
+				2EAD0CEE1889AE0500FBDD5C /* Default@2x.png in Resources */,
+				2EAD0CF01889AE0500FBDD5C /* Default-568h@2x.png in Resources */,
+				2EAD0CF21889AE0500FBDD5C /* Shader.fsh in Resources */,
+				2EAD0CF41889AE0500FBDD5C /* Shader.vsh in Resources */,
+				2EAD0CFA1889AE0500FBDD5C /* ViewController_iPhone.xib in Resources */,
+				2EAD0CFD1889AE0500FBDD5C /* ViewController_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EAD0CCE1889AE0500FBDD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EAD0CE61889AE0500FBDD5C /* main.m in Sources */,
+				2E957C3D1889BA7E00F2C5A0 /* AppDelegate.m in Sources */,
+				2E957C3E1889BA7E00F2C5A0 /* GameManager.cpp in Sources */,
+				2E957C3F1889BA7E00F2C5A0 /* MyGameState.cpp in Sources */,
+				2E957C401889BA7E00F2C5A0 /* MyStoreKit.m in Sources */,
+				2E957C411889BA7E00F2C5A0 /* ViewController.m in Sources */,
+				2E957C85188A449800F2C5A0 /* PhantomEngine.m in Sources */,
+				2E957C86188A449800F2C5A0 /* PhantomImp.cpp in Sources */,
+				2E957C87188A449800F2C5A0 /* PhantomOSAndroid.cpp in Sources */,
+				2E957C89188A44D000F2C5A0 /* MyGameInit.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EAD0CE21889AE0500FBDD5C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EAD0CE31889AE0500FBDD5C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2EAD0CF81889AE0500FBDD5C /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EAD0CF91889AE0500FBDD5C /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		2EAD0CFB1889AE0500FBDD5C /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EAD0CFC1889AE0500FBDD5C /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EAD0CFE1889AE0500FBDD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EAD0CFF1889AE0500FBDD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EAD0D011889AE0500FBDD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhantomPlatform/PhantomPlatform-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../../include,
+					../../dep,
+					../base,
+				);
+				INFOPLIST_FILE = "PhantomPlatform/PhantomPlatform-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2EAD0D021889AE0500FBDD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LIBRARY = "libstdc++";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhantomPlatform/PhantomPlatform-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					../../include,
+					../../dep,
+					../base,
+				);
+				INFOPLIST_FILE = "PhantomPlatform/PhantomPlatform-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../lib/-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EAD0CCD1889AE0400FBDD5C /* Build configuration list for PBXProject "PhantomPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EAD0CFE1889AE0500FBDD5C /* Debug */,
+				2EAD0CFF1889AE0500FBDD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EAD0D001889AE0500FBDD5C /* Build configuration list for PBXNativeTarget "PhantomPlatform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EAD0D011889AE0500FBDD5C /* Debug */,
+				2EAD0D021889AE0500FBDD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EAD0CCA1889AE0400FBDD5C /* Project object */;
+}

@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\..\win32base\DlgBindBar.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win32base\DlgLog.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\GameManager.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\MD5.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win32base\MFCGame.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win32base\MFCGameDlg.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\MyGameInit.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\NetService.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\win32base\OpenEdit.cpp">
+      <Filter>other</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\AnalyseThread.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\Base.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\ClientPoint.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\DeepStock.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\Formula.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\ServerPoint.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\Simulation.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\Socket.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\SocketAndroid.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\SocketIOS.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\SocketWin32.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="F:\趋势分析Project\Trend\include\Stock.cpp">
+      <Filter>stock</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\base\StockInterface.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Resource.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\win32base\DlgBindBar.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\win32base\DlgLog.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\GameManager.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\MD5.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\win32base\MFCGame.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\win32base\MFCGameDlg.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\NetService.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\win32base\OpenEdit.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\win32base\resource.h">
+      <Filter>other</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\趋势分析Project\Trend\include\StockMath.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\趋势分析Project\Trend\include\AnalyseThread.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\趋势分析Project\Trend\include\Base.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\趋势分析Project\Trend\include\ClientPoint.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\趋势分析Project\Trend\include\DeepStock.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\趋势分析Project\Trend\include\ServerPoint.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\趋势分析Project\Trend\include\ShareID.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\趋势分析Project\Trend\include\Simulation.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\趋势分析Project\Trend\include\Socket.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="F:\趋势分析Project\Trend\include\Stock.h">
+      <Filter>stock</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\StockInterface.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\base\default_init_zip.zip">
+      <Filter>other</Filter>
+    </None>
+    <None Include="..\..\base\share_data\default_init_zip.zip">
+      <Filter>other</Filter>
+    </None>
+    <None Include="..\..\win32base\res\MFCGame.ico">
+      <Filter>other</Filter>
+    </None>
+    <None Include="..\..\win32base\res\MFCGame.rc2">
+      <Filter>other</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="other">
+      <UniqueIdentifier>{1c2617ef-c97a-4466-a28d-6d946198c402}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stock">
+      <UniqueIdentifier>{304c2a81-3d87-4e52-b698-608a4f7b63e1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="..\..\win32base\MFCGame.rc">
+      <Filter>other</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,73 @@
+// !$*UTF8*$!
+{
+	0867D690FE84028FC02AAC07 /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeSDKPreference = iphoneos4.0;
+		activeTarget = D2AAC07D0554694100DB518D /* PhantomGameEngine */;
+		addToTargets = (
+			D2AAC07D0554694100DB518D /* PhantomGameEngine */,
+		);
+		codeSenseManager = 2E708E8C15EBC6B600B791C5 /* Code sense */;
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					341,
+					20,
+					48.16259765625,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 367773348;
+			PBXWorkspaceStateSaveDate = 367773348;
+		};
+		sourceControlManager = 2E708E8B15EBC6B600B791C5 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	2E708E8B15EBC6B600B791C5 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	2E708E8C15EBC6B600B791C5 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	2E708E8F15EBC70F00B791C5 /* Box2D_Usage.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {726, 5005}}";
+			sepNavSelRange = "{751, 0}";
+			sepNavVisRange = "{440, 388}";
+		};
+	};
+	2E708E9615EBC70F00B791C5 /* PhantomDefine.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {976, 1235}}";
+			sepNavSelRange = "{535, 11}";
+			sepNavVisRange = "{0, 848}";
+			sepNavWindowFrame = "{{15, 183}, {750, 558}}";
+		};
+	};
+	D2AAC07D0554694100DB518D /* PhantomGameEngine */ = {
+		activeExec = 0;
+	};
+}
