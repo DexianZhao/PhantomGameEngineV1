@@ -15,3 +15,16 @@ This system can be compiled and run on windows, Android, IOS and other systems
 秋风落叶未枯尽，我欲何往又何然。
 
 ​                    赵德贤。
+
+故里
+
+雪绵绵飘万里，天地成一色。
+
+​条条印似锦龙，只影向前行 。
+
+岁月痕幼时朝，​如梦似如画。
+
+​冬又去春又来，冰雪汇成河。
+
+                                     ​赵德贤
+​
